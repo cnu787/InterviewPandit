@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body style="margin: 0px;">
+	<div
+		style="margin-left: auto; margin-right: auto; width: 600px; background-color: #0095DA; color: #3e454c; padding: 35px;">
+
+		<div
+			style="background: linear-gradient(to bottom, #FFF, #F2F2F2) repeat scroll 0% 0% #FFF; border-bottom: 5px solid #F46F22; font-family: robotoregular; height: 60px; border-top-radius: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 15px;">
+			<img style="margin: 5px;"
+				src="http://downloads.testmyinterview.com/resourceimg/testmyinterview_logo.png" />
+		</div>
+		<div
+			style="padding: 20px; background-color: #ffffff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<span style="font-size: 24px;">Hi  <br>
+			<br>
+			<br>	
+			<p>Please click on the below link for the registration</p>
+			#if($customTemplate.userType==1)
+			<a style="font-size: 14px; color: #0066cc;" target="blank"
+				href="${customTemplate.siteUrl}registerView.tmi?referralId=${customTemplate.referralId}">${customTemplate.siteUrl}registerView.tmi?referralId=${customTemplate.referralId}</a>
+			#end
+			#if($customTemplate.userType==2)
+			<a style="font-size: 14px; color: #0066cc;" target="blank"
+				href="${customTemplate.siteUrl}empRegisterView.tmi?referralId=${customTemplate.referralId}">${customTemplate.siteUrl}empRegisterView.tmi?referralId=${customTemplate.referralId}</a>
+			#end 
+			</p>
+			<p style="line-height: 1.4;">In case of any further queries, do write to us at <a style="font-size: 14px; color: #0066cc;" href="#">support@testmyinterview.com</a> or call our number + 91 40 69000783.</p>
+			<p>Yours Sincerely,</p>
+			<p>Team Test My Interview</p>			
+		</div>
+	</div>
+
+</body>
+</html>

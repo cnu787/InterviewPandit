@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module2_l1.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <img src="../shared/images/bord.png" style="height:0px; width:0px; float:left; opacity: 0">
+                <div id="pageTitle">Module Objectives</div>
+                <div id="page1_bord"><img src="../shared/images/bord2.png" border="0"></div>
+                <div class="fader">
+                    <div id="ContentText" >
+                        <div id="instruction_text" >In the previous module, you learnt the need for an interview and the basic concepts of interviewing. You also learnt the importance of hiring the right candidate for the role.<br><br> 
+                        
+                        <div id="firsttext" class="animate">You would expect the candidates to come prepared for an interview, right? It is equally important for you to do your homework before you walk in to conduct the mock interview.</div> </div>
+                        <ul style="margin-left:65px; margin-top:20px; width:532px; position:absolute; z-index:99999999;" ><div style="font-weight:normal; color:#00569c; margin-left:-20px; list-style:none; " class="animate" id="ultext">After completing this module, you will be able to: </div>
+                            <li id="text1" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-26px; margin-left:30px;">Review relevant documents before conducting the interview.</div></li>
+                            <li id="text2" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Plan an appropriate environment to conduct the interview.</div></li>
+                            <li id="text3" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Identify and avoid common distractors in different environments.</div></li>
+                            <li id="text4" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">List basic questions to ask the candidates during an interview.</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+	</body>
+        <script type="text/javascript">
+                var anim_flag = false; var total_steps = 6; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 10000; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 20000; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 23800; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 27000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 30500; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 34500; steps[6][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('module2_1','',true,true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#firsttext').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+				function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ultext').fadeIn('normal', function() { steps[2][2] = 1; });
+                    }
+                }
+				
+				function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) { 
+                        $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                function playStep6() { 
+                    if(anim_flag==true) { 
+                        $('#text4').fadeIn('normal', function() { steps[6][2] = 1; });
+                        
+                    }
+                }
+                
+            </script>
+</html>

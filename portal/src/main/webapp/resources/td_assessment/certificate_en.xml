@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<certificate>
+	<logo>lib/images/certificate_logo.png</logo>	
+	<bgImage>lib/images/certificate_bg.png</bgImage>
+	<title>CERTIFICATE</title>
+	<wishMessage>Congratulations! We are pleased to confirm that</wishMessage>
+	<studentName>#name#</studentName>
+	<dateMessage><![CDATA[has successfully completed the <font style="font-weight:bold">E-Test for Guided bone and guided tissue regeneration.</font><br/><br/>]]></dateMessage>
+	<footGreet>Best Wishes,</footGreet>
+	<department>Sales Force Effectiveness Team.</department>
+	<signature></signature>
+	<designation></designation>
+</certificate>

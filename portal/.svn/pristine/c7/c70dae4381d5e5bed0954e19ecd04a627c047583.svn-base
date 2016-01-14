@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+	<div
+		style="font-size:14px;margin-left: auto; margin-right: auto; width: 600px; background-color: #0095DA; color: #3e454c; padding: 35px;">
+
+		<div
+			style="background: linear-gradient(to bottom, #FFF, #F2F2F2) repeat scroll 0% 0% #FFF; border-bottom: 5px solid #F46F22;height: 60px; border-top-radius: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 15px;">
+			<img style="margin: 5px;"
+				src="http://downloads.testmyinterview.com/resourceimg/testmyinterview_logo.png" />
+				
+				
+		</div>
+		<div style="background-color: #0CB14B; height: 45px;">
+			<img
+				style="margin-left: 25px; float: left; margin-top: 10px; margin-right: 15px;"
+				src="http://downloads.testmyinterview.com/resourceimg/icon_confirm.png" />
+			<div style="font-size: 16px; padding-top: 15px; color: #FFF;">Interview
+				Booking Confirmation</div>
+		</div>
+		#foreach($userDet in $customTemplate.userDetails)
+		<div
+			style="padding: 30px; background-color: #ffffff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<span style="font-size: 14px;">Dear <span
+				style="text-transform: capitalize;color: #f36f21; font-weight: 500;">${userDet.evalfirstname},</span></span>
+			<br> <br> 
+			<p style="line-height: 1.4;">
+			Thank you for your contribution to Test My Interview. Below are the details of 
+			the next mock interview session with your candidate.
+			</p>			
+			<p>Please take a moment to verify the details:</p>
+			<table style="width: 500px;">
+			<tr>
+			<td style="width: 30%;padding:5px;">Applicant Name</td><td style="text-transform: capitalize;padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: ${userDet.UserName}</td>
+			</tr>
+			<tr>
+			<td style="width: 30%;padding:5px;">Industry</td><td style="padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: ${userDet.industryname}</td>
+			</tr>
+			<tr>
+			<td style="width: 30%;padding:5px;">Domain</td><td style="padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: 
+			
+			#set( $domainCount=0)	
+			#foreach($domainLst in $customTemplate.domainList)
+			#set( $domainCount=$domainCount+1)	
+			${domainLst.domainname} 
+			#if($customTemplate.domainList.size()!=$domainCount)
+			,
+			#end 			
+			#end
+			</td>
+			</tr>
+			#if(${userDet.companyName})
+			<tr>			
+			<td style="width: 30%;padding:5px;">Company Name</td><td style="text-transform: capitalize;padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: $!{userDet.companyName}</td>
+			</tr>
+			#end
+			#if(!${userDet.designation.empty})
+			<tr>
+			<td style="width: 30%;padding:5px;">Position</td><td style="text-transform: capitalize;padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: ${userDet.designation}</td>
+			</tr>
+			#end
+			<tr>
+			<td style="width: 30%;padding:5px;">Role of Interviewer</td><td style="padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: ${userDet.interviewerrolename}</td>
+			</tr>
+			<tr>
+			<td style="width: 30%;padding:5px;">Location</td><td style="padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: ${userDet.locationname}</td>
+			</tr>
+			<tr>
+			<td style="width: 30%;padding:5px;">Mode of Interview</td><td style="padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: ${userDet.interviewtypename}</td>
+			</tr>
+			<tr>
+			<td style="width: 30%;padding:5px;">Slot Booked</td><td style="padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: ${userDet.date}&nbsp;&nbsp;&nbsp;${userDet.evaltime}</td>
+			</tr>
+			<tr>
+			<td style="width: 30%;padding:5px;">Skills for Evaluation</td><td style="padding:5px;font-size:14px;color: #f36f21; font-weight: 500;">: 
+			#set( $skillCount=0)	
+			#foreach($list in $customTemplate.skillsDetails)
+			#set( $skillCount=$skillCount+1)	
+			${list.skillname} 
+			#if($customTemplate.skillsDetails.size()!=$skillCount)
+			,
+			#end 			
+			#end			
+			</td>
+			</tr>
+			</table>
+			<p style="line-height: 1.4;">In case of any further queries, do write to us at <a href="#" style="font-size: 14px; color: #0066cc;">support@testmyinterview.com</a> or call our number + 91 40 69000783.</p>
+			<p>Yours Sincerely,</p>
+			<p>Team Test My Interview</p>
+		</div>
+		#end
+	</div>
+
+</body>
+</html>

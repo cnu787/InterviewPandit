@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass
+        name="com.testmyinterview.portal.ProfileController" x="3" y="9">
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.CustomTemplateBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.testmyinterview.portal.util.TmiUtil"
+        x="37" y="452">
+        <Communication destinationClassName="com.testmyinterview.portal.bean.CustomTemplateBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.FileUploader"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.testmyinterview.portal.bean.CustomTemplateBean"
+        x="184" y="89"/>
+    <CommunicationClass
+        name="com.testmyinterview.portal.util.FileUploader" x="215" y="446"/>
+    <CommunicationClass
+        name="com.testmyinterview.portal.bean.ProfileBean" x="518" y="674"/>
+</ClassDiagram>

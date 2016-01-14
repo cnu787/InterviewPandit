@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="com.testmyinterview.portal.dao.KookooDao"
+        x="832" y="200"/>
+    <CommunicationClass
+        name="com.testmyinterview.portal.kookoo.KookooController"
+        x="449" y="31">
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.KookooDao"
+            endpointName="kookooDao" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.KookooDao"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.testmyinterview.portal.kookoo.ScheduleCallBean"
+        x="259" y="28">
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.KookooDao"
+            endpointName="kookooDao" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.KookooDao"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.testmyinterview.portal.kookoo.ScheduledJob" x="18" y="29">
+        <Association
+            destinationClassName="com.testmyinterview.portal.kookoo.ScheduleCallBean"
+            endpointName="scheduleCallBean" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.kookoo.ScheduleCallBean"/>
+    </CommunicationClass>
+</ClassDiagram>

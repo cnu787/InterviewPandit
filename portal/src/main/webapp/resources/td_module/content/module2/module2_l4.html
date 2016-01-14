@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module2_l4.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <img src="../shared/images/bg1_normal.png" style="height:0px; width:0px; float:left; opacity: 0">
+            <img src="../shared/images/bg2_normal.png" style="height:0px; width:0px; float:left; opacity: 0">
+            <div id="content"> 
+                    <div id="pageTitle">Planning the Appropriate Environment</div>
+                    <div id="instruction_text">Take a look at the two pictures of an office space. Imagine yourself interviewing a candidate. Which one would you prefer? Click the image to learn more.</div>
+                    <div id="messy_desk" class="active" rel="1" audio_name="module2_messy">
+                        
+                    </div>
+                    <div id="tidy_desk" class="active" rel="2" audio_name="module2_tidy">
+                    </div>
+                    
+                    <div id="content_text">
+                        <div id="btn_close" style=" position: absolute; margin-left: 300px; z-index: 99999; cursor: pointer;"><img src="../shared/images/close_button.png"></div>
+                        <div class="header_text"><span style="color:#cc0000">Messy Desk</span> </div>
+                            <p>A messy or a cluttered desk is a sign of a cluttered mind. Can you find what you need from the clutter without wasting time? Not really! </p>
+                            <p>Imagine the first impression it can have on candidates. Remember that you are representing Interview Pandit and are its face.</p>
+                            <p>Ensure that your interview area is organized and all the cables are neatly tucked away from view.</p>
+                            <center>
+                                <div style=" margin-top: -16px;"><img src="../shared/images/td.png"></div>
+                            </center>
+                    </div>
+                    
+                    <div id="content_text1">
+                        <div id="btn_close1" style=" position: absolute; margin-left: 300px; z-index: 99999; cursor: pointer;"><img src="../shared/images/close_button.png"></div>  
+                        <div class="header_text" style="border-bottom: 2px solid #1eac17;"> <span style="color:#1eac17">Tidy Desk</span></div>
+                            <p>A tidy desk is a sign of professionalism. </p>
+                            <p id="text1">People often judge your capabilities based on the state of your desk. A clean, clutter–free desk creates a very positive impression about the organization you represent – Interview Pandit!</p>
+                            <center>
+                                <div style=" margin-top:100px; margin-left: 30px;"> <img src="../shared/images/tu.png"></div>
+                            </center>
+                    </div>
+                    <div id="instruction_text99">Click on both the images to proceed.</div>
+                    <div id="active1" style="position: absolute; top:159px; width: 810px; border: 0px solid; height: 344px; left:102px;"> </div>
+            </div>
+	</body>
+            <script type="text/javascript">
+                var anim_flag = false; var total_steps = 2; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 60000; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 8200; steps[2][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('module2_l4','',true,false);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#messy_desk').fadeIn('normal',function() { steps[1][2] = 1; });
+                        
+                    }
+                }
+		function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#active1').fadeOut('normal', function() { steps[2][2] = 1; });
+                    }
+                }
+		
+                $(document).ready(function(){ 
+                    var cont=0; var cont1=0;
+                    $('.active').click(function(){
+                        //$('.active').removeClass('selected');
+                        $(this).addClass('selected');
+                        var audio_file = $(this).attr('audio_name');
+                        //parent.loadAudioTranscript(audio_file,'',true);
+                        var number = $(this).attr('rel');
+                        if(number == 1){ $(this).addClass('visited');  $('#content_text').fadeIn('fast'); } else if(number == 2 ){ cont1++; $('#content_text1').fadeIn('fast'); $(this).addClass('visited'); }
+                        
+                        if($('#messy_desk').hasClass('visited') && $('#tidy_desk').hasClass('visited') ){
+                            parent.loadAudioTranscript(audio_file,'',true,true);
+                        }
+                        else{
+                            parent.loadAudioTranscript(audio_file,'',true,false);
+                        }
+                    });
+                    
+                    $('#btn_close').click(function(){
+                        $('#content_text').fadeOut();
+                        $('#messy_desk').removeClass('selected');
+			parent.unloadAudioTranscript();
+                        
+                    });
+                   
+                    $('#btn_close1').click(function(){
+                        $('#content_text1').fadeOut();
+                        $('#tidy_desk').removeClass('selected');
+			parent.unloadAudioTranscript();
+                    });
+                   
+                    
+                });       
+            </script>
+</html>

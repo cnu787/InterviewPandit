@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Common Misconceptions About Candidates</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+		<link rel="stylesheet" type="text/css" href="../shared/css/module1_5.css" />
+                <script src="../shared/js/jquery/jquery.min.js"></script>
+                <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+                <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+                <style>
+                #ContentText{ margin-top: 20px;}
+                .preloader { width:1px; height: 1px; position: absolute; margin-left:-1000px; overflow:hidden; }
+                .preloader IMG { width:1px; height: 1px; margin-left:-1000px; }
+                </style>
+        </head>
+        <body>
+            <div id="content">
+                <div id="pageTitle">Common Misconceptions About Candidates</div>
+                <div id="content_text">
+                    <div id="question_text">
+                        Misconceptions about candidates find a common place among interviewers. Consciously, or otherwise, you look for these in the candidate and make inferences from it, impacting the outcome of the interview.
+                    </div>
+                    <div id="instruction_text">
+                        Read the statements below and indicate if it is a misconception or not by selecting an option from the drop down list. Click <b>Submit</b> when done.
+                    </div>
+                    <div id="options">
+                        <div id=" text1" class=" example_text"> <div style=" width: 200px; padding: 3px; padding-left: 15px; padding-top: 8px; line-height: 1.1;" >‘I will ask neutral questions that will help the candidate respond appropriately.’</div></div>
+                        <div id=" text2" class=" example_text"><div style=" width: 200px; padding: 12px; padding-left: 15px;" >‘A person with scuffed shoes is likely to be disorganized.’</div></div>
+                        <div id=" text3" class=" example_text"><div style=" width: 200px; padding: 3px; padding-left: 15px; padding-top: 8px; line-height: 1.1;" >‘I will probe the evidence  and not make assumptions based on my experiences.’</div></div>
+                        <div id=" text4" class=" example_text"><div style=" width: 200px; padding: 12px; padding-left: 15px;" >‘Wearing a red tie is a sign of confidence.’</div></div>
+                    </div>
+                    <div id="dropdown_list_container" >
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 5px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox1" style=" border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 26px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox2" style=" border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>                            
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 25px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox3" style="border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 26px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox4" style="border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div id="options1">
+                        <div id=" text1" class=" example_text"><div style=" width: 200px; padding: 12px; padding-left: 15px;" >‘No Eye Contact. I am sure he is hiding something.’</div></div>
+                        <div id=" text2" class=" example_text"><div style=" width: 200px; padding: 3px; padding-left: 15px; padding-top: 8px; line-height: 1.1;" >‘I have been in this business for a long time. I know a good candidate when I see one.’</div></div>
+                        <div id=" text3" class=" example_text"><div style=" width: 200px; padding: 12px; padding-left: 15px;" >‘That’s a firm hand shake. I know he is right for the job.’ </div></div>
+                        <div id=" text4" class=" example_text"><div style=" width: 200px; padding: 3px; padding-left: 15px; padding-top: 8px; line-height: 1.1;" >‘I will not let first impressions impact my judgement about the candidate.’</div></div>
+                    </div>
+                    <div id="dropdown_list_container1">
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 5px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox5" style=" border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 26px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox6" style=" border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>                            
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 25px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox7" style="border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>
+                        <div class="custom-dropdown custom-dropdown--white" style="z-index:1001; margin-top: 26px;"> 
+                            <select class="custom-dropdown__select custom-dropdown__select--white result" id="content_selectbox8" style="border-radius: 5px;">
+                                <option value="-1">Select an Option</option>
+                                <option value="1">Common Misconception </option>
+                                <option value="0">Not a Misconception</option>
+                            </select>
+                        </div>
+                    </div>
+                        <div id="submit_btn">
+                            <button  type=button class="btn1 btn1disabled" id="btn_submit">Submit</button>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                        <div class="resultbg"></div>
+                        <div id="correct_div" class="resultdiv">
+                            <div class="rbox" style="width:620px; " >
+                                <p style="color:#4ab559; font:700 20px Avenir Next LT Pro Regular;">Excellent! You got all of them right. </p><br>
+                                <p style=" font-size: 11pt; margin-top: -10px; ">Observe that most of the misconceptions interviewers make relate to the first impression. Reiterate to the candidates that making a good first impression is as important as having the right knowledge and skills for the job. </p>
+                                <ul> Some of the Common misconceptions interviewers make are:
+                                    <li>‘A person with scuffed shoes is likely to be disorganized.’</li>
+                                    <li>‘Wearing a red tie is a sign of confidence.’ </li>
+                                    <li>‘No Eye Contact. I am sure he is hiding something.’</li>
+                                    <li>‘I have been in this business for a long time. I know a good candidate when I see one.’</li>
+                                    <li>‘That’s a firm hand shake. I know he is right for the job.’ </li>   
+                                </ul>
+                                <ul> The following statements are not misconceptions:
+                                    <li>‘I will ask neutral questions that will help the candidate respond appropriately.’</li>
+                                    <li>‘I will probe the evidence  and not make assumptions based on my experiences.’</li>
+                                    <li>‘I will not let first impressions impact my judgement about the candidate.’</li>
+                                </ul>
+                                <br>
+                            <center>
+                                <button type=button class="btn" id="continue">Continue</button>
+                            </center>
+                            </div>
+                        </div>
+                        <div id="incorrect_div" class="resultdiv">
+                            <div class="rbox" style="width:620px; " >
+                                <p style="color:#cc0000; font:700 20px Avenir Next LT Pro Regular;">Not all of your responses were correct.</p><br>
+                                    <p style=" font-size: 11pt; margin-top: -10px; ">Observe that most of the misconceptions interviewers make relate to the first impression. Reiterate to the candidates that making a good first impression is as important as having the right knowledge and skills for the job. </p>
+                                <ul> Some of the Common misconceptions interviewers make are:
+                                    <li>‘A person with scuffed shoes is likely to be disorganized.’</li>
+                                    <li>‘Wearing a red tie is a sign of confidence.’ </li>
+                                    <li>‘No Eye Contact. I am sure he is hiding something.’</li>
+                                    <li>‘I have been in this business for a long time. I know a good candidate when I see one.’</li>
+                                    <li>‘That’s a firm hand shake. I know he is right for the job.’ </li>   
+                                </ul>
+                                <ul> The following statements are not misconceptions:
+                                    <li>‘I will ask neutral questions that will help the candidate respond appropriately.’</li>
+                                    <li>‘I will probe the evidence  and not make assumptions based on my experiences.’</li>
+                                    <li>‘I will not let first impressions impact my judgement about the candidate.’</li>
+                                </ul>
+                                <br>
+                            <center>
+                                <button type=button class="btn" id="continue">Continue</button>
+                            </center>
+                           
+                                
+                            </div>
+                        </div>
+        </body>
+        <script type="text/javascript">
+                parent.next_disable();
+                $(window).load(function() {
+                    parent.loadAudioTranscript('module1_6','',true,false);
+                });
+
+		$(".btn").click(function(){
+                        parent.gotoPage(7);
+                    });
+        
+			$(document).ready(function() {
+                        if($('#content').css('visibility')=='hidden') 
+                	{
+                    	$('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+					}
+                                        
+                        jQuery.fn.disable = function(){ $(this).addClass('btn1disabled');  $(this).attr("disabled",'disabled'); };
+                        jQuery.fn.enable = function(){ $(this).removeClass('btn1disabled'); $(this).removeAttr("disabled"); };
+                        
+                         jQuery.fn.prevnet_drop = function(){ 
+                                                            $(".custom-dropdown__select").prop("disabled", true); 
+                                                            };
+                        $('#btn_submit').disable(); 
+						
+						
+                       
+                         $('.custom-dropdown__select').change(function() { 
+                            var all_selected = true;
+                            $('.custom-dropdown__select').each(function() { 
+                                if($(this).val()==='-1') all_selected = false;
+                            });
+                            if(all_selected) $('#btn_submit').enable(); else $('#btn_submit').disable();  
+                        });
+                        
+                           
+                        $("#btn_submit").click(function(){
+                               if(($("#content_selectbox1").val()=== '0')&& 
+                               ($("#content_selectbox2").val()=== '1')&& 
+                               ($("#content_selectbox3").val()=== '0')&& 
+                               ($("#content_selectbox4").val()=== '1')&& 
+                               ($("#content_selectbox5").val()=== '1')&& 
+                               ($("#content_selectbox6").val()=== '1')&&
+                               ($("#content_selectbox7").val()=== '1')&&
+                               ($("#content_selectbox8").val()=== '0'))
+                                {
+                                    parent.loadAudioTranscript('module1_6_correct','',true,true);
+                                    $('#correct_div').fadeIn(1000);
+                                    $('#correct_ans_img').fadeIn(1000);
+                                    $(".resultbg").fadeIn(1000);
+                                    $('#btn_submit').disable();
+                                    $('#btn_submit').prevnet_drop();
+                                    $("#btn_submit").unbind("click");
+                                 }
+                                else
+                                {
+                                    parent.loadAudioTranscript('module1_6_incorrect','',true,true);
+                                    $('#incorrect_div').fadeIn(1000);
+                                    $('#incorrect_ans_img').fadeIn(1000);
+                                    $(".resultbg").fadeIn(1000);
+                                    $('#btn_submit').disable();
+                                    $('#btn_submit').prevnet_drop();
+                                    $("#btn_submit").unbind("click");
+                                }
+                         }); 
+                        $("#show_me").click(function(){
+                            parent.unloadAudioTranscript();
+                            $('#incorrect_div').fadeOut(1000);
+                            $('#incorrect_ans_img').fadeOut(1000);
+                            $(".resultbg").fadeOut(1000);
+                            $("#content_selectbox1").val("0");
+                            $("#content_selectbox2").val("1");
+                            $("#content_selectbox3").val("0");
+                            $("#content_selectbox4").val("1");
+                            $("#content_selectbox5").val("1");
+                            $("#content_selectbox6").val("1");
+                            $("#content_selectbox7").val("1");
+                            $("#content_selectbox8").val("0");
+                            $('.custom-dropdown__select').css("box-shadow","0px 0px 10px green");
+                            $('.custom-dropdown__select').css('background-color','#f5f5f5');
+                        });                
+			});
+</script>
+</html>

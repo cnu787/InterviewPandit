@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module1_7.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+            <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <img src="../shared/images/page1_man.png" style="height:0px; width:0px; float:left; opacity: 0">
+            <img src="../shared/images/board_1.png" style="height:0px; width:0px; float:left; opacity: 0">
+		<div id="pageTitle">Check Your Understanding</div>
+                <div id="page1_board"><img src="../shared/images/board_1.png" border="0"></div>
+                <div class="fader">
+                    <div id="ContentText" >
+                        <div id="message_text" class="animate">Read the situation below and answer the question that follows.</div>
+                        <div id="iformation_container">You are about to conduct a screening interview for a candidate and prepare her for her forthcoming interview as Java Team Lead in a mid-size IT company. She insists on describing, in detail, the 6 month computer class that she recently completed. Keeping in mind the real-time scenario, you have 15 minutes to complete the interview.</div>
+                        <div id="question_container">
+                            <div>What would you do to help ensure that you remain focused and cover everything needed in the allotted amount of time?</div>
+                            <div id="select_inst">Select the two correct answers. Click <b>Submit</b> when you have selected the options.</div>
+                            <div>
+                                <table class="ddtable" border="0" cellpadding="5" cellspacing="0">
+                                <tr>
+					<td><input type="checkbox" class="check check1" id="chk1"></td>
+					<td><label for="chk1">Since it is only a mock interview, listen to all that she has to say ignoring the time.</label></td>
+				</tr>
+				 <tr>
+					<td><input type="checkbox" class="check check1"  id="chk2"></td>
+                                        <td><label class="green" for="chk2"> It’s a screening interview so you will focus on the relevant topic.</label></td>
+				</tr>
+				 <tr>
+					<td><input type="checkbox" class="check check1"  id="chk3"></td>
+					<td><label for="chk3">Indulge in a personal discussion with the candidate to get to know her better.</label></td>
+				</tr>
+				 <tr>
+					<td><input type="checkbox" class="check check1"  id="chk4"></td>
+					<td><label class="green" for="chk4">Politely but firmly, you will steer the interview towards achieving the goal. </label></td>
+				</tr>
+                                </table>
+                                <div id="button_container"><a href="#" class="btn1 btn1disabled" id="btn_submit">Submit</a></div>
+                            </div>
+                            <div class="resultbg"></div>    
+                            <div class="feedback" id="fbc">
+                                <div>
+                                    <span style=" color: #4ab559; font-size: 13pt;"> That’s correct.</span><br><br> Since it is a screening interview, it is important to stay focused and steer the interview towards achieving the goal.
+                                    <br><br>
+                                    <center>
+                                    <button type=button class="btn2" id="btn_close1">Continue</button>
+                                    </center>
+                                    <br>
+                                </div>
+                                
+                            </div>
+                            <div class="feedback" id="fbw">
+                                <div>
+                                    <span style=" color: #cc0000; font-size: 13pt;">That’s incorrect.</span><br><br> Since it is a screening interview, it is important to stay focused and steer the interview towards achieving the goal. 
+                                   <br><br>
+                                    <center>
+                                    <button type=button class="btn2" id="btn_close">Continue</button>
+                                    </center>
+                                    <br>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	</body>
+<script type="text/javascript">
+			$(document).ready(function() {
+                            $('#btn_submit').addClass('disabled');
+				
+                                $('#btn_submit').click(function() {
+                                if(!$(this).hasClass('disabled')) {
+				var is_correct = true;
+				if($('#chk1').is(':checked') == true) is_correct = false;
+				if($('#chk2').is(':checked') == false) is_correct = false;
+				if($('#chk3').is(':checked') == true) is_correct = false;
+				if($('#chk4').is(':checked') == false) is_correct = false;
+				
+				$('#btn_submit').addClass('disabled');
+				$("input.check").attr("disabled", true);
+				if(is_correct) showFeedback(1); else showFeedback(2);
+				}
+                                });
+                                function showFeedback(ch) {
+                                    if(ch==1) 
+                                    { 
+                                        $('.resultbg').fadeIn("normal"); $('#fbc').fadeIn('normal'); parent.loadAudioTranscript('module1_7_correct','',true,true);  
+                                    } 
+                                    else if(ch==2) 
+                                    { 
+                                        $('.resultbg').fadeIn("normal"); $('.green').addClass('text_green'); $('#fbw').fadeIn('normal'); parent.loadAudioTranscript('module1_7_incorrect','',true,true); 
+                                    }
+                                }
+		$('.btn1').click(function() {  $('.ctry').attr('disabled','disabled');  });
+		$('.btn2').click(function() {  parent.gotoPage(8); $('.resultbg').fadeOut('normal'); });
+//		$('#btn_showanswer').click(function() { 
+//			$('#chk1').removeAttr('checked'); 
+//			$('#chk2').attr('checked','checked');
+//			$('#chk3').removeAttr('checked'); 
+//			$('#chk4').attr('checked','checked');
+//			$('.check').attr('disabled','disabled');  
+//			$('#fbw').fadeOut('normal'); 
+//			$('.resultbg').fadeOut('normal');
+//		});
+		
+		
+		$(".check").click(function () {
+			var check1_selected = false; 
+			$(".check1:checked").each(function() {
+				check1_selected = true;
+			});
+			if(check1_selected ) $('#btn_submit').removeClass('disabled'); else $('#btn_submit').addClass('disabled');
+		});
+                
+	});     
+                parent.next_disable();
+                var anim_flag = false; var total_steps = 10; var steps = Array(); var steps_handle = Array();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 200; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 1000; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 1700; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 2500; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 3400; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 4500; steps[6][2] = 0;
+                steps[7][0] = 'playStep7()'; steps[7][1] = 5400; steps[7][2] = 0;
+                steps[8][0] = 'playStep8()'; steps[8][1] = 6200; steps[8][2] = 0;
+                steps[9][0] = 'playStep9()'; steps[9][1] = 6900; steps[9][2] = 0;
+                steps[10][0] = 'playStep10()'; steps[10][1] = 7800; steps[10][2] = 0;
+                                
+                $(window).load(function() {
+                parent.loadAudioTranscript('module1_7','',true,false);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#message_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal', function() { steps[2][2] = 1; });
+                    }
+                }
+                
+                function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal', function() { steps[3][2] = 1; });
+                    }
+                }
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal',function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) { 
+                        $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+                function playStep6() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text1').fadeIn('normal', function() { steps[6][2] = 1; });
+                    }
+                }
+                function playStep7() { 
+                    if(anim_flag==true) { 
+                        $('#text4').fadeIn('normal', function() { steps[7][2] = 1; });
+                    }
+                }
+                function playStep8() { 
+                    if(anim_flag==true) { 
+                        $('#text5').fadeIn('normal', function() { steps[8][2] = 1; });
+                    }
+                }
+                function playStep9() { 
+                    if(anim_flag==true) { 
+                        $('#text6').fadeIn('normal', function() { steps[9][2] = 1; });
+                    }
+                }
+                function playStep10() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal', function() { steps[10][2] = 1; });
+                    }
+                }
+            </script>
+</html>

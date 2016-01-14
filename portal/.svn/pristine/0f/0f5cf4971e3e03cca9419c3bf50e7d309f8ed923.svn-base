@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<course>
+    <organizations default="sutherland">
+        <organization identifier="sutherland" structure="hierarchical">
+            <pagetitle show="header">Interviewing Skills</pagetitle>
+                <items identifier="module_1" title="Introduction to Interviewing" id="1" src="" pageid="" transcript="">
+                    <item identifier="m_1_lesson_1" identifierref="m_1_l_1" title="Module Objectives" parentid="1" id="1" pageid="1" src="content/module1/module1_1.html" transcript="Let us begin with the first module on Introduction to Interviewing.
+                        At the end of this module, you will be able to:
+                        State the need for an interview.
+                        Get familiar with the different types of interviews.
+                        Recognize the impact of a bad hire on an organization so that you can conduct the interview more effectively."></item>
+                    <item identifier="m_1_lesson_2" identifierref="m_1_l_2" title="Need for an Interview " parentid="1" id="2" pageid="2" src="content/module1/module1_2.html" transcript="Why are interviews conducted in the first place? You know the answer to this already. However, the purpose of the mock interview is to ensure that candidates appearing for the interview are also aware why interviews are conducted.
+Share this knowledge with candidates during the mock interview to enable them to be better prepared for the actual interview. Let’s play a game to refresh your memory. 
+A few balloons are floating, each of which has one reason why you need to conduct an interview. Pick the right reasons by clicking on the floating balloon. 
+You have 30 seconds to finish this game. Click Start to begin."></item>
+				<item identifier="m_1_lesson_3" identifierref="m_1_l_3" title="Purpose of an Interview" parentid="1" id="3" pageid="3" src="content/module1/module1_3.html" transcript="What is the Purpose of an Interview?  
+Few interviewers are trained to conduct excellent interviews. To enhance your success at interviewing there are things you need to do before, during and after the interview.
+To begin with, there are three basic criteria that need to be addressed when you conduct an interview: 
+Can the candidate do the job? 
+Will the candidate fit in? 
+Is this the best candidate for the position?  
+In the context of a mock interview, it is your responsibility to assess and prepare the candidate to achieve the above criteria.
+"></item>
+				<item identifier="m_1_lesson_4" identifierref="m_1_l_4" title="Why Getting it Right is Important" parentid="1" id="4" pageid="4" src="content/module1/module1_4.html" transcript="Why is it so important to make the right hire? How does a bad hire impact an organization? 
+Drag and drop the numbered circle displayed on each statement into the appropriate bucket to classify the impact of a good or a bad hire on an organization. Click Submit to view the feedback.
+"></item>
+				<item identifier="m_1_lesson_5" identifierref="m_1_l_5" title="Types of Interviews" parentid="1" id="5" pageid="5" src="content/module1/module1_5.html" transcript="At a broad level, you may be conducting the following types of mock interviews:
+                                Freshers :
+                                Candidates are fresh graduates or post graduates who are seeking their first job.
+                                Candidates are at the very beginning of their career with absolutely no experience. 
+                                You will conduct the interview either in-person such as on-campus interviews or remotely via telephone, audio or video.
+                                Experienced: 
+                                Candidates come with prior work experience in some field of expertise. 
+                                Experience may vary for each candidate and may be as minimal as a year or two. 
+                                You will conduct the interview remotely via telephones, audio or video.
+                                Remember that the approach and the type of questions you ask will vary based on whether the candidate is a fresher or an experienced one."></item>
+				<item identifier="m_1_lesson_6" identifierref="m_1_l_6" title="Common Misconceptions About Candidates" parentid="1" id="6" pageid="6" src="content/module1/module1_6.html" transcript="Misconceptions about candidates find a common place among interviewers. Consciously, or otherwise, you look for these in the candidate and make inferences from it, impacting the outcome of the interview. Read the statements below and indicate if it is a misconception or not by selecting an option from the drop down list. Click Submit when done."></item>
+				<item identifier="m_1_lesson_7" identifierref="m_1_l_7" title="Check Your Understanding" parentid="1" id="7" pageid="7" src="content/module1/module1_7.html" transcript="It is time now to check your understanding of what you have learned so far. Read the scenario on the screen and answer the question that follows. Select the correct answer or answers from the options given and click Submit."></item>
+				<item identifier="m_1_lesson_8" identifierref="m_1_l_8" title="Module Summary" parentid="1" id="8" pageid="8" src="content/module1/module1_8.html" transcript="Here is a quick recap of what you have learnt in this lesson.
+For an interview to be effective, it is important to conduct interviews with an open mind without any preconceived notions either about the situation or the candidate. Equally important is the need to avoid making the common mistakes interviewers make while interviewing.
+You should now be able to: State the need for an interview. Identify the differences between different types of interviews and Recognize the impact of a bad hire on an organization so that you can conduct the interview more effectively."></item>
+            </items>
+			
+	    <items identifier="module_2" title="Before the Interview" id="2" src="" pageid="" transcript="">
+                <item identifier="m_2_lesson_1" identifierref="m_2_l_1" title="Module Objectives" parentid="2" id="1" pageid="9" src="content/module2/module2_l1.html" transcript="In the previous module, you learnt the need for an interview and the basic concepts of interviewing. You also learnt the importance of hiring the right candidate for the role.
+                    You would expect the candidates to come prepared for an interview, right? It is equally important for you to do your homework before you walk in to conduct the mock interview.
+                    After completing this module, you will be able to: 
+                    Review relevant documents before conducting the interview.
+                    Plan an appropriate environment to conduct the interview.
+                    Identify and avoid common distractors in different environments.
+                    List basic questions to ask the candidates during an interview."></item>
+                <item identifier="m_2_lesson_2" identifierref="m_2_l_2" title="Doing Your Homework" parentid="2" id="2" pageid="10" src="content/module2/module2_l2.html" transcript="As an interviewer, you are aware of the need to do your homework before you conduct an interview. This is particularly important for a mock interview, so as to prepare candidates well for their actual interview. 
+                    Here is an activity to help you gauge how prepared you are. How would you respond to each of the following situations? Select ‘Yes’ or ‘No’ as appropriate. 
+                    Click Submit when you are done."></item>
+                <item identifier="m_2_lesson_3" identifierref="m_2_l_3" title="Reviewing Relevant Documents" parentid="2" id="3" pageid="11" src="content/module2/module2_l3.html" transcript="Remember that your objective is to ensure that candidates derive the best from the mock interview and prepare them for a successful interview. Therefore, prepare yourself well for the interview by following these important preparatory steps. 
+                    Click each tab below to learn more."></item>
+                <item identifier="m_2_lesson_4" identifierref="m_2_l_4" title="Planning the Appropriate Environment" parentid="2" id="4" pageid="12" src="content/module2/module2_l4.html" transcript=" Take a look at the two pictures of an office space. Imagine yourself interviewing a candidate. Which one would you prefer? Click the image to learn more. A messy or a cluttered desk is a sign of a cluttered mind. Can you find what you need from the clutter without wasting time? Not really! Imagine the first impression it can have on candidates. 
+                    Remember that you are representing Test My Interview and are its face. Ensure that your interview area is organized and all the cables are neatly tucked away from view. A tidy desk is a sign of professionalism. People often judge your capabilities based on the state of your desk. A clean, clutter–free desk creates a very positive impression about the organization you represent – Test My Interview!">
+                </item>
+                <item identifier="m_2_lesson_5" identifierref="m_2_l_5" title="Modes of Interview" parentid="2" id="5" pageid="13" src="content/module2/module2_l5.html" transcript="You will be interviewing candidates using three modes, namely – campus, audio or video interviews. It is important to prepare the environment appropriately and adequately keeping in mind the mode of the interview, privacy, minimum number of distractions and comfort, not just yours but also the candidate’s. You are the face of Test My Interview's image. So Dress well.
+                    Click each mode to learn more."></item>
+                <item identifier="m_2_lesson_6" identifierref="m_2_l_6" title="Planning Basic Questions" parentid="2" id="6" pageid="14" src="content/module2/module2_l6.html" transcript="
+                    While planning create around 10 basic questions, that you intend to ask a candidate in advance. While doing so, keep the following points in mind:
+                    Be aware of the objective of the interview. Ensure that you prepare relevant ice-breaker questions. Questions must be broad-based and short. Do not be very specific at this stage.
+                    You need not ask all questions from the list. Remember not to read out from your list of questions during the interview. The list is only a trigger. Click here to download a list of basic questions that you can ask at this stage of the interview. "></item>
+                <item identifier="m_2_lesson_7" identifierref="m_2_l_7" title="Check Your Understanding" parentid="2" id="7" pageid="15" src="content/module2/module2_l7.html" transcript="It is time now to check your understanding of what you have learned so far. Think about the type of interview you conduct most often. Now, read the statements below and identify the statements that apply when you are preparing to interview a candidate. 
+                    Select the two correct answers. Click Submit when you have selected the options."></item>
+                <item identifier="m_2_lesson_8" identifierref="m_2_l_8" title="Module Summary" parentid="2" id="8" pageid="16" src="content/module2/module2_l8.html" transcript="Here is a quick recap of what you have learnt in this lesson. Before you conduct an interview, it is important to prepare yourself for the interview. This helps get the best out of the candidate and prepare them well for the actual interview. 
+                    You should now be able to: Prepare before conducting an interview. Plan an appropriate environment for interviewing. Identify and avoid common distractors in different environments while interviewing.
+                    List basic questions to ask the candidate during an interview. Distinguish between the Do’s and Don’ts before you conduct an interview."></item>
+            </items>
+            <items identifier="module_3" title="During the Interview" id="3" src="" pageid="" transcript="">
+                <item identifier="m_3_lesson_1" identifierref="m_3_l_1" title="Module Objectives" parentid="3" id="1" pageid="17" src="content/module3/module3_l1.html" transcript=" In the previous lesson, you learnt the importance of doing your homework and preparing yourself well before you conduct an interview. 
+                Interviewing is not just about qualifications, knowledge and skills. Observing and evaluating what candidates do, say, and how they say it are equally important.  
+                After completing this module, you will be able to: 
+                Identify the five stages of an interview process.
+                Ask the right type of question during the various phases of a mock interview.
+                Evaluate candidates using the STAR questioning technique.
+                Take notes that help you provide effective feedback after an interview.">
+                </item>
+                <item identifier="m_3_lesson_2" identifierref="m_3_l_2" title="Stages of an Interview" parentid="3" id="2" pageid="18" src="content/module3/module3_l2.html" transcript="Every interview ideally consists of five stages namely, building rapport, introductory, core, confirmation, and closing. Each stage has a specific purpose and takes up an approximate percentage of the interview. Click each stage to learn more.">
+                </item>
+                <item identifier="m_3_lesson_3" identifierref="m_3_l_3" title="Developing Questioning Techniques" parentid="3" id="3" pageid="19" src="content/module3/module3_l3.html" transcript="You are familiar with the phrase Garbage in, garbage out, aren’t you? Similarly, in a mock interview, you ask the wrong questions, you will probably get the wrong answer, or, at least not quite what you're hoping for. Asking the right question is the crux of effective interviewing. Here are some common questioning techniques. 
+                Click each type of question below to learn more.">
+                </item>
+                <item identifier="m_3_lesson_4" identifierref="m_3_l_4" title="Check Your Understanding" parentid="3" id="4" pageid="20" src="content/module3/module3_l4.html" transcript="Lets do a quick review of what you have learned so far. Which of the following questions are open-ended questions? Select the two correct answers. 
+                Click Submit when you have selected the options.  Open-ended questions are designed to encourage a full, meaningful answer based on candidate’s knowledge and/or feelings. They are just the opposite of closed-ended questions. ">
+                </item>
+                <item identifier="m_3_lesson_5" identifierref="m_3_l_5" title="Using the STAR Technique" parentid="3" id="5" pageid="21" src="content/module3/module3_l5.html" transcript="The STAR  (Situation, Task, Action, Result) technique is a competency-based interviewing technique you can use to gather all the relevant information about a specific capability that a job requires. This is designed to make the job application process as objective as possible by removing any biases. Inform candidates that this may be one of the techniques used by organizations during the interview process among other techniques. Therefore, they should be prepared! ">
+                </item>
+                <item identifier="m_3_lesson_6" identifierref="m_3_l_6" title="Using the STAR Technique - Example" parentid="3" id="6" pageid="22" src="content/module3/module3_l6.html" transcript="Here is an example of how the STAR technique actually helps evaluate candidates effectively.  Consider that you are interviewing a candidate for the role of marketing executive of a global organization. This role requires problem-solving skills as well as conflict management skills. You ask an open-ended probing question and look forward to responses in the STAR format. 
+                Below is the complete response of a candidate that has been broken down into 4 boxes each mapping to one letter of STAR. Drag the boxes up or down to arrange them in the correct order.">
+                </item>
+                <item identifier="m_3_lesson_7" identifierref="m_3_l_7" title="Avoiding Inappropriate Questions" parentid="3" id="7" pageid="23" src="content/module3/module3_l7.html" transcript="As the face of Test My Interview, it is important for you to  avoid asking inappropriate questions during the interview while still getting to the root of the concern behind the question. The table below gives you a few examples of how to ask these questions appropriately.
+                Sensitize candidates to prepare ahead of time for these type of questions. While it is important not to ask any inappropriate questions, it is equally important not to indulge in any personal discussions or answer personal questions that a candidate may have for you. Also you must never reveal your name or the organization that you work for to a candidate. Keep your discussions focused on the job role you are interviewing a candidate for.">
+                </item>
+                <item identifier="m_3_lesson_8" identifierref="m_3_l_8" title="Interpreting Body Language" parentid="3" id="8" pageid="24" src="content/module3/module3_l8.html" transcript="Body Language is a significant non-verbal form of communication and is an important aspect of the interviewing process. You can interpret candidates’ thought process and attitude through facial expressions, eye movement, postures, hand movements etc. 
+                Body language:
+                Constitutes a significant aspect of modern communication.
+                It goes both ways – to and from.
+                Is a matter of interpretation. There are no absolute right or wrong answers.
+                It is most relevant to management and leadership. However, it is still valid in other aspects of work and business.
+                Reveals candidate’s feelings and meanings to you.">
+                </item>
+                <item identifier="m_3_lesson_9" identifierref="m_3_l_9" title="Interpreting Body Language – Expressions &amp; Postures" parentid="3" id="9" pageid="25" src="content/module3/module3_l9.html" transcript="Here is an activity to learn more about body language. Interpret each expression or posture given below by dragging the label to the appropriate image. Click Submit when done.
+               It’s important to observe body language and provide relevant feedback to help the candidate make a great impression in an interview. "></item>
+                <item identifier="m_3_lesson_10" identifierref="m_3_l_10" title="Taking Effective Notes" parentid="3" id="10" pageid="26" src="content/module3/module3_l10.html" transcript="Taking notes is very important during an interview. It helps you provide effective and constructive feedback to candidates at the end of the interview as well as detailed feedback after the interview.  
+                While taking notes:
+                Include only the information that is relevant to the current task.
+                Comment on anything that needs follow up.
+                Organize your notes as clearly as possible.
+                Use association techniques throughout your notes for effective recall.
+                Try different ways of presenting your notes to save time. 
+                Summarize the key points for providing feedback after taking notes.
+                Remember, Less is More when taking notes!">
+                </item>
+                <item identifier="m_3_lesson_11" identifierref="m_3_l_11" title="Conducting the Interview" parentid="3" id="11" pageid="27" src="content/module3/module3_l11.html" transcript="It is time now to conduct the mock interview. Here are some important pointers on how to go about it: 
+                    Before the Interview:
+                    Download the Feedback Form and the Programming Questions Bank, and go through them.
+                    Before starting a telephonic interview, ensure that your phone is fully charged. This will ensure a interview without interruptions and hence a good experience for the candidate.
+                    During the Interview: 
+                    Greet the candidate and make him comfortable.
+                    Ask questions to check knowledge of programming languages, databases, operating systems etc.
+                    Ask open-ended questions so that candidates can talk freely - even about things you haven't planned on. This will allow you to check their soft skills. Use the STAR technique where appropriate.
+                    Listen and Observe. You are there to do more listening than talking. This will help you provide appropriate feedback in the Attitudes section of the feedback form.">
+                </item>
+                <item identifier="m_3_lesson_12" identifierref="m_3_l_12" title="Providing Feedback" parentid="3" id="12" pageid="28" src="content/module3/module3_l12.html" transcript="Now that you are at the end of the interview process, it is time to consolidate notes and provide feedback to the candidate. 
+                There are two levels where you provide feedback to the candidate: 
+                Level 1: Verbal feedback to candidates at the end of the interview. Keep this feedback short, direct, concise focusing on key areas that candidates need to focus on immediately.
+                Level 2: Written feedback provided online after closing the interview. At this level, provide consolidated, detailed feedback using the feedback form.  
+                It is important to:
+                Provide balanced, objective, observed, specific and timely feedback.
+                Relate your feedback to the job description for the specific position.
+                Provide specific examples so that candidates can incorporate the feedback.
+                Restrict your feedback to responses and areas that the candidate can improve upon.
+                Avoid direct, negative feedback. Sandwich your feedback.">
+                </item>
+                <item identifier="m_3_lesson_13" identifierref="m_3_l_13" title="Check Your Understanding" parentid="3" id="13" pageid="29" src="content/module3/module3_l13.html" transcript="It is time now to check your understanding of what you have learned so far. From the statements given, select the ones that are true and applicable while conducting the interview.
+                Select the three correct answers. Click Submit when you have selected the options. "></item>
+                <item identifier="m_3_lesson_14" identifierref="m_3_l_14" title="Module Summary" parentid="3" id="14" pageid="30" src="content/module3/module3_l14.html" transcript="Here is a quick recap of what you have learnt in this module.
+                Effective interviewing involves observing and evaluating what candidates do, say and how they say it. It also involves asking the appropriate questions and providing constructive feedback.  
+                You should now be able to: 
+                Identify the five stages of an interview process.
+                Ask the right type of question during the various phases of a mock interview.
+                Evaluate candidates using the STAR questioning technique.
+                Take notes that help you provide effective feedback after an interview.">
+                </item>
+            </items>
+			
+			
+			<items identifier="module_4" title="After the Interview" id="4" src="" pageid="" transcript="">
+                <item identifier="m_4_lesson_1" identifierref="m_4_l_1" title="Module Objectives" parentid="4" id="1" pageid="31" src="content/module4/module4_l1.html" transcript="In the previous module, you learned about the different stages of the interview process, the importance of body language, effective note-taking and providing constructive feedback. 
+                You are done with interviewing the candidate. What next? 
+                Now is the time to provide feedback. You must summarize the overall performance of candidates and evaluate what went right and what went wrong.
+                At the end of this module, you will be able to: 
+                Evaluate the candidate and consolidate notes.
+                Provide feedback using the pre-designed feedback form.
+                Close the mock interview.">
+                </item>
+                <item identifier="m_4_lesson_2" identifierref="m_4_l_2" title="Evaluating Candidates" parentid="4" id="2" pageid="32" src="content/module4/module4_l2.html" transcript="When you are interviewing, it is easy to be biased by any number of irrelevant factors. Therefore, before you provide feedback, ensure that you evaluate candidates objectively and without being judgmental. 
+                Before providing feedback:
+                Gather your thoughts on the performance of candidates based on the questions you asked.
+                Take time to consolidate information gathered during the interview. 
+                Assess  candidates against the right criteria that helps provide useful feedback. 
+                Identify strengths and weaknesses based on your evaluation and candidates’ responses.
+                Assess candidates’ responses to your questions and specify why you feel an answer was suitable or not. 
+                Summarize your interview based on the evaluation process outlined in the feedback form.">
+                </item>
+                <item identifier="m_4_lesson_3" identifierref="m_4_l_3" title="Providing Feedback" parentid="4" id="3" pageid="33" src="content/module4/module4_l3.html" transcript="The comprehensive feedback form is designed to help you achieve the goal of enabling candidates prepare for their actual interview effectively. You will need to complete the feedback form online separately for each individual candidate.
+                The feedback form contains three distinct areas for evaluating candidates based on KNOWLEDGE, SKILLS, and ATTITUDE(KSA).  
+                First two sections focus on the KNOWLEDGE of candidates relevant to the job they are applying.  
+                The next seven sections have three different probing questions each and focus on the SKILLS of the candidate. You may choose to ask one or more of these or similar questions. 
+                The final four sections focus on the overarching ATTITUDE, behavior and communication skills. 
+                Samples of the two formats are given below:
+                Click here to download a sample of Freshers’ Interview Feedback Form.
+                Click here to download a sample of  Experienced Interview Feedback Form.">
+                </item>
+                <item identifier="m_4_lesson_4" identifierref="m_4_l_4" title="Check Your Understanding" parentid="4" id="4" pageid="34" src="content/module4/module4_l4.html" transcript="It is time now to check your understanding of what you have learned so far. After the interview, it is important for you to implement which of the following steps?
+                Select the correct answer. Click Submit when you have selected the option. All the statements are correct. After the interview, you need to consolidate the information gathered, assess candidates’ responses and complete the online feedback form. ">
+                </item>
+                <item identifier="m_4_lesson_5" identifierref="m_4_l_5" title="Module Summary" parentid="4" id="5" pageid="35" src="content/module4/module4_l5.html" transcript="Here is a quick recap of what you have learnt in this lesson.
+                Once you have completed the feedback form online and submitted your valuable input, the loop is closed. You are now ready to conduct the next interview.
+                Well done! You have reached the end of this module on review and feedback.
+                You should now be able to: 
+                Evaluate the candidate and consolidate notes.
+                Provide consolidated feedback using the pre-designed feedback form.
+                Close the mock interview.">
+                </item>
+                <item identifier="m_4_lesson_6" identifierref="m_4_l_6" title="Course Summary" parentid="4" id="6" pageid="36" src="content/module4/module4_l6.html" transcript="You have now completed this course on ‘Interviewing Skills’ successfully. You are now ready to conduct a mock interview.
+                The Resources section provides you with additional reference material that you can use to Prepare for and conduct a mock interview and evaluate candidates effectively. 
+                Best of Luck!!">
+                </item>
+            </items>
+              	
+			
+        </organization>
+    </organizations>
+</course>

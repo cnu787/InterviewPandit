@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body style="margin: 0px;">
+	<div
+		style="margin-left: auto; margin-right: auto; width: 600px; background-color: #0095DA; color: #3e454c; padding: 35px;">
+
+		<div
+			style="background: linear-gradient(to bottom, #FFF, #F2F2F2) repeat scroll 0% 0% #FFF; border-bottom: 5px solid #F46F22; font-family: robotoregular; height: 60px; border-top-radius: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 15px;">
+			<img style="margin: 5px;"
+				src="resources/images/testmyinterview_logo2.png" />
+		</div>
+		<div
+			style="padding: 20px; background-color: #ffffff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<span style="font-size: 24px;">Dear <span
+				style="color: #f36f21;">${customTemplate.firstName}</span></span> <br>
+			<br>
+			<p>Welcome to Interview Pandit, India's largest interview platform for students, 
+			campuses and job seekers. Interview Pandit strives to perfect your preparation for the crucial
+			 job interviews that can change your life. Our mission is to prep the candidates 
+			 to the best abilities, showcasing their inner potential to the evaluators.</p>
+			 <p>Thank you for registering on Interview Pandit, India's largest online interview platform. </p>
+			Your Username is - ${customTemplate.emailAddress} <br>			
+			
+			<p>Click <a style="font-size: 14px; color: #0066cc;" target="blank"
+				href="${customTemplate.siteUrl}${customTemplate.loginUrl}?type=${customTemplate.securityCode}">here</a> to complete the verification process.</p>
+			<p>Interview Pandit had been established from the pioneers in the corporate industry, coming with plenty 
+			of expertise on the subject. </p>
+			<p>We schedule the following for our candidates, both onsite and online:</p>
+			<ol>
+			<li> Mock Interviews conducted by the experts from the corporate space</li>
+			<li> Online aptitude tests for thorough practice</li>
+			<li> Interview Pandit online blog - free resources for the job seekers in the form of guidance material</li>
+			</ol>
+			<p>You can now register for a mock interview by visiting our home page.</p>
+			<p>Interview Pandit looks forward to a long and fruitful association with you in course of your career path. </p>
+			<p>In case of any further queries, do write to us at <a style="font-size: 14px; color: #0066cc;" href="#">support@interviewpandit.com</a> or call our number + 91 40 31903296.</p>
+			<p>Yours Sincerely,</p>
+			<p>Team Interview Pandit</p>	
+		</div>
+	</div>
+
+</body>
+</html>

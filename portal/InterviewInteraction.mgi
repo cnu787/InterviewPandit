@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass
+        name="com.testmyinterview.portal.bean.InterViewBean" x="375" y="15"/>
+    <CommunicationClass
+        name="com.testmyinterview.portal.dao.SchedulerDAO" x="36" y="349">
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.testmyinterview.portal.ExternalController" x="15" y="15">
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"
+            endpointName="externalUserDao" kind="Simple"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.SchedulerDAO"
+            endpointName="schedulerDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.InterViewBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.SchedulerDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.testmyinterview.portal.dao.ExternalUserDao" x="985" y="306">
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.InterViewBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.FileUploader"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.testmyinterview.portal.util.RandomNumberGenerator"
+        x="49" y="491"/>
+    <CommunicationClass name="com.testmyinterview.portal.util.TmiUtil"
+        x="498" y="478">
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"
+            endpointName="externalUserDao" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.InterViewBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.FileUploader"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.testmyinterview.portal.util.FileUploader" x="914" y="527"/>
+</ClassDiagram>

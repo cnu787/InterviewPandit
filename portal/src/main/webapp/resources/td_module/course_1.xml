@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<course>
+    <organizations default="sutherland">
+        <organization identifier="sutherland" structure="hierarchical">
+            <pagetitle show="header">Interviewing Skills</pagetitle>
+            <items identifier="module_1" title="Introduction to Interviewing" id="1" src="content/module1/module1_1.html" pageid="1" transcript="Welcome to this course on Interviewing Skills.
+Before you begin, take a look at the picture on your screen. What do you see? An old woman? Or a young girl? Can you see both at the same time? Is there one right answer? 
+Statistics indicate that almost 90% of us perceive it to be the old woman. 
+
+Here is another one. It sure is confusing, isn’t it? From where you see it, both the answers could be right. Aren’t they? But both could be wrong too. 
+In reality, equally valid observations can appear to be contradictory when you see it from different perspectives. This is true of the interviewing process as well. 
+
+You know that “First impressions are lasting impressions!”. So to avoid carrying any biases, you must keep an open mind while conducting the mock interview.
+
+As an interviewer conducting a mock interview, preparing candidates to succeed in an interview becomes your most important goal. This course not only provides you the tools to conduct a great mock interview also tell you how you can help candidates make that ‘good first impression’.
+After completing this course, you will be able to prepare for a conducting a mock interview, conduct a mock interview, and evaluate a candidate and provide constructive feedback after the mock interview is over.
+
+This course will take 30 minutes to complete. And you must complete this course in one go to get credits.
+
+
+
+"></items>
+			
+        </organization>
+    </organizations>
+</course>

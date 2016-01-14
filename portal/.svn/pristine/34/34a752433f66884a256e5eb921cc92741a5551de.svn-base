@@ -1,0 +1,34 @@
+table {
+	width: 100%;
+	border-collapse: collapse
+}
+
+tr:nth-of-type(odd) {
+	background: #FFF
+}
+
+tr:nth-of-type(even) {
+	background: #f2f2f2
+}
+
+th {
+	background: #59574B;
+	color: #fff;
+	font-weight: 700
+}
+
+td,th {
+	padding: 10px 20px;
+	border: 0 solid #ccc;
+	text-wrap: none;
+	white-space: -moz-pre-wrap !important;
+	white-space: -webkit-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: pre-wrap;	
+	white-space: normal
+}
+
+tr {
+	border-bottom: 1px solid #ccc
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.testmyinterview.portal.HomeController" x="81" y="321">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.AdminDAO"
+            endpointName="adminDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.ElearningController"
+        x="1901" y="1297">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.LookupController" x="62" y="1195">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.AdminDAO"
+            endpointName="adminDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.AdminDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.ErrorHandler" x="583" y="41">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.InternalController" x="1248" y="1166">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.AdminDAO"
+            endpointName="adminDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.AdminDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.EvaluatorsEvalController"
+        x="1790" y="824">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.AdminDAO"
+            endpointName="adminDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.AdminProfileBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.AdminDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.bean.AdminProfileBean"
+        x="589" y="260">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.bean.ProfileBean" x="611" y="654">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.SchedulerController" x="44" y="973">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.AdminController" x="799" y="1382">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.AdminDAO"
+            endpointName="adminDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.AdminProfileBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.AdminDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.KeepSession" x="525" y="143">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.MockTestController" x="92" y="138">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.ExternalController" x="816" y="203">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.AdminDAO"
+            endpointName="adminDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.AdminDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class
+        name="com.testmyinterview.portal.CallCenterRepresentativeController"
+        x="1714" y="36">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.AdminDAO"
+            endpointName="adminDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.AdminProfileBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.AdminDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.PaymentController" x="1288" y="39">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.ProfileController" x="1243" y="372">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.dao.AdminDAO" x="800" y="842">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.LoginController" x="117" y="39">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

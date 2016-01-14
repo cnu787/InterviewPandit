@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Help</title>
+	<link type="text/css" rel="stylesheet" href="lib/css/help.css" />
+</head>
+
+<body>
+<div id="contentText">
+<span class="popupText"><ul><li>When you launch an assessment, click the <span class="boldText">Start Assessment</span> button to begin the test. Note that a timer will count down the available minutes on the top right of the page.</li><li>Read the instructions for each question carefully. Some have only one correct answer, while others have several correct answer.</li><li>You must answer each question before you can click the <span class="boldText">Next</span> button to go to the next question.</li><li>If you want to review or change your answer, click the <span class="boldText">Previous</span> button to go back to the previous question.</li><li>After you have answered all the questions, click the <span class="boldText">Submit Answers</span> button on the last question page. The system will then calculate your score and show the result.</li><li>Click the <span class="boldText">Repeat Test</span> button to retake the assessment. You cannot click this button once you have exhausted the maximum attempts allowed for the specific assessment.</li><li>To exit the assessment, <u>ALWAYS</u> use the <span class="boldText">Exit button</span> to the top right (behind the Nobel Biocare logo).</li></ul></span>
+</body>
+</html>

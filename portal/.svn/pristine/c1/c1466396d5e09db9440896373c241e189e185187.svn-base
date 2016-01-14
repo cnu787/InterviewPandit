@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.obeo.fr/dsl/viewpoint/1.1.0" xmlns:xsd="http://www.eclipse.org/xsd/2002/XSD" xmi:id="_8tZuUDHhEeWExrP3EM6Htg" version="6.8.0.201307151200">
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_assessment/adlcp_rootv1p2.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_assessment/imscp_rootv1p1p2.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="bundleentry://2351.fwk1095321208/cache/www.w3.org/2001/XMLSchema-instance.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="bundleentry://2351.fwk1095321208/cache/www.w3.org/2001/XMLSchema.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_assessment/ims_xml.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_assessment/imsmd_rootv1p2p1.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="bundleentry://2351.fwk1095321208/cache/www.w3.org/2001/MagicXMLSchema.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="http://www.w3.org/2001/xml.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_module/adlcp_rootv1p2.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_module/imscp_rootv1p1p2.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_module/ims_xml.xsd#/"/>
+  <models xmi:type="xsd:XSDSchema" href="src/main/webapp/resources/td_module/imsmd_rootv1p2p1.xsd#/"/>
+</viewpoint:DAnalysis>

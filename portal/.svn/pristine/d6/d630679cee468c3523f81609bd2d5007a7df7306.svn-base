@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module2_l3.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+			UL { margin-top:2px;}
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <div id="pageTitle">Reviewing Relevant Documents</div>
+            <div id="ContentText">Remember that your objective is to ensure that candidates derive the best from the mock interview and prepare them for a successful interview. Therefore, prepare yourself well for the interview by following these important preparatory steps. <br>Click each tab below to learn more.</div>
+            
+            <div id="canvas">
+                <div class="poptab" id="poptab_1" rel="popcnt_1" audio_name="">GATHER DATA</div>
+                <div class="poptab" id="poptab_2" rel="popcnt_2" audio_name="">REVIEW RESUME</div>
+                <div class="poptab" id="poptab_3" rel="popcnt_3" audio_name="">BLOCK SUFFICIENT TIME</div>
+                
+                <div class="benjamin_franklin" id="bf_quote1"></div>
+                
+              <div class="popcontent" id="popcnt_1">
+                    <strong><u>What data would you gather?</u></strong> <br>
+                    The first step towards preparing to conduct an interview effectively is to gather all relevant data<br> such as:
+                        <ul>
+                            <li>Details about the candidate you are about to interview.</li>
+                            <li>Background about the organization the the candidate is interested in.</li>
+                            <li>Job description of the role the candidate is applying for.</li>
+                            <li>Technical Skills required, if any.</li>
+                        </ul>
+                        	<strong><u>What would you do with the data that you gather?</u></strong>
+                            <ul style="margin-left:-10px;">
+                                <li>Having the above data helps you analyze the data, identify the gaps and provide<br> effective feedback to the candidate. </li>
+                                <li>The candidate in turn can prepare the missing data accordingly for the actual interview.</li>
+                            </ul>         
+                    <div style="margin-left: 600px; margin-top:-150px;"><img src="../shared/images/tab_img1.png" /></div>
+                </div>
+                
+                <div class="popcontent" id="popcnt_2">
+                    <strong><u>What to look for in a resume?</u></strong><br>
+                    Before beginning the screening process, review the candidate’s resume thoroughly and identify 
+                        <ul>
+                            <li>Significant gaps between different jobs </li>
+                            <li>Lack of progression in roles or responsibilities</li>
+                            <li>Non-job-specific educational qualifications</li>
+                            <li>Reasons for leaving past jobs</li>
+                            <li>Contradictions or ‘red flags’, if any</li>
+                        </ul>
+                        <div style="margin-top:-8px;">
+                        <strong><u>What would you do with the feedback on the resume?</u></strong>
+                                <ul style="margin-left:-10px;">
+                                    <li>Note down important points and gaps in the resume and provide that feedback to the candidate <br>after the interview.</li>
+                                    <li>Inform candidates that some organizations may require additional documentation such as  cover letters,<br> samples of work, project reports, data supporting achievements, references etc.</li>
+                                    <li>Direct candidates towards tools and resources to prepare an effective resume.</li>
+                                    <li>Most candidates are unable to go past the ‘<strong>Resume</strong>‘ stage. Your feedback will help them prepare<br> and present their resume for success for the actual interview. </li>
+                                </ul> 
+                                
+                         </div>           
+                    <div style="margin-left: 679px; margin-top:-266px;"><img src="../shared/images/tab_img2.png" /></div>
+                </div>
+                
+                
+                <div class="popcontent" id="popcnt_3">
+                    Before you determine how much time to allot for each interview, <br>think about the time required for the entire process.<br>
+                    Remember to:
+                    <ul>
+                        <li>Always check the calendar on the interview application for any scheduled interviews. </li>
+                        <li>Block sufficient, time for the interview. <br>Include time required to prepare <strong>before</strong>, <strong>during</strong> and <strong>after</strong> the interview.</li>
+                        <li>The interview is usually scheduled for 45 minutes.</li>
+                    </ul> 
+
+                    Your preparation will go a long way in preparing candidates for their success.
+
+                            
+                    <div style="margin-left: 693px; margin-top:-158px;"><img src="../shared/images/tab_img3.png" /></div>
+                </div>
+            
+            </div> 
+            
+               
+            </div>
+	</body>
+        <script type="text/javascript">
+                var anim_flag = false; var total_steps = 5; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 18300; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 20800; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 22000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 25900; steps[5][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('module2_l3','',true,true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+				
+				function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) {
+                         $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+                $('.poptab').click(function() {
+				$('#bf_quote1').fadeOut('fast'); 
+					if(!$(this).hasClass('.selected')) {
+						$('.poptab').removeClass('selected');
+						$(this).addClass('selected');
+						$('.popcontent').fadeOut('fast');
+						$('#'+$(this).attr('rel')).fadeIn('fast'); 
+                                               
+					}
+			});
+                
+            </script>
+</html>

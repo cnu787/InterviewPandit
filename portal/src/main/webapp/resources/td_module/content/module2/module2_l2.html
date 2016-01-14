@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Doing Your Homework</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+		<link rel="stylesheet" type="text/css" href="../shared/css/module2_l2.css" />
+                <script src="../shared/js/jquery/jquery.min.js"></script>
+                <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+                <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+                <style>
+                #ContentText{ margin-top: 20px;}
+                .preloader { width:1px; height: 1px; position: absolute; margin-left:-1000px; overflow:hidden; }
+                .preloader IMG { width:1px; height: 1px; margin-left:-1000px; }
+                </style>
+        </head>
+        <body>
+            <div id="content" >
+                <div id="pageTitle">Doing Your Homework</div>
+                <div class="contentdiv">
+                    <!-- Begin of Static Div Section -->
+                    <div class="staticdiv">
+                        <div id="question_text">
+                            As an interviewer, you are aware of the need to do your homework before you conduct an interview. This is particularly important for a mock interview, so as to prepare candidates well for their actual interview.  
+                            <div style="margin-top:5px;">
+                                Here is an activity to help you gauge how prepared you are. How would you respond to each of the following situations? Select ‘Yes’ or ‘No’ as appropriate. </div>
+                        </div>
+                        <div id="instruction_text">Click <b>Submit</b> when you are done.</div>
+                    </div>
+                    <!-- End of Static Div Section -->
+                    <div class="fundiv" id="ddsdiv" style="width:940px; overflow-y:auto; height:290px; margin:0px 0px 10px 0px;padding-top:0px;">	
+                    </div>
+                    <div style="display:table; width: 100%; margin-top: -5px; ">
+                        <center>
+                            <button class="btn1" id="btn_submit">Submit</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="resultbg" id="resultbg"></div>
+                <div class="resultdiv" id="resultdiv">
+                    <div class="rbox" id="resultcontent">
+                    </div>
+                    <div style=" position: absolute; top:200px; left: 450px;">
+                        <button class="btn" id="btn_result_close" > Continue</button>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="../shared/js/jquery/module2_l2.js"></script>
+            <script type="text/javascript">
+                        parent.next_disable();
+			$(document).ready(function() {
+                            $('#btn_result_close').click(function(){
+                              parent.gotoPage(11);
+                            });
+                            
+                        });
+                        
+                    var anim_flag = false; var total_steps = 1; var steps = Array(); var steps_handle = Array();
+                    for(i=1;i<=total_steps;i++) steps[i] = Array();
+                    steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+                    $(window).load(function() {
+                    parent.loadAudioTranscript('module2_2','',true,false);
+                    });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+            </script>
+</body>
+</html>

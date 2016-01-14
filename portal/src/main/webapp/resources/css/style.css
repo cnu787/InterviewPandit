@@ -1,0 +1,461 @@
+@font-face {
+	font-family: "AgencyFBRegular";
+	src: url(../fonts/Roboto-Regular.ttf)
+}
+.navbar-brand {
+	padding: 15px 15px 15px 0px;
+}
+.modal-footer {
+	border: 0
+}
+.tool-pull-right {
+	float:right;
+	width:50%;
+}
+.tool-pull-left {
+	float:left;
+	width:50%;
+}
+.tool-clear {
+	clear:both;
+}
+.close {
+	font-size: 30px;
+	color: #FFF
+}
+
+.modal-header {
+	background-color: #59574A;
+	color: #FFF
+}
+
+.mymodal-dialog .modal-body {
+	text-align: center
+}
+
+.steplineback {
+	display: inline-block;
+	width: 15%;
+	float: left;
+	margin-top: 16px;
+	background-color: #DDD;
+	height: 12px;
+	box-shadow: 0 5px 5px -5px #878686 inset, 0 -5px 5px -5px #878686 inset;
+	margin-left: -1px;
+	margin-right: -1px
+}
+
+.stepline {
+	display: inline-block;
+	width: 100%;
+	float: left;
+	border-top: 4px solid #DDD;
+	margin-top: 3px
+}
+
+#processImg {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2000;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7)
+}
+
+.ano_project {
+	width: 100px;
+	border-radius: 6px;
+	overflow: hidden;
+	padding: 5px;
+	top: 50%;
+	left: 50%;
+	margin: 200px auto 0
+}
+
+.ano_proinn {
+	background: none repeat scroll 0 0 transparent;
+	border-radius: 6px;
+	display: block;
+	height: 100px;
+	overflow: hidden;
+	width: 100%
+}
+
+select {
+	padding-right: 5px !important
+}
+
+.successmsg {
+	font-family: robotoregular;
+	font-size: 15px;
+	color: #3e454c
+}
+
+.changecolor {
+	color: #0095da
+}
+
+.changesize {
+	font-family: robotoregular;
+	font-size: 14px
+}
+
+.profile-header {
+	font-family: robotoregular;
+	font-size: 32px;
+	color: #f36f21
+}
+
+.profile-text {
+	font-family: robotolight;
+	font-size: 14px;
+	color: #3e454c
+}
+
+.header-file {
+	font-family: robotolight;
+	font-size: 32px;
+	color: #f36f21
+}
+
+.successMsg {
+	font-family: robotoregular;
+	font-size: 15px;
+	color: #3e454c
+}
+
+.header-text {
+	font-family: robotoregular;
+	font-size: 14px;
+	color: #3e454c
+}
+
+.interview-heading {
+	font-family: robotoregular;
+	font-size: 14px;
+	color: #0095da
+}
+
+#intertype {
+	font-family: robotoregular;
+	font-size: 14px;
+	color: #666
+}
+
+.nav .active {
+	background: url(../images/navigation_hover.png) no-repeat scroll center
+		bottom/14px auto transparent
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover
+	{
+	background-color: transparent;
+	color: #f26f21
+}
+
+.navbar-toggle {
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.navbar {
+	min-height: 85px;
+	margin-bottom: 0;
+	border: 0
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #58574a
+}
+
+.navbar-nav>li>a {
+	padding-top: 30px;
+	padding-bottom: 31px;
+	font-family: robotoregular
+}
+
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover
+	{
+	color: #f26f21
+}
+
+.headerright {
+	background-color: #0094DA !important;
+	color: #FFF !important;
+	padding-top: 14px !important;
+	padding-bottom: 13px !important
+}
+
+.headerrightimage {
+	margin-left: auto;
+	margin-right: auto;
+	display: block
+}
+
+.home-middle {
+	background-color: #0094DA;
+	color: #fff
+}
+
+.home-middle h2 {
+	text-shadow: 0 1px #000;
+	font-size: 22px;
+	font-family: robotocondensedregular;
+}
+
+.home-middle p {
+	font-size: 14px;
+}
+.thumbnailimg {
+	border: 5px solid #ffffff;
+}
+.carousel-indicators .active {
+	background: url(../images/slide_indicator_active.png) repeat scroll 0 0%/100%
+		100% transparent
+}
+
+.carousel-indicators li {
+	border: none;
+	background: url(../images/slide_indicator_inactive.png) repeat scroll 0
+		0%/100% 100%
+}
+
+.non-authentic-body {
+	background: url(../images/login_bg.jpg) repeat scroll 0 0%/100% 100%;
+	padding: 2%
+}
+
+.myform-body {
+	background: none repeat scroll 0 0 rgba(252, 252, 252, 0.5);
+	border: 1px solid rgba(212, 234, 249, 1);
+	border-radius: 10px
+}
+
+.marginauto {
+	margin-left: auto;
+	margin-right: auto
+}
+
+.imagemarginauto {
+	margin-left: auto;
+	margin-right: auto;
+	display: block
+}
+
+.mybtn {
+	background: linear-gradient(to bottom, #F37020, #F37020) repeat scroll 0
+		0 #F37020 !important;
+	border-radius: 5px;
+	font-family: Arial;
+	color: #FFF;
+	font-size: 16px;
+	padding: 5px 40px;
+	text-decoration: none;
+	border-color: #F37020;
+	width: 100%;
+	background-color:#F37020 !important;
+}
+
+.mybackbtn {
+	background: linear-gradient(to bottom, #3e454c, #3e454c) repeat scroll 0
+		0 #3e454c;
+	border-radius: 5px;
+	font-family: robotocondensedregular;
+	color: #FFF;
+	font-size: 16px;
+	padding: 5px 0;
+	text-decoration: none;
+	border-color: #3e454c;
+	width: 100%;
+	background-color:#3e454c !important;
+}
+
+.mycontinuebtn {
+	background: linear-gradient(to bottom, #f36f21, #f36f21) repeat scroll 0
+		0 #f36f21;
+	border-radius: 5px;
+	font-family: robotocondensedregular;
+	color: #FFF;
+	font-size: 16px;
+	padding: 5px 0;
+	text-decoration: none;
+	border-color: #f36f21;
+	width: 100%;
+	background-color:#F37020 !important;
+}
+
+label {
+	font-size: 12px;
+	color: #3E454C;
+	font-weight: 400
+}
+
+.alertmsg {
+	color: red
+}
+
+.help-block {
+	color: red !important
+}
+
+.upploadbtn {
+	display: block;
+	overflow: hidden;
+	opacity: 0
+}
+
+form {
+	font-family: robotolight
+}
+
+label {
+	font-family: robotoregular;
+	font-size: 15px;
+	color: #3e454c
+}
+
+input,select {
+	font-family: robotoregular !important;
+	font-size: 14px !important;
+	color: #666
+}
+
+hr {
+	border-style: 1px solid;
+	border-color: #59574b
+}
+
+.form-control-feedback {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	display: block;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: left;
+	pointer-events: none
+}
+
+.profile-reader {
+	background-color: #f36f21;
+	border: 3px solid #d44434;
+}
+
+.calendar-page {
+        background-color: #3e454c;
+	border: 3px solid #293139;	
+}
+
+.interview-book {
+	background-color: #605958;
+	border: 3px solid #4d4645;
+}
+
+.referral-page {
+	background-color: #0095da;
+	border: 3px solid #0078b0;
+}
+
+.head-profile {
+	font-family: robotoregular;
+	font-size: 24px;
+	color: #FFF;
+	text-align: center;
+}
+
+.groom-profile {
+	font-family: robotolight;
+	font-size: 16px;
+	color: #FFF;
+} 
+
+.progress {
+    height: 10px;
+    width: 160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+.progress-bar {
+	background-color: #605958;
+	text-align: center;
+}
+.progress-value {
+	color: #FFF;
+    float: right;
+    margin-top: -35px;
+    padding: 0px 20px;
+}
+
+.badge {
+	padding: 3px 6px;
+	font-size: 14px;
+	color: #605958;
+	background-color: #FFF;
+}
+.evaluators-role {
+     font-size: 32px; 
+     height: 110px; 
+     width: 150px; 
+     padding: 10px; 
+     color: #fff;
+}
+.evaluator-font {
+     font-size: 15px;
+}
+.text-instruction {
+	font-family: robotoregular;
+	font-size: 16px;
+	color: #3e454c;
+	text-align: justify
+}
+.text-instruction ul{
+	margin-left: -20px
+}
+.header-belowtext {
+	font-family: robotolight;
+	font-size: 24px;
+	color: #0095da
+}
+.text-knowledge {
+	font-family: robotoregular;
+	font-size: 15px;
+	color: #3e454c;
+	text-align: justify
+}
+.text-knowledge ul{
+	margin-left: -20px;
+}
+.search_suggest {
+	position: absolute;
+    z-index:5; 
+    background-color: #FFFFFF; 
+    width: 100%
+}
+.myclosedbtn {
+    background-image: linear-gradient(to bottom, #F36F21, #F36F21);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0px 0px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    border-radius: 5px;
+    font-family: robotocondensedregular;
+    color: #FFF;
+    font-size: 14px;
+    padding: 5px 0px;
+    text-decoration: none;
+    border-color: #F36F21;
+    width: 73%;
+    background-color: #F37020 !important;
+}
+.mymodal-alert{
+ width: 400px;
+}

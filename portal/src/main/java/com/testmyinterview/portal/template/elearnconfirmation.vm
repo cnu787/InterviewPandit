@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+	<div
+		style="font-size:14px;margin-left: auto; margin-right: auto; width: 600px; background-color: #0095DA; color: #3e454c; padding: 35px;">
+
+		<div
+			style="background: linear-gradient(to bottom, #FFF, #F2F2F2) repeat scroll 0% 0% #FFF; border-bottom: 5px solid #F46F22;height: 60px; border-top-radius: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 15px;">
+			<img style="margin: 5px;"
+				src="http://43.225.52.93:8080/portal/resources/images/testmyinterview_logo2.png" />
+				
+				
+		</div>
+		<div style="background-color: #0CB14B; height: 45px;">
+			<img
+				style="margin-left: 25px; float: left; margin-top: 10px; margin-right: 15px;"
+				src="http://43.225.52.93:8080/portal/resources/images/icon_confirm.png" />
+			<div style="font-size: 16px; padding-top: 15px; color: #FFF;">E-Learning
+				Confirmation</div>
+		</div>
+		
+		#foreach($userDet in $customTemplate.userDetails)
+		<div
+			style="padding: 30px; background-color: #ffffff; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<span style="font-size: 18px;">Dear <span
+				style="text-transform: capitalize;color: #f36f21; font-weight: 500;">${userDet.firstname},</span></span>
+			<br> <br> 
+			<p style="line-height: 1.4;font-size: 18px;">
+			Thank you for your contribution to Interview Pandit.
+			</p>			
+			<br>
+			<p style="font-size: 18px;">Please complete E-Learning and set your calendar<br><br>
+			In case of any further queries, do write to us at support@interviewpandit.com or call our number + 91 40 31903296.
+
+Yours Sincerely,
+
+Team Interview Pandit</p>
+				
+			</span>
+		</div>
+		#end
+	</div>
+
+</body>
+</html>

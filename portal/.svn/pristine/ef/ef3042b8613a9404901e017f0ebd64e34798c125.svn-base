@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module3_l13.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+            <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+			.two { display:none;}
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <img src="../shared/images/page1_man.png" style="height:0px; width:0px; float:left; opacity: 0">
+            <img src="../shared/images/board_1.png" style="height:0px; width:0px; float:left; opacity: 0">
+		<div id="pageTitle">Check Your Understanding</div>
+                <div id="page1_board"><img src="../shared/images/board_1.png" border="0"></div>
+                <div class="fader">
+                    <div id="ContentText" >
+                        <div id="iformation_container">From the statements below, select the ones that are true and applicable while conducting the interview.</div>
+                        <div id="question_container">
+                            <div id="select_inst">Select the two correct answers. Click <b>Submit</b> when you have selected the options.</div>
+                            <div>
+                                <table class="ddtable" border="0" cellpadding="5" cellspacing="0">
+                                <tr>
+					<td class="one"><input type="checkbox" class="check check1" id="chk1"></td>
+					<td><label for="chk1">It is appropriate to ask a candidate about his opinion on inter-office dating.</label></td>
+				</tr>
+				 <tr>
+					<td class="one"><input type="checkbox" class="check check1"  id="chk2"></td>
+					<td><label for="chk2">Body Language is a significant non-verbal form of communication and is an important </label></td>
+				</tr>
+				 <tr>
+					<td class="one"><input type="checkbox" class="check check1"  id="chk3"></td>
+					<td><label for="chk3">Building a good rapport with the candidate constitutes a largest percentage of the interview process.</label></td>
+				</tr>
+				 <tr>
+					<td class="one"><input type="checkbox" class="check check1"  id="chk4"></td>
+					<td><label for="chk4">Feedback provided to candidates should be constructive and effective and should focus on areas that the candidate can change.</label></td>
+				</tr>
+                                </table>
+                                <br>
+                                <center>
+                                <div id="button_container"><a href="#" class="btn1 btn1disabled" id="btn_submit">Submit</a></div>
+                                </center>
+                            </div>
+                            <div class="resultbg"></div>    
+                            <div class="feedback" id="fbc">
+                                <div>
+                                    <span style=" color: #4ab559; font-size: 13pt;"> That’s correct.</span><br><br> The statements you have selected are correct.
+                                    <br><br>
+                                    <center>
+                                    <button type=button class="btn2" id="btn_close1">Continue</button>
+                                    </center>
+                                    <br>
+                                </div>
+                                
+                            </div>
+                            <div class="feedback" id="fbw">
+                                <div>
+                                    <span style=" color: #cc0000; font-size: 13pt;">That’s incorrect.</span><br><br> One or all of the statements you have selected are incorrect. The correct answers are displayed for you.
+                                   <br><br>
+                                    <center>
+                                    <button type=button class="btn2" id="btn_close">Continue</button>
+                                    </center>
+                                    <br>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	</body>
+<script type="text/javascript">
+
+                var anim_flag = false; var total_steps = 2; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 15600; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 16500; steps[2][2] = 0;
+				
+				$(window).load(function() {
+                parent.loadAudioTranscript('m3_13','',true,false);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+			
+				function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('.two').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+				function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+                 
+				 
+				 
+				        $(document).ready(function() {
+                            $('#btn_submit').addClass('disabled');
+				
+                                $('#btn_submit').click(function() {
+                                if(!$(this).hasClass('disabled')) {
+				var is_correct = true;
+				if($('#chk1').is(':checked') == true) is_correct = false;
+				if($('#chk2').is(':checked') == false) is_correct = false;
+				if($('#chk3').is(':checked') == true) is_correct = false;
+				if($('#chk4').is(':checked') == false) is_correct = false;
+				
+				$('#btn_submit').addClass('disabled');
+				$("input.check").attr("disabled", true);
+				if(is_correct) showFeedback(1); else showFeedback(2);
+				}
+                                });
+                                function showFeedback(ch) {
+                                    
+                                    if(ch==1) { $('.resultbg').fadeIn("normal"); $('#fbc').fadeIn('normal'); parent.loadAudioTranscript('m3_13_correct','',true,true);  } else if(ch==2) { $('.resultbg').fadeIn("normal");  $('#fbw').fadeIn('normal'); parent.loadAudioTranscript('m3_13_incorrect','',true,true); }
+                                }
+		$('.btn1').click(function() {  $('.ctry').attr('disabled','disabled');  });
+		$('#btn_close1').click(function() {  parent.gotoPage(30); $('.resultbg').fadeOut('normal'); });
+                $('#btn_close').click(function() {
+                 parent.gotoPage(30); $('.resultbg').fadeOut('normal');
+//			$('#chk1').removeAttr('checked'); 
+//			$('#chk2').attr('checked','checked');
+//			$('#chk3').removeAttr('checked'); 
+//			$('#chk4').attr('checked','checked');
+//                        $('.check').attr('disabled','disabled');  
+//			$('#fbw').fadeOut('normal'); 
+//			$('.resultbg').fadeOut('normal');
+                    });
+		
+                $(".check").click(function () {
+			var check1_selected = false; 
+			$(".check1:checked").each(function() {
+				check1_selected = true;
+			});
+			if(check1_selected ) $('#btn_submit').removeClass('disabled'); else $('#btn_submit').addClass('disabled');
+		});
+                
+	});
+    </script>
+</html>

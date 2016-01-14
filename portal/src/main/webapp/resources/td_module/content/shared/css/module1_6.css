@@ -1,0 +1,40 @@
+#page1_man{
+	margin-left:620px;
+	margin-top:65px;
+	overflow:hidden;
+	height:700px;
+	width:462px;
+        position: absolute;
+	background-position:bottom;
+}
+
+
+#sb{ height: 87px; width: 179px; position: absolute; top:60px; left:535px; background-image: url('../images/sb_2_1_2.png'); font-family: Avenir Next LT Pro Regular;
+	font-style: normal; font-variant: normal; font-weight: normal;	font-size: 12pt; color:#595959;}
+#sb1{ height: 87px; width: 179px; position: absolute; top:60px; left:780px; background-image: url('../images/sb_2_1_1.png'); font-family: Avenir Next LT Pro Regular;
+	font-style: normal; font-variant: normal; font-weight: normal;	font-size: 12pt; color:#595959;}
+#sb2{ height: 58px; width: 179px; position: absolute; top:150px; left:805px; background-image: url('../images/sb_2_1_3.png'); font-family: Avenir Next LT Pro Regular;
+	font-style: normal; font-variant: normal; font-weight: normal;	font-size: 12pt; color:#595959;}
+
+
+#ContentText{
+	width: 555px;
+	height: 600px;
+	margin-left:0px;
+	margin-top:10px;
+	text-align: left;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color:#000000;
+	overflow: hidden;
+        line-height: 1.4;
+	}
+        
+	
+.animate { display:none;}  
+#quest_text{ font-style: normal; font-variant: normal; font-weight: normal; font-size: 14pt; color:#595959; }
+#message_text{ font-style: normal; font-variant: normal; font-weight: normal; font-size: 12pt; margin-top:10px;  }
+#instruction_text{  font-style: normal; font-variant: normal; font-weight: normal; font-size: 12pt; margin-top:325px; display: none; width: 750px;  }

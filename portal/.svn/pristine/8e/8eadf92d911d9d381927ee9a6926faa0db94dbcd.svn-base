@@ -1,0 +1,12 @@
+
+smsurl=http://182.18.132.51/httpapi/sendmsg.php?user=pranavT1&password=8b015rNA&from=TESTMY&to=91$sendTo&message=$message&msg_type=t&dcs=0&deliv_ack=0&udh=0
+
+bookingConfmsg=Congratulations! Your mock interview slot with Test My Interview has been successfully booked. Please check your mail for all the details. Thank you.
+bookingConfmsgEval=Dear interviewer, greetings from Test My Interview. Your interview with the candidate has now been booked. Please check your mail for more information.
+regConfMsg=Thank you for registering with Test My Interview. You have been sent a verification mail to the registered email address. Thank you.
+emailConfMsg=Your Email with Test My Interview has been successfully verified. You can now login to the TMI platform and get started with mock interviews. Thank you.
+resetPasswordMsg=New TMI password has been sent to your registered Email address. Please check your mail to proceed further.
+paymentSuccessMsg=Greetings from Test My Interview. Your payment has been successful for the mock interview. Please check your mail for more information. Thank You.
+interviewCancelMsg=Greetings from Test My Interview. Your scheduled interview slot has been cancelled. Login to www.testmyinterview.com to check the next available slot.
+
+

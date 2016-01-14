@@ -1,0 +1,9 @@
+/*TiUnite Design elements starts here*/
+BODY { margin: 0px; padding: 0px; font-family: verdana, Helvetica, sans-serif; font-weight: normal; font-style: normal; font-size: 12px; color: #000000; }
+A IMG { border: none; }
+A {color: #3e3e3e; text-decoration: none; cursor: pointer;font-size: 11px;} A:hover { color: #808080; } A:focus { color: #3e3e3e; outline: none; }
+P { color: #000000; } P A, P A:visited { }
+H1 { font-size: 28px; } H2 { font-size: 18px; margin-top: 5px; margin-bottom: 20px;}
+UL { } LI { line-height: 22px; }
+
+#contentText { height:300px; overflow-y:auto; }

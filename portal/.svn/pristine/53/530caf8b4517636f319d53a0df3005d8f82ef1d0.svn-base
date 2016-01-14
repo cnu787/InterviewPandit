@@ -1,0 +1,26 @@
+
+# ******* local url **********
+
+paymentGateWayURl=https://test.payu.in/_payment
+SURL=http://49.207.1.87:8080/portal/paymentSuccess.tmi
+FURL=http://49.207.1.87:8080/portal/paymentFailure.tmi
+CURL=http://49.207.1.87:8080/portal/paymentCancel.tmi
+KEY=EV4Z5b
+SALT=ZFaCW30t
+# ******* test url **********
+
+#paymentGateWayURl=https://test.payu.in/_payment
+#SURL=http://tmi-testenv.elasticbeanstalk.com/paymentSuccess.tmi
+#FURL=http://tmi-testenv.elasticbeanstalk.com/paymentFailure.tmi
+#CURL=http://tmi-testenv.elasticbeanstalk.com/paymentCancel.tmi
+#KEY=EV4Z5b
+#SALT=ZFaCW30t
+
+# ******* production url **********
+
+#paymentGateWayURl=https://secure.payu.in/_payment
+#SURL=http://www.testmyinterview.com/paymentSuccess.tmi
+#FURL=http://www.testmyinterview.com/paymentFailure.tmi
+#CURL=http://www.testmyinterview.com/paymentCancel.tmi
+#KEY=ot7r1l
+#SALT=86390oSU

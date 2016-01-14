@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - Application context containing business beans. - - Used by all artifacts. 
+	- - $Id: applicationContext-common-business.xml,v 1.1.1.1 2010-03-25 10:29:51 
+	pavan Exp $ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<!-- property name="url" value="jdbc:mysql://43.225.52.93:3306/interviewportaldb?allowMultiQueries=true" />
+		<property name="username" value="root" />
+		<property name="password" value="" /-->
+		
+		<!-- property name="url" value="jdbc:mysql://43.225.52.93:3306/interviewportaldb?allowMultiQueries=true" />
+		<property name="username" value="tmi" />
+		<property name="password" value="Tmi123" /-->
+		
+		<!-- <property name="url" value="jdbc:mysql://tmiproddb.corn82ghrqij.us-west-2.rds.amazonaws.com/interviewportaldb?allowMultiQueries=true" /> 
+		 <property name="username" value="tmi" /> 
+		 <property name="password" value="TmiPran123" /> -->
+		<property name="url" value="jdbc:mysql://43.225.52.93/interviewportaldb?allowMultiQueries=true" /> 
+		 <property name="username" value="username" /> 
+		 <property name="password" value="password" /> 
+		<!-- The number of connections created when the pool is started. (actually 
+			created when first connection is opened) -->
+		<property name="initialSize" value="34" />
+		<property name="maxActive" value="377" />
+		<property name="maxIdle" value="233" />
+		<property name="minIdle" value="89" />
+		<property name="timeBetweenEvictionRunsMillis" value="34000" />
+		<property name="minEvictableIdleTimeMillis" value="55000" />
+		<property name="validationQuery" value="SELECT 1" />
+		<property name="validationInterval" value="34000" />
+		<property name="testOnBorrow" value="true" />
+		<property name="removeAbandoned" value="true" />
+		<property name="removeAbandonedTimeout" value="55" />
+	</bean>
+
+	<bean id="secTransactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="secTransactionManager" />
+</beans>

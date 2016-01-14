@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module3_l12.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <img src="../shared/images/board_2.png" style="height:0px; width:0px; float:left; opacity: 0">
+            
+		<div id="pageTitle">Providing Feedback</div>
+                <div id="page1_bord"><img src="../shared/images/page28_1.png" border="0"></div>
+                <div class="fader">
+                    <div id="instruction_text">Now that you are at the end of the interview process, it is time to consolidate notes and provide feedback to the candidate. </div>
+                   <div id="ContentText" >
+                        <ul style="margin-left:68px; margin-top:15px; width:532px; position:absolute; z-index:99999999;" ><div id="ul_text" style="font-weight:normal; color:#00569c; margin-left:-22px; list-style:none; font-size: 12pt; " class="animate">There are two levels where you provide feedback to the candidate: </div>
+                            <li id="text1" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-26px; margin-left:30px;"><strong>Level 1</strong>: Verbal feedback to candidates at the end of the interview. Keep this feedback short, direct, concise focusing on key areas that candidates need to focus on immediately.
+</div></li>
+                            <li id="text2" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;"><strong>Level 2</strong>: Written feedback provided online after closing the interview. At this level, provide consolidated, detailed feedback using the feedback form.  </div></li>
+                        </ul>
+                   </div>
+                    <div id="ContentText1" >
+                        <ul style="margin-left:-15px; margin-top:15px; width:532px; position:absolute; z-index:99999999;" ><div id="ul_text1" style="font-weight:normal; color:#00569c; margin-left:-22px; list-style:none; font-size: 12pt; " class="animate">It is important to:</div>
+                                <li id="text3" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Provide balanced, objective, observed, specific and timely feedback.</div></li>
+                                <li id="text4" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Relate your feedback to the job description for the specific position.</div></li>
+                                <li id="text5" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Provide specific examples so that candidates can incorporate the feedback.</div></li>
+                                <li id="text6" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Restrict your feedback to responses and areas that the candidate can improve upon.</div></li>
+                                <li id="text7" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Avoid direct, negative feedback. Sandwich your feedback.</div></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+	</body>
+        <script type="text/javascript">
+                var anim_flag = false; var total_steps = 11; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 7000; steps[1][2] = 0;
+		steps[2][0] = 'playStep2()'; steps[2][1] = 10500; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 22500; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 32000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 33000; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 38600; steps[6][2] = 0;
+                steps[7][0] = 'playStep7()'; steps[7][1] = 42800; steps[7][2] = 0;
+                steps[8][0] = 'playStep8()'; steps[8][1] = 46900; steps[8][2] = 0;
+                steps[9][0] = 'playStep9()'; steps[9][1] = 51800; steps[9][2] = 0;
+                
+                $(window).load(function() {
+                parent.loadAudioTranscript('m3_12','',true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+				
+		function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text1').fadeIn('normal',function() { steps[4][2] = 1; });
+                    }
+                }
+                function playStep5() { 
+                    if(anim_flag==true) { 
+                        $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+                function playStep6() { 
+                    if(anim_flag==true) {
+                         $('#text4').fadeIn('normal', function() { steps[6][2] = 1; });
+                    }
+                }
+                function playStep7() { 
+                    if(anim_flag==true) {
+                         $('#text5').fadeIn('normal', function() { steps[7][2] = 1; });
+                    }
+                }
+                function playStep8() { 
+                    if(anim_flag==true) { 
+                        $('#text6').fadeIn('normal', function() { steps[8][2] = 1; });
+                    }
+                }
+                
+                function playStep9() { 
+                    if(anim_flag==true) {
+                         $('#text7').fadeIn('normal', function() { steps[9][2] = 1; });
+                    }
+                }
+                
+            </script>
+</html>

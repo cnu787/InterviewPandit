@@ -1,0 +1,7 @@
+userEmailExistsMsg=This email address is already used. Please use another email address.
+registrationSuccessMsg=Congratulations! You have successfully completed your registration. Please click on the link sent to you email address to complete the login process.
+resetPasswordSuccessMsg=You have successfully reset your password. An email will be sent to you shortly.
+passwordUpdate=Your password has been successfully changed.
+resetPasswordErrMsg=Please Enter Valid Email Address
+maxFileUploadMsg=The uploaded file cannot exceed the max limit
+e-learnMsg=Dear interviewer, greetings from Test My Interview. Please complete E-Learning and set your calendar

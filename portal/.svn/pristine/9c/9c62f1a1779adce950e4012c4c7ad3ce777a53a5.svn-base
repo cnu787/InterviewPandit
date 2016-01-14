@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module3_l8.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <img src="../shared/images/board_2.png" style="height:0px; width:0px; float:left; opacity: 0">
+            
+		<div id="pageTitle">Interpreting Body Language</div>
+                <div id="page1_bord"><img src="../shared/images/page24_1.png" border="0"></div>
+                <div class="fader">
+                    <div id="instruction_text">Body Language is a significant non-verbal form of communication and is an important aspect of the interviewing process. You can interpret candidates’ thought process and attitude through facial expressions, eye movement, postures, hand movements etc. </div>
+                    
+                    <div id="ContentText" >
+                        <ul style="margin-left:68px; margin-top:20px; width:532px; position:absolute; z-index:99999999;" ><div id="ul_text" style="font-weight:normal; color:#00569c; margin-left:-22px; list-style:none; " class="animate">Body language:</div>
+                            <li id="text1" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-26px; margin-left:30px;">Constitutes a significant aspect of modern communication.</div></li>
+                            <li id="text2" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Goes both ways – to and from</div></li>
+                            <li id="text3" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Is a matter of interpretation. There are no absolute right or wrong answers.</div></li>
+                            <li id="text4" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Most relevant to management and leadership. However, it is still valid in other aspects of work and business.</div></li>
+                            <li id="text5" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Reveals candidate’s feelings and meanings to you.</div></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="footer_text" class="animate">“The physical language of the body is so much more powerful than words.”</div>
+                    
+                </div>
+            </div>
+	</body>
+        <script type="text/javascript">
+                var anim_flag = false; var total_steps = 8; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 14700; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 15800; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 16200; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 20000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 23500; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 29500; steps[6][2] = 0;
+                steps[7][0] = 'playStep7()'; steps[7][1] = 37000; steps[7][2] = 0;
+                steps[8][0] = 'playStep8()'; steps[8][1] = 39800; steps[8][2] = 0;
+                
+                $(window).load(function() {
+                parent.loadAudioTranscript('m3_08','',true,true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+				
+		function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) {
+                         $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                function playStep6() { 
+                    if(anim_flag==true) {
+                         $('#text4').fadeIn('normal', function() { steps[6][2] = 1; });
+                    }
+                }
+                function playStep7() { 
+                    if(anim_flag==true) { 
+                        $('#text5').fadeIn('normal', function() { steps[7][2] = 1; });
+                    }
+                }
+                
+                function playStep8() { 
+                    if(anim_flag==true) {
+                         $('#footer_text').fadeIn('normal', function() { steps[8][2] = 1; });
+                    }
+                }
+                
+            </script>
+</html>

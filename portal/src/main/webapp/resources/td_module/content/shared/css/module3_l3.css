@@ -1,0 +1,33 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	//font: 14px/1.4 Georgia, Serif; 
+        font-family: Avenir Next LT Pro Regular;
+} *
+p {
+	margin: 0px; 
+}
+
+#interactivity { display:block; }
+
+.flipgame { width:910px; height: auto; display: table; margin:20px auto; float: right;}
+
+.slot { height:155px; }
+.card { 
+    width:200px; height:37px; vertical-align: middle; background-image:url(../images/filpcard.png); background-color:none !important; 
+    background-repeat:no-repeat; cursor: pointer;  padding:0px; 
+}
+.open { cursor:default; background-position: 0px -345px; height: 340px;   }
+.text{ margin-top: 0px;}
+.card .text { width:198px; color:#ffffff; font-size:12pt; font-family:Avenir Next LT Pro Regular;  display:table; text-align: center; font-weight:700; padding-top: 7px; }
+.open .text { color:#ffffff; }
+.card .label { margin:0px 0px 0px 0px !important; width:185px; height:322px;  color:#333; padding:20px 10px 10px 10px; color:#ffffff; font-size:11pt; font-family:Avenir Next LT Pro Regular;  display:none; position:absolute; }
+.open .label { display: block;  }
+#card_1{ position: absolute; margin-left:0%; }
+#card_2{ position: absolute; margin-left:220px;}
+#card_3{ position: absolute; margin-left:440px;}
+#card_4{ position: absolute; margin-left:660px;}
+
+.visited{}

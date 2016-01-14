@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module3_l6.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+            <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <div id="content">
+                <div id="pageTitle">Using the STAR Technique - Example</div>
+                <div id="instruction_text">Here is an example of how the STAR technique actually helps evaluate candidates effectively.  Consider that you are interviewing a candidate for the role of marketing executive of a global organization. This role requires problem-solving skills as well as conflict management skills. You ask an open-ended probing question and look forward to responses in the STAR format.
+                    <div style="margin-top:5px;"> Below is the complete response of a candidate that has been broken down into 4 boxes each mapping to one letter of the STAR approach. Drag the boxes up or down to arrange them in the correct order.</div>
+
+</div>
+                 <div id="question_text">Give me a specific example of a time when you had to face a difficult challenge. How did you respond to that situation, and what was the outcome?</div>
+                 <div id="logo_container">
+                    <div class="logo"><img src="../shared/images/s_logo.png"></div>
+                    <div class="logo"><img src="../shared/images/t_logo.png"></div>
+                    <div class="logo"><img src="../shared/images/a_logo.png"></div>
+                    <div class="logo"><img src="../shared/images/r_logo.png"></div>
+                 </div>
+                 <div id="option_container">
+                    <ul id="sortable-8">
+                        <li id="3" class="default"><div style=" margin-top: 8px;">Chris and I had worked together on the presentation. So I knew what to present. I called up Chris, and we decided that I should present. So I took to the dais for the first time in my life.</div></li>
+                        
+                        <li id="1" class="default"><div style=" margin-top: 8px;">“It was a year into my first job, and we were due to make a presentation to a group of 15 potential customers on our flagship product. Chris, who was making this presentation got stuck on traffic and was behind schedule by 15 minutes.”</div></li>
+                        <li id="4" class="default">“Though I was a bit nervous at first, the presentation went well. Also I could take all the questions that the customers had. In the end 12 of the customers decided to purchase our product. And not to mention about the confidence boost that this experience game me.”</li>
+                        <li id="2" class="default"><div style=" margin-top: 8px;">"It was my responsibility to find an alternative so that it didn't reflect badly on our organization and we didn't waste the opportunity.“</div></li>
+                        
+                        
+                    </ul>
+                     <center>
+                 <div style="top: 515px; position: absolute; left: 45%">
+                     <button type="button" class="btn1 btn1disabled" id="btn_submit">Submit</button>
+                 </div>
+                 </center>
+                 </div>
+                 
+                 
+                 
+                 <div id="result_div" style="display:none;">
+                    <ul id="sortable-8">
+                        <li id="1" class="default1"><div style=" margin-top: 8px;">“It was a year into my first job, and we were due to make a presentation to a group of 15 potential customers on our flagship product. Chris, who was making this presentation got stuck on traffic and was behind schedule by 15 minutes.”</div></li>
+                        <li id="2" class="default1"><div style=" margin-top: 8px;">"It was my responsibility to find an alternative so that it didn't reflect badly on our organization and we didn't waste the opportunity.“</div></li>
+                        
+                        <li id="3" class="default1"><div style=" margin-top: 8px;">Chris and I had worked together on the presentation. So I knew what to present. I called up Chris, and we decided that I should present. So I took to the dais for the first time in my life.</div></li>
+                        
+                        
+                        <li id="4" class="default1">“Though I was a bit nervous at first, the presentation went well. Also I could take all the questions that the customers had. In the end 12 of the customers decided to purchase our product. And not to mention about the confidence boost that this experience game me.”</li>
+                    </ul>
+                 </div>
+            </div>
+            <div class="resultbg"></div>
+             <div id="correctrdiv" class="rdiv">
+                 <p style="color:#4ab559; font-size:14pt">That’s correct.</p>
+                 <p>Behavior-based questions are generally designed to determine if a candidate possesses certain key competencies. And the response usually follows the STAR approach.</p>
+                 <br>
+                 <center>
+                 <button type="buton" class="btn" id="btn_continue">Continue</button>
+                 <br><br>
+                 </center>
+             </div>
+             
+             <div id="incorrectrdiv" class="rdiv">
+                 <p style="color:#cc0000; font-size:14pt ">That’s incorrect.</p>
+                 <p>Responses to behavior-based questions usually follow the STAR approach. Please try again.</p> 
+                 <br>
+                 <center>
+                 <button type="buton" class="btn" id="show_me">Try Again</button>
+                 <br><br>
+                 </center>
+             </div>
+            
+            <div id="correctrdiv1" class="rdiv">
+                <p style="color:#cc0000;">That’s incorrect.</p>
+                 <p>The correct response is displayed for you.</p> 
+                    <center>
+                 <button type="buton" class="btn" id="result">Show Me</button>
+                 <br><br>
+                 </center>
+             </div>
+	</body>
+        <script type="text/javascript">
+                var anim_flag = false; var total_steps = 7; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+		steps[2][0] = 'playStep2()'; steps[2][1] = 8300; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 11000; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 14600; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 20600; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 23600; steps[6][2] = 0;
+                steps[7][0] = 'playStep7()'; steps[7][1] = 29600; steps[7][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('m3_06','',true,false);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+				
+				function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text3').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) {
+                         $('#text4').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                function playStep6() { 
+                    if(anim_flag==true) {
+                         $('#text5').fadeIn('normal', function() { steps[6][2] = 1; });
+                    }
+                }
+                function playStep7() { 
+                    if(anim_flag==true) {
+                         $('#footer_text').fadeIn('normal', function() { steps[7][2] = 1; });
+                    }
+                }
+               jQuery.fn.disable = function(){ $(this).addClass('btn1disabled');  $(this).attr("disabled",'disabled'); };
+               jQuery.fn.enable = function(){ $(this).removeClass('btn1disabled'); $(this).removeAttr("disabled");  };
+
+         $(document).ready(function() {
+             var flagattemp = 0;
+            var productOrder=new Array();
+            $('#sortable-8').sortable({
+             update: function(event, ui) {
+              productOrder = $(this).sortable('toArray').toString();
+               $("#sortable-9").text(productOrder);
+               $('#btn_submit').enable();
+            }
+         });
+          $('#btn_submit').click(function(){
+              var item1 = productOrder[0];
+              var item2 = productOrder[2];
+              var item3 = productOrder[4];
+              var item4 = productOrder[6];
+             
+               if(item1 == 1 && item2 == 2 && item3 == 3 && item4 == 4 )
+               {
+                    $("#correctrdiv").fadeIn('normal');
+					parent.loadAudioTranscript('m3_06_correct','',true,true);
+                   
+               }
+               else if( flagattemp== 1 )
+               {
+                  $("#correctrdiv1").fadeIn('normal'); $('.resultbg').fadeIn('normal');
+                    parent.loadAudioTranscript('m3_06_incorrect2','',true,true);  
+               }
+               else{
+                    $("#incorrectrdiv").fadeIn('normal');
+                    parent.loadAudioTranscript('m3_06_incorrect1','',true,false);
+                    flagattemp++;
+                    }
+                 $('.resultbg').fadeIn('normal'); 
+          });
+          $('#btn_continue').click(function(){
+              parent.gotoPage(23);
+          });
+          
+           $('#show_me').click(function(){
+               $('.resultbg').fadeOut('normal');
+                $(".rdiv").fadeOut('normal');
+                
+          });
+          });
+      
+        $('#result').click(function(){
+               $('.resultbg').fadeOut('normal');
+               $(".rdiv").fadeOut('normal');
+               $('#result_div').fadeIn('normal');
+               $('#option_container').css('visibility','hidden');
+             });
+            </script>
+</html>

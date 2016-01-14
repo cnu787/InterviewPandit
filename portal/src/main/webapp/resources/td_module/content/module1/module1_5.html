@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module1_6.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <img src="../shared/images/page1_man.png" style="height:0px; width:0px; float:left; opacity: 0">
+            <img src="../shared/images/whiteboard_bar_1.png" style="height:0px; width:0px; float:left; opacity: 0">
+		<div id="pageTitle">Types of Interviews</div>
+                <div id="page1_man"><img src="../shared/images/page1_man_1.png" border="0"></div>
+                <div class="fader">
+                    <div id="sb"><div style=" margin: 7px 34px; width: 150px; ">I really don’t know what to expect.</div></div>
+                    <div id="sb1"><div style=" margin: 7px 14px; width: 150px; ">This job is so important to me…</div></div>
+                    <div id="sb2"><div style=" margin: 7px 34px; width: 150px; ">Will they judge me by my behavior?</div></div>
+                    
+                    <div id="ContentText" >
+                        <div id="message_text" class="animate">At a broad level, you may be conducting the following types of  mock interviews:</div>
+                        <ul style="margin-left:-18px; margin-top:10px; width:632px; position:absolute; z-index:99999999;" ><div class="animate" id="ul_text" style="font-weight:normal; color:#00569c; margin-left:-20px; list-style:none;">Freshers :</div>
+                            <li id="text2" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Candidates are fresh graduates or post graduates who are seeking their first job.</div></li>
+                            <li id="text3" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Candidates are at the very beginning of their career with absolutely no experience. 
+</div></li>
+                            <li id="text1" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-26px; margin-left:30px;">You will conduct the interview either in-person such as on-campus interviews or remotely via telephone, audio or video.</div></li>
+                        </ul>
+                        
+                        
+                        <ul style="margin-left:-18px; margin-top:173px; width:632px; position:absolute; z-index:99999999;" ><div class="animate" id="ul_text1" style="font-weight:normal; color:#00569c; margin-left:-20px; list-style:none;">Experienced: </div>
+                            <li id="text5" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Candidates come with prior work experience in some field of expertise. </div></li>
+                            <li id="text6" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">Experience may vary for each candidate and may be as minimal as a year or two. 
+</div></li>
+<li id="text4" class="animate" style="list-style:none; margin-left:-22px; margin-top:20px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-26px; margin-left:30px;">You will conduct the interview remotely via telephones, audio or video.</div></li>
+                        </ul>
+                        <div id="instruction_text" class="animate">Remember that the approach and the type of questions you ask will vary<br> based on whether the candidate is a fresher or an experienced one.</div>
+                    </div>
+                </div>
+            </div>
+	</body>
+                <script type="text/javascript">
+                parent.next_disable();
+                var anim_flag = false; var total_steps = 11; var steps = Array(); var steps_handle = Array();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+		steps[2][0] = 'playStep2()'; steps[2][1] = 4400; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 15800; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 5000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 9600; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 23800; steps[6][2] = 0;
+                steps[7][0] = 'playStep7()'; steps[7][1] = 35800; steps[7][2] = 0;
+                steps[8][0] = 'playStep8()'; steps[8][1] = 24000; steps[8][2] = 0;
+                steps[9][0] = 'playStep9()'; steps[9][1] = 29400; steps[9][2] = 0;
+                steps[10][0] = 'playStep10()'; steps[10][1] = 40000; steps[10][2] = 0;
+				steps[11][0] = 'playStep11()'; steps[11][1] = 48000; steps[11][2] = 0;
+                                
+                $(window).load(function() {
+                parent.loadAudioTranscript('module1_5','',true,true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#message_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal', function() { steps[2][2] = 1; });
+                    }
+                }
+                
+                function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal', function() { steps[3][2] = 1; });
+                    }
+                }
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal',function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) { 
+                        $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+                function playStep6() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text1').fadeIn('normal', function() { steps[6][2] = 1; });
+                    }
+                }
+                function playStep7() { 
+                    if(anim_flag==true) { 
+                        $('#text4').fadeIn('normal', function() { steps[7][2] = 1; });
+                    }
+                }
+                function playStep8() { 
+                    if(anim_flag==true) { 
+                        $('#text5').fadeIn('normal', function() { steps[8][2] = 1; });
+                    }
+                }
+                function playStep9() { 
+                    if(anim_flag==true) { 
+                        $('#text6').fadeIn('normal', function() { steps[9][2] = 1; });
+                    }
+                }
+                function playStep10() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal', function() { steps[10][2] = 1; });
+                    }
+                }
+		function playStep11() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').delay(3000).fadeIn('normal', function() { steps[11][2] = 1; });
+			
+                    }
+                }
+            </script>
+</html>

@@ -1,0 +1,66 @@
+#instruction_text{ font-size: 12pt; font-family: Avenir Next LT Pro Regular; font-weight: normal; margin-top: 10px; width: 100%;}
+#question_text{ font-size: 11pt; background-image: url('../images/question_bg.png'); height: 37px; margin-top: 17px; font-family: Avenir Next LT Pro Regular; font-weight: normal; 
+padding-left: 70px; padding-top: 3px;}
+#logo_container{ margin-top: 20px; margin-left: 8px; width: 100px;}
+.logo{ margin-top: 16px;}
+#option_container{ margin-left: 70px; margin-top: -256px;}
+LI{ list-style:none;  }
+
+#sortable-8{ list-style-type: none; margin: 0; padding: 0; width: 820px;  }
+      #sortable-8 li{ margin-top:9px; padding: 6px 7px 6px 60px;  line-height: 1.1; font-family: Avenir Next LT Pro Regular; font-size: 10pt;}
+      .twoliner{ padding: 15px 7px 6px 60px; color:#cc0000;}
+      .default {
+         background-image:  url('../images/sorting_bg.png');
+         color: #333333;
+         height: 45px;
+         width: 787px;
+         cursor:move;
+      }
+      .default1 {
+         background-image:  url('../images/sorting_bg.png');
+         color: #333333;
+         height: 45px;
+         width: 787px;
+         cursor:default;
+      }
+UL{}      
+
+.btn, .btn:visited, .btn:active, .btndisabled
+{ 
+    background-color:transparent !Important;
+    background-image:url(../images/cnt_btn_new.png);
+    width:131px;
+    height:39px;
+    font-family: Avenir Next LT Pro Regular;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    border:0px;
+    cursor:pointer;
+    font-weight:bold;
+    padding-right: 20px;
+}
+.btn:hover { background: url(../images/cnt_btn_new.png) 0px 0px no-repeat; color:#000000; }
+.btn1, .btn1:visited, .btn1:active, .btn1disabled
+{ 
+    background-color:transparent !Important;
+    background-image:url(../images/custom.png);
+    width:132px;
+    height:39px;
+    font-family: Avenir Next LT Pro Regular;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    border:0px;
+    cursor:pointer;
+    padding: 0px 4px 1px 5px;
+    font-weight:bold;
+}
+.btn1:hover { background: url(../images/custom.png) 0px 0px no-repeat; color:#000000; }
+.btn1disabled, .btn1disabled:visited, .btn1disabled:active, .btn1disabled:hover { background:url(../images/custom.png) 0px 0px no-repeat; color:#ffffff; cursor:default; opacity: 0.5;}
+.resultbg { background:#202e3f; opacity: 0.8; width:100%; height:100%; position:absolute; z-index:10001; top:0px; left:0px; display:none; font-family: Avenir Next LT Pro Regular;}
+#correctrdiv {  padding:10px; position:absolute; z-index:10002; display:none;  background:#fff; top:180px; left:25%; width:45%; height:auto;  border-top:solid 2px #4ab559; font-family: Avenir Next LT Pro Regular;}
+#incorrectrdiv {   padding:10px; position:absolute; z-index:10002; display:none;  background:#fff; top:180px; left:25%; width:45%; height:auto;  border-top:solid 2px #4ab559; font-family: Avenir Next LT Pro Regular;}
+#correctrdiv1 {  padding:10px; position:absolute; z-index:10002; display:none;  background:#fff; top:180px; left:25%; width:45%; height:auto;  border-top:solid 2px #4ab559; font-family: Avenir Next LT Pro Regular;}
+#result_div{ margin-left: 70px; margin-top: -265px; cursor: default;}
+#result_div:hover{cursor: default !important;}

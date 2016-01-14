@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="com.testmyinterview.portal" x="243" y="33">
+        <DependencyLink destination="com.testmyinterview.portal.util"/>
+        <DependencyLink destination="com.testmyinterview.portal.paging"/>
+        <DependencyLink destination="com.testmyinterview.portal.kookoo"/>
+        <DependencyLink destination="com.testmyinterview.portal.dao"/>
+        <DependencyLink destination="com.testmyinterview.portal.bean"/>
+    </Package>
+    <Package name="com.testmyinterview.portal.bean" x="465" y="124"/>
+    <Package name="com.testmyinterview.portal.dao" x="45" y="123">
+        <DependencyLink destination="com.testmyinterview.portal.util"/>
+        <DependencyLink destination="com.testmyinterview.portal"/>
+        <DependencyLink destination="com.testmyinterview.portal.bean"/>
+    </Package>
+    <Package name="com.testmyinterview.portal.kookoo" x="36" y="261">
+        <DependencyLink destination="com.testmyinterview.portal.dao"/>
+    </Package>
+    <Package name="com.testmyinterview.portal.paging" x="357" y="262"/>
+    <Package name="com.testmyinterview.portal.template" x="167" y="468"/>
+    <Package name="com.testmyinterview.portal.util" x="198" y="393">
+        <DependencyLink destination="com.testmyinterview.portal.dao"/>
+        <DependencyLink destination="com.testmyinterview.portal.bean"/>
+    </Package>
+</PackageAnalysis>

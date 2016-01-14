@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module3_l9.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+        </head>
+	<body>
+            <div id="content"> 
+                <div id="pageTitle">Interpreting Body Language – Expressions &amp; Postures</div>
+                <div id="instruction_text" >Here is an activity to learn more about body language. Interpret each expression or posture given below by dragging the label to the appropriate image. Click <b>Submit</b> when done.<br><br> 
+                </div>
+                <div id="scoreboard">
+                    <br>
+                 <table class="qtable" cellpadding="0" cellspacing="0" align="left" border="0">
+                    <tr valign="top" >
+                    <td>
+                        <table width="100%" cellpadding="0" cellspacing="0" align="center" border="0"> 
+                            <tr valign="top" style="height: 75px !important;" >
+                            <td class="options" id="qoptions" colspan="0"> 			
+                                <table class="ddset" cellspacing="1" border="0"style=" ">
+                                <tr valign="middle" >
+                                    <td align="center" class="droppable varcase" id="ddset_1_varcase_1"><div class="draggable var" id="ddset_1_var_1"><div class="ddcrctdiv"></div><div class="ddwrngdiv"></div><div style="margin-top: 0px; padding-top: 2px;">OPEN</div></div></td>
+                                    
+                                    <td align="center" class="droppable varcase" id="ddset_1_varcase_2" style="width:30px"><div class="draggable var" id="ddset_1_var_2"><div class="ddcrctdiv"></div><div class="ddwrngdiv"></div><div style="margin-top:0px; padding-top: 2px;" >CLOSED</div></div></td>
+                                    <td align="center" class="droppable varcase" id="ddset_1_varcase_3" style="width:30px"><div class="draggable var" id="ddset_1_var_3"><div class="ddcrctdiv"></div><div class="ddwrngdiv"></div><div style="margin-top:0px; padding-top: 2px;" >BORED</div></div></td>
+                                    <td align="center" class="droppable varcase" id="ddset_1_varcase_4" style="width:30px"><div class="draggable var" id="ddset_1_var_4"><div class="ddcrctdiv"></div><div class="ddwrngdiv"></div><div style="margin-top:0px; padding-top: 2px;" >HAPPY</div></div></td>
+                                    <td align="center" class="droppable varcase" id="ddset_1_varcase_5" style="width:30px"><div class="draggable var" id="ddset_1_var_5"><div class="ddcrctdiv"></div><div class="ddwrngdiv"></div><div style="margin-top:0px; padding-top: 2px;" >FRUSTRATED</div></div></td>
+                                </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr> 
+                           <td valign="bottom" colspan='2' style=" background-image:url('../shared/images/expressions.png'); background-repeat: no-repeat; height: 155px !important; width: 860px !important;">
+                            </td>
+                        </tr>
+                        <tr valign="bottom">
+                            <td align="left" >
+                                <div class="vardiv" id="vardiv_1">
+                                    <table class="ddset" cellpadding="0" cellspacing="0" border="0" style=" margin-left: 15px; background: none; width: 890px;">
+                                    <tr valign="middle"><td align="center"><div class="droppable optcase" id="ddset_1_optcase_1"></div></td>
+                                    <td align="center"><div class="droppable optcase" id="ddset_1_optcase_2"></div></td>
+                                    <td align="center"><div class="droppable optcase" id="ddset_1_optcase_3"></div></td>
+                                    <td align="center"><div class="droppable optcase" id="ddset_1_optcase_4"></div></td>
+                                    <td align="center"><div class="droppable optcase" id="ddset_1_optcase_5"></div></td>
+                                    </tr> 
+                                    </table>					
+                                </div>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td align="center" colspan="2" style="position: absolute; top: 320px; left:375px;"><button type="button" class="btn1 btn1disabled" id="btn_submit" title="Submit">Submit</button></td>
+                        </tr>
+                        </table>
+                    </td>
+                    </tr>	
+                    </table>
+            </div>
+            </div>
+             <div class="resultbg"></div>
+             <div id="correctrdiv" class="rdiv">
+                 <h3 style="color:#4ab559;">That’s correct.</h3><br>
+                 <p>It’s important to observe body language and provide relevant feedback to help the candidate make a great impression in an interview.</p>                <br><center>
+                 <button type="buton" class="btn" id="btn_continue">Continue</button>
+                 </center>
+             </div>
+             
+             <div id="incorrectrdiv" class="rdiv">
+                 <h3 style="color:#cc0000;">That’s incorrect.</h3><br>
+                 <p>It’s important to observe body language and provide relevant feedback to help the candidate make a great impression in an interview. Please try again.</p> 
+                 <br>
+                 <center>
+                 <button type="buton" class="btn" id="show_me">Show Me</button>
+                 </center>
+             </div>
+	</body>
+       <script language="JavaScript" src="../shared/js/module3_l9.js"></script>
+        <script type="text/javascript">
+                var anim_flag = false; var total_steps = 6; var steps = Array(); var steps_handle = Array();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 11200; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 13500; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 17200; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 20500; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 23500; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 28500; steps[6][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('m3_09','',true,false);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#firsttext').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+				function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ultext').fadeIn('normal', function() { steps[2][2] = 1; });
+                    }
+                }
+				
+				function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) { 
+                        $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                function playStep6() { 
+                    if(anim_flag==true) { 
+                        $('#text4').fadeIn('normal', function() { steps[6][2] = 1; });
+                        
+                    }
+                }
+                
+            </script>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module3_l2.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+			UL { margin-top:2px;}
+			.greytext {  margin-top:10px; padding:6px 10px; color:#000000; text-align: center; font-family: Avenir Next LT Pro Regular; width:920px; }
+			.benjamin_franklin { background-image: url(../images/arrow_image.png); width:850px; height:293px; position:absolute; margin-top:58px; margin-left:45px; background-repeat:no-repeat; z-index:999999; border:1px solid;}
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <div id="pageTitle">Stages of an Interview </div>
+            <div id="ContentText">Every interview ideally consists of five stages namely, building rapport, introductory, core, confirmation, and closing. Each stage has a specific purpose and takes up an approximate percentage of the interview.
+                <div>Click each <b><strong>stage</strong></b> to learn more.</div>
+            </div>
+            <div class="greytext">The Interview Process – Stages of an Interview</div>
+            
+            <div id="canvas">
+                <div class="poptab" id="poptab_1" rel="popcnt_1" audio_name=""><div>Building Rapport</div></div>
+                <div class="poptab" id="poptab_2" rel="popcnt_2" audio_name=""><div style=" margin-left:7px;">Introductory</div></div>
+                <div class="poptab" id="poptab_3" rel="popcnt_3" audio_name=""><div style=" margin-left:-9px;">Core</div></div>
+                <div class="poptab" id="poptab_4" rel="popcnt_4" audio_name=""><div style=" margin-left:-18px;">Confirmation</div></div>
+                <div class="poptab" id="poptab_5" rel="popcnt_5" audio_name=""><div style=" margin-left:-16px;">Closing</div></div>
+                
+                <div id="bf_quote1"></div>
+                
+              <div class="popcontent" id="popcnt_1">
+                    Building rapport is the first step to a successful interview and represents a meagre but important part of the interview. <br>
+                    <strong><b><i>Time allocated: 2 minutes</i></b></strong><br><br>
+                    <b><strong><i>Purpose:</i></strong></b>
+                    <ul>
+                        <li>Warm up and ease the candidate into the interview process.</li>
+                        <li>Identify the format for the rest of the interview. </li>
+                        <li>Build a rapport with candidates. </li>
+                    </ul>
+                    <strong><b><i>Examples:</i></b></strong>
+                    <ul>
+                    	<li>“I’m glad the construction activity on the highway didn"t keep you from coming in this morning.”</li>
+                    	<li>“How are you liking the weather today?”</li>
+                    	<li>Do you need water?</li>
+					</ul>
+
+                </div>
+                
+                <div class="popcontent" id="popcnt_2">
+                    This stage represents the introductory phase of the interview.<br>
+                    <strong><i><b>Time allocated: 3 minutes</b></i></strong><br><br>
+                    <strong><i><b>Purpose:</b></i></strong>
+                    <ul>
+                        <li>Initiate your assessment process.</li>
+                        <li>Ask questions about topics familiar to the candidates  to avoid undue pressure.</li>
+                        <li>Ask questions that are broad enough to generate additional questions by you.</li>
+                        <li>Allow the candidates to relax and articulate their thoughts better. </li>
+                    </ul>
+                    <strong><i><b>Examples:</b></i></strong>
+                    <ul>
+                        <li>“What five adjectives describe you best?”</li>
+                        <li>“How did you find out about this job?”</li>
+                        <li>“What interests you most about this position?”</li>
+                    </ul>
+
+                </div>
+                
+                
+                <div class="popcontent" id="popcnt_3">
+                    You are ready to move on to the crucial core stage of the interview.<br>
+                    <strong><i><b>Time allocated: 30 minutes</b></i></strong><br><br>
+                    <strong><i><b>The primary purpose of this stage is to:</b></i></strong>
+                    <ul>
+                        <li>Gather the bulk of your information about the candidate.</li>
+                        <li>Ask enough of the right open-ended questions.</li>
+                        <li>Evaluate the candidate for core skills, technical or functional skills, personality etc.</li>
+                        <li>Provide information, and answer questions from the candidate.</li>
+                    </ul>
+                    <strong><i><b>Examples:</b></i></strong>
+                    <ul>
+                        <li>“Give me an example of a problem you've had at school and how you solved it.”</li>
+                        <li>“Are your grades a good measure of your ability?”</li>
+                        <li>“What makes a job enjoyable for you?”</li>
+                    </ul>
+
+
+                </div>
+            
+            	<div class="popcontent" id="popcnt_4">
+                    The confirmation stage, represents verification phase of the interview.<br>
+                    <strong><i><b>Time allocated: 5 minutes</b></i></strong><br><br>
+                    <strong><i><b>The primary purpose of this stage is to:</b></i></strong>
+                    <ul>
+                        <li>Verify information gathered thus far about and from candidates.</li> 
+                        <li>Emphasis on open-ended questions  that help validate information gathered from the candidate.</li>  
+                        <li>Keep closed-ended questions to the minimum.</li>
+                    </ul>
+                    <strong><i><b>Examples:</b></i></strong>
+                    <ul>
+                        <li>“You mentioned that you were not allowed to grow in the previous job. What you mean by that?”</li>
+                        <li>“You stated that you are leaving your job for a better opportunity. Can you please elaborate? ”</li>
+                        <li>“Tell me more about how your new job responsibilities will differ from the earlier one. ”</li>
+                    </ul>
+
+
+                </div>
+                
+                <div class="popcontent" id="popcnt_5">
+                    Closing is the final stage of the interview. <br>
+                    <strong><i><b>Time allocated: 5 minutes</b></i></strong><br><br>
+                    <strong><i><b>The primary purpose of this stage is to:</b></i></strong>
+                    <ul>
+                        <li>Ensure that you have covered all relevant areas.</li>
+                        <li>Inform the candidate of the next steps. </li>
+                        <li>Provide constructive feedback to the candidate for the actual interview.</li>
+                    </ul>
+                    <strong><i><b>Examples:</b></i></strong>
+                    <ul>
+                        <li>“What else can you tell me about your decision to choose this field?”</li>
+                        <li>“Share any additional examples of how you dealt with difficult people.”</li>
+                        <li>“What personal development are you expecting from the job you are applying to?”</li>
+                    </ul>
+
+                </div>
+            </div> 
+            
+               
+            </div>
+	</body>
+<script type="text/javascript">
+    pass_next_button=0;
+			$(document).ready(function() {
+				parent.next_disable();
+			});
+			
+			$('.poptab').click(function() {
+				$('#bf_quote1').fadeOut('fast'); 
+					if(!$(this).hasClass('.selected')) {
+						$('.poptab').removeClass('selected');
+						$(this).addClass('selected');
+                                                $(this).addClass('visited');
+						$('.popcontent').fadeOut('fast');
+						$('#'+$(this).attr('rel')).fadeIn('fast'); 
+                                            }
+                                           if($('#poptab_1').hasClass('visited') && $('#poptab_2').hasClass('visited') && $('#poptab_3').hasClass('visited') && $('#poptab_4').hasClass('visited') && $('#poptab_5').hasClass('visited'))
+                                           {
+                                           parent.next_enable();
+                                           }
+                                            
+			});	
+
+                        
+                var anim_flag = false; var total_steps = 5; var steps = Array(); var steps_handle = Array();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+				steps[2][0] = 'playStep2()'; steps[2][1] = 18300; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 20800; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 22000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 25900; steps[5][2] = 0;
+                $(window).load(function() {
+                 parent.loadAudioTranscript('m3_02','',true,false);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+				
+				function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) {
+                         $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+            </script>
+</html>

@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="iso-8859-1"?> -->
+<assessment>	
+	<config>
+		<scoreThreshold>80</scoreThreshold>
+		<numberOfAttempts>1</numberOfAttempts>
+		<totalTimeAllowed>5</totalTimeAllowed>
+		<randomization>1</randomization>
+		<showSolution>1</showSolution>
+	</config>
+
+	<textualContent>
+		<asTitle><![CDATA[<img src="lib/images/logo.png">]]></asTitle>
+		<welcomeText><![CDATA[<table align="left" style="width:93%;"><tr valign="top">
+			<td style="width:0px; float:left; padding-right:0px; margin-top:-10px;"></td>
+		<td align="left">Hello, and welcome to the <span class="boldText">e-test for the NobelParallel CC e-module</span>. In this e-test, you will answer questions that will help you review and test your knowledge of the NobelParallel CC implant.<br/><br/>
+		<span class="boldText">Prerequisites for taking this assessment: </span> Before you start this assessment, please make sure that you have reviewed the following material:
+		<ul>
+		<li>EC NobelParallel CC</li>
+		
+		</ul>
+		
+		 The passing score for this e-test is set to <span class="boldText">90%</span>. You can attempt it  <span class="boldText">once</span>,  after which you will be locked out. Should you not pass the test at the first attempt, please contact your local e-learning administrator to reset the test for you. Each log-in session will last for <b>30 minutes</b>.</td>
+			</tr>
+			<tr valign="top"><td align="left" colspan="2"><p class="redText"><span class="boldText redText">IMPORTANT:</span>  Please use ONLY the Quit Course button at the top right to close the tests window. Clicking the Quit Course button is the signal for the system to calculate your score, save it to your account, and stop logging your time.</p><p class="redText">Click <span class="boldText redText">Start Assessment</span> to begin.</p></div>
+			</td>
+			</tr>
+			</table>
+		]]></welcomeText>
+		<feedbackTextPass><![CDATA[<table align="left" style="width:93%;"><tr valign="top">
+			<td style="width:0px; float:left; padding-right:00px; margin-top:-10px;"></td>
+		<td align="left"><br>Congratulations! You have successfully completed the <img src="lib/images/logo_small.png" style=" margin-top:-13px;">  Assessment. You scored <span class="greenBoldText">|score|%</span>.
+		<br/><br/>Now you can:<ul>
+		<li>Check your answers.</li>
+		<li>Click the <span class="boldText">Quit Course </span> button at the top right to close the course window. Clicking this button is the signal for the system to calculate your score, save it to your account, and stop logging your time.</li>
+		
+		</ul></td>
+		</tr>
+		</table>]]></feedbackTextPass>
+		<feedbackTextFail><![CDATA[<table align="left" style="width:93%;"><tr valign="top">
+			<td style="width:0px; float:left; padding-right:0px; margin-top:-10px;"></td>
+		<td align="left" ><br>Sorry, you were not successful in the <img src="lib/images/logo_small.png" style=" margin-top:-13px;"> Assessment. You scored <span class="redBoldText">|score|%</span>. To pass the certification successfully, you need to score <span class="boldText">80%</span> or more. 
+		<br/><br/>Now you can:<ul>
+		<li>Check your answers.</li>
+		<li>Click the <span class="boldText">Close</span> button at the top right to close the course window. Clicking this button is the signal for the system to calculate your score, save it to your account, and stop logging your time.</li></ul></td>
+		</tr>
+		</table>]]></feedbackTextFail>
+		<pageInstructionText><![CDATA[Click <span class="redBoldText">Next</span> to proceed to the next question.]]></pageInstructionText>
+	</textualContent>
+        <newquestions></newquestions>
+	<questions>		
+	
+
+	<question id="q1" qtype="MS" weightage="10" qTime="2" random="false">
+			<qText>Which of the following statements are true in the context of a good hire?</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select ALL the correct answers.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Good hires result in high rates of attrition.</option>
+				<option correct="1">Good hires contribute positively to the growth of the organization.</option>
+				<option correct="0">A good hire reduces revenue and productivity.</option>
+				<option correct="1">Good hires are assets to the organization.</option>
+			</options>
+		</question>
+
+
+	<question id="q2" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>The ‘S’ and the ‘A’ in the STAR technique of interviewing stand for __________ and ___________ respectively. Select the correct option from below.</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Sequence and Action</option>
+				<option correct="1">Situation and Action</option>
+				<option correct="0">Sample and Analysis</option>
+				<option correct="0">Strength and Aptitude</option>
+			</options>
+		</question>
+
+
+
+	<question id="q3" qtype="MS" weightage="10" qTime="2" random="false">
+			<qText>Identify the statements that are common misconception made by interviewers while interviewing ?</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select ALL the correct answers.</span>]]></qInstruction>
+			<options>
+				<option correct="1">‘No Eye Contact. I am sure he is hiding something.’</option>
+				<option correct="1">‘A person with scuffed shoes is likely to be disorganized.’</option>
+                                <option correct="0">‘I will probe the evidence and not make assumptions based on my experiences.’</option>
+                                <option correct="0">‘I will not let first impressions impact my judgement about the candidate.’</option>
+			</options>
+		</question>
+
+	<question id="q4" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>Before you conduct an interview, which of the following points would you look for while reviewing a resume?</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Significant gaps between different jobs </option>
+				<option correct="0">Lack of progression in roles or responsibilities</option>
+                <option correct="0">Contradictions or ‘red flags’, if any</option>
+				<option correct="1">All of the Above</option>
+			</options>
+		</question>
+	<question id="q5" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>The primary purpose of the core stage of an interview is to:</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Ignore the bulk of your information about the candidate.</option>
+				<option correct="0">Ask enough of the closed-ended questions. </option>
+				<option correct="1">Evaluate the candidate for core skills, technical or functional skills, personality etc.</option>
+				<option correct="0">Close the interview without answering questions from the candidate.</option>
+			</options>
+		</question>
+
+
+
+
+	<question id="q6" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>The stage of an interview that requires the greatest percentage of time and focus is called the:</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">closing stage</option>
+				<option correct="1">core stage</option>
+				<option correct="0">confirmation stage</option>
+				<option correct="0">rapport-building stage</option>
+			</options>
+		</question>
+		
+		<question id="q7" qtype="MS" weightage="10" qTime="2" random="false">
+			<qText>Two common errors made during the introductory stage of candidate-related and some employee interviews are:</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select ALL the correct answers.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Talking about the weather and the candidate’s commute.</option>
+				<option correct="1">Making small talk and reading the candidate’s paperwork back to them.</option>
+				<option correct="1">Saying, “Tell me about yourself” and “I didn’t get a chance to read your file”.</option>
+				<option correct="0">Asking the candidate whether he or she understands the purpose of the interview and saying, “Tell me about yourself”.</option>			
+			</options>
+		</question>
+		
+			<question id="q8" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>Successful interviews begin with:</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Reviewing relevant paperwork followed by icebreakers, establishing the format, and telling the candidate approximately how long the interview is expected to last.</option>
+				<option correct="1">Reviewing relevant paperwork followed by blocking sufficient time, planning an appropriate environment, and planning a handful of basic questions.</option>
+				<option correct="0">Blocking sufficient time followed by planning an appropriate environment, icebreakers, and establishing the format.</option>
+				<option correct="0">Planning an appropriate environment followed by planning a handful of basic questions, blocking sufficient time, and answering questions.</option>
+				
+			</options>
+		</question>
+		
+		
+		
+		<question id="q9" qtype="SS" weightage="10" qTime="2" random="false">
+		<qText>Open-ended questions: </qText>
+			
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Should constitute most of the core stage of the interview.</option>
+				<option correct="0">Are always better than close-ended questions.</option>
+				<option correct="1">Encourage candidates to talk, thereby allowing you to assess verbal communication skills, actively listen to responses, and observe nonverbal communication.</option>
+				<option correct="0">Are more effective when they are converted into close-ended questions.</option>
+				
+				
+				
+			</options>
+		</question>
+		
+		<question id="q10" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>An example of a competency-based question would be: </qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">What kind of a supervisor are you?</option>
+				<option correct="0">Are you always conscientious about meeting deadlines?</option>
+				<option correct="1">Tell me about a time when you had an employee with an attendance problem. How was the situation resolved?</option>
+				<option correct="0">Suppose you were left in charge in the absence of your superior, and there was an emergency. What would you do?</option>
+				
+			</options>
+		</question>
+	
+		
+		
+		<question id="q11" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>Silence is a good way of: </qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Taking the necessary time to observe body language.</option>
+				<option correct="0">Letting thought speed work.</option>
+				<option correct="0">Seeking contrary information.</option>
+				<option correct="1">Encouraging candidates to talk.</option>
+								
+			</options>
+		</question>
+		
+	   <question id="q12" qtype="SS" weightage="10" qTime="2" random="false">
+			<qText>If a candidate avoids making eye contact during the interview each time you talk about why he wants to leave his current job, it probably means that he:</qText>
+			<qInstruction><![CDATA[<span class="redBoldText">Select the correct answer.</span>]]></qInstruction>
+			<options>
+				<option correct="0">Is hiding something.</option>
+				<option correct="1">Is expressing his own pattern of body language.</option>
+				<option correct="0">Is lying.</option>
+				<option correct="0">Is deep in thought.</option>				
+			</options>
+		</question>
+	</questions>
+</assessment>

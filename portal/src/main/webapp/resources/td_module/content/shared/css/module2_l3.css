@@ -1,0 +1,50 @@
+#page1_bord{
+	margin-left:698px;
+	margin-top:18px;
+	overflow:hidden;
+	height:500px;
+	width:462px;
+        position: absolute;
+	background-position:bottom;
+}
+
+#ContentText{
+	width: 945px;
+	height: auto;
+	margin-top:10px;
+	text-align: left;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color:#000000;
+	overflow: hidden;
+    line-height: 1.3;
+	}
+        
+#canvas { background-image:url(../images/tab_bg.png); height:365px; width:944px; margin-top:10px;}
+
+.benjamin_franklin { background-image: url(../images/bf_quote2.png); width:824px; height:271px; position:absolute; margin-top:74px; margin-left:65px;}
+
+#bf_quote2 { width:924px; margin-top:5px; background-color:#CC6600; font-family: Avenir Next LT Pro Regular; text-align:right; padding:7px 20px 7px 0px; color:#ffffff; display:none }
+
+.poptab { z-index: 10;  text-align:left; height:36px; width:312px; top: 30px; cursor:pointer; float:left; font-family: Avenir Next LT Pro Regular; font-size:10pt; font-weight: bold; color:#808080; padding-top:15px; background-color:#FFFFFF; border:1px solid #cac9c5; }
+.poptab:hover { color:#0033FF !important; } 
+.poptab.selected { color:#0033FF !important; border-bottom: 3px solid #0033FF; } 
+
+#poptab_1{ text-align:center; vertical-align:middle; font-weight:bold; }
+#poptab_1:hover, #poptab_1.selected {  cursor:pointer; color:#ffffff; }
+
+#poptab_2{ text-align:center; vertical-align:middle; font-weight:bold; margin-left:1px; }
+#poptab_2:hover, #poptab_2.selected {  cursor:pointer; color:#ffffff; }
+
+#poptab_3{ text-align:center; vertical-align:middle; font-weight:bold; margin-left:1px; }
+#poptab_3:hover, #poptab_3.selected { cursor:pointer; color:#ffffff; }
+
+
+.popcontent {position:absolute; display:none; line-height:1.3;  z-index:99999999; background-repeat:no-repeat; font-family:Avenir Next LT Pro Regular; font-size:10pt; margin-top:62px; margin-left:15px; height:300px; width:910px; }
+
+.greybox { background-color:#CCCCCC; opacity: 0.7; padding: 2px 10px 0px 10px;}
+.animate { display:none;}        
+#instruction_text{ font-size: 14pt; font-family: Avenir Next LT Pro Regular; font-weight: normal; margin-top: 65px; margin-left: 85px;}

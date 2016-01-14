@@ -1,0 +1,31 @@
+#page1_bord{
+	margin-left:698px;
+	margin-top:208px;
+	overflow:hidden;
+	height:500px;
+	width:462px;
+    position: absolute;
+}
+
+#ContentText{
+	width:auto;
+	height: 400px;
+	margin-left:-83px;
+	margin-top:-20px;
+	text-align: left;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color:#000000;
+	overflow: hidden;
+        line-height: 1.4;
+	}
+        
+	
+.animate { display:none;}        
+#instruction_text{ font-size: 13pt; font-family: Avenir Next LT Pro Regular; font-weight: normal; margin-top: 50px; margin-left: 85px;}
+#instruction_text1{ font-size: 13pt; font-family: Avenir Next LT Pro Regular; font-weight: normal; margin-top: 15px; margin-left: 85px;}
+#instruction_text2{ font-size: 13pt; font-family: Avenir Next LT Pro Regular; font-weight: normal; margin-top: 25px; margin-left: 85px;}
+.td_red{ color:#e45f51 !important; font-weight:bold;}

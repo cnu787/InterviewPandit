@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.testmyinterview.portal.bean.InterViewBean" x="997" y="453">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.dao.SchedulerDAO" x="616" y="1014">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.dao.DropDownDAO" x="283" y="738">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.ExternalController" x="51" y="132">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"
+            endpointName="externalUserDao" kind="Simple"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.DropDownDAO"
+            endpointName="dropDownDAO" kind="Simple"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.SchedulerDAO"
+            endpointName="schedulerDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.InterViewBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.SchedulerDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.DropDownDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.dao.ExternalUserDao" x="55" y="877">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.InterViewBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.FileUploader"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.util.RandomNumberGenerator"
+        x="791" y="127">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.util.TmiUtil" x="674" y="235">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"
+            endpointName="externalUserDao" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.InterViewBean"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.ExternalUserDao"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.FileUploader"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.util.FileUploader" x="617" y="1216">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.testmyinterview.portal.util.Constants" x="784" y="486">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.dao.ProfileDAO" x="1147" y="76">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.FileUploader"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.util.RandomNumberGenerator"
+        x="1251" y="811">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.ProfileController" x="4" y="132">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.ProfileDAO"
+            endpointName="profileDAO" kind="Simple"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.ProfileDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.RandomNumberGenerator"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.TmiUtil"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.util.TmiUtil" x="1232" y="609">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.ProfileDAO"
+            endpointName="profileDAO" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.ProfileDAO"/>
+        <Communication destinationClassName="com.testmyinterview.portal.util.FileUploader"/>
+        <Communication destinationClassName="com.testmyinterview.portal.bean.ProfileBean"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.util.FileUploader" x="628" y="136">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.bean.ProfileBean" x="503" y="500">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

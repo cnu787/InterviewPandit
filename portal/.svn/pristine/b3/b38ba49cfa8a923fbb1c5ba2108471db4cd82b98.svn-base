@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module4_l3.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <img src="../shared/images/module4_l3.png" style="height:0px; width:0px; float:left; opacity: 0">
+            
+		<div id="pageTitle">Providing Feedback</div>
+                <div id="page1_bord"><img src="../shared/images/module4_l3.png" border="0"></div>
+                <div class="fader">
+                    <div id="ContentText" >
+                        <div id="instruction_text">The comprehensive feedback form is designed to help you achieve the goal of enabling candidates prepare for their actual interview effectively. You will need to complete the feedback form online separately for each individual candidate.</div>
+                        <ul style="margin-left:68px; margin-top:20px; width:600px; position:absolute; z-index:99999999;" ><div id="ul_text" style="font-weight:normal; color:#00569c; margin-left:-22px; list-style:none; " class="animate">The feedback form contains three distinct areas for evaluating candidates based on <b>KNOWLEDGE, SKILLS,</b> and <b>ATTITUDE(KSA)</b>.  </div>
+                            <li id="text1" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-26px; margin-left:30px;">First two sections focus on the <strong><b>KNOWLEDGE</b></strong> of candidates relevant to the job they are applying.  </div></li>
+                            <li id="text2" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">The next seven sections have three different probing questions each and focus on the <strong><b>SKILLS</b></strong> of the candidate.<br>You may choose to ask one or more of these or similar questions. </div></li>
+                            <li id="text3" class="animate" style="list-style:none; margin-left:-22px; margin-top:10px;"><img src="../shared/images/ticksmall.png" border="0"><div style=" margin-top:-23px; margin-left:30px;">The final four sections focus on the overarching <strong><b>ATTITUDE</b></strong>, behavior and communication skills. </div></li>
+                        </ul>
+                    </div>
+                    <div id="footer_text1" class="animate">Samples of the two formats are given below:</div>
+                    <div id="footer_text2" class="animate">
+                        <a href="sample.pdf" target="new">Click here</a> to download a sample of Freshers’ Interview Feedback Form.
+                    </div>
+                    <div id="footer_text3" class="animate">
+                        <a href="sample.pdf" target="new">Click here</a> to download a sample of  Experienced Interview Feedback Form.
+                    </div>
+                </div>
+            </div>
+	</body>
+        <script type="text/javascript">
+                var anim_flag = false; var total_steps = 8; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+		steps[2][0] = 'playStep2()'; steps[2][1] = 13100; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 20200; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 26600; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 36600; steps[5][2] = 0;
+                steps[6][0] = 'playStep6()'; steps[6][1] = 42400; steps[6][2] = 0;
+                steps[7][0] = 'playStep7()'; steps[7][1] = 42800; steps[7][2] = 0;
+                steps[8][0] = 'playStep8()'; steps[8][1] = 46600; steps[8][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('module4_3','',true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+                function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+				
+		function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal',function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) { 
+                        $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+                function playStep6() { 
+                    if(anim_flag==true) {
+                         $('#footer_text1').fadeIn('normal', function() { steps[6][2] = 1; });
+                    }
+                }
+                function playStep7() { 
+                    if(anim_flag==true) {
+                         $('#footer_text2').fadeIn('normal', function() { steps[7][2] = 1; });
+                    }
+                }
+                function playStep8() { 
+                    if(anim_flag==true) {
+                         $('#footer_text3').fadeIn('normal', function() { steps[8][2] = 1; });
+                    }
+                }
+                
+            </script>
+</html>

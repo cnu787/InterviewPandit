@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module2_l5.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+			<script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+			UL { margin-top:2px;}
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <div id="pageTitle">Modes of Interview</div>
+            <div id="ContentText">You will be interviewing candidates using three modes, namely – campus, audio or video interviews. It is important to prepare the environment appropriately and adequately keeping in mind the mode of the interview, privacy, minimum number of distractions and comfort, not just yours but also the candidate’s. You are the face of Interview Pandit's image. So Dress well.<br> <strong>Click each  mode to learn more</strong>.</div>
+            
+            <div id="canvas">
+                <div class="poptab" id="poptab_1" rel="popcnt_1" audio_name="">CAMPUS INTERVIEW</div>
+                <div class="poptab" id="poptab_2" rel="popcnt_2" audio_name="">AUDIO INTERVIEW</div>
+                <div class="poptab" id="poptab_3" rel="popcnt_3" audio_name="">VIDEO INTERVIEW</div>
+                
+                <div class="benjamin_franklin" id="bf_quote1"></div>
+                
+          <div class="popcontent" id="popcnt_1">
+                    <strong>Examples:</strong> On Campus, In Auditoriums <br>
+                    <strong>Presentation:</strong>
+                        <ul>
+                            <li>Dress in comfortable Formals or Business Casuals.</li>
+                            <li>Maintain a calm and confident demeanor.</li>
+                            <li>Wear clean, polished, formal shoes.</li>
+                            <li>Ensure fresh breath and body odor.</li>
+                            <li>Avoid smoking or chewing gum. It can be a big put-off for the candidate.</li>
+                            <li>Wear the Smile!</li>
+                        </ul>
+                    <strong>Environment:</strong>
+                        <ul>
+                            <li>Ensure that your desk is clutter free.</li>
+                            <li>Assign a comfortable place for candidates.</li>
+                            <li>Ensure that environment is noise-free. </li>
+                            <li>Keep a list of all candidates handy.</li>
+                            <li>Turn off your mobiles. It can be very distracting.</li>
+                        </ul>           
+                    <div style="margin-left: 675px; margin-top:-317px;"><img src="../shared/images/tab2_1.png" /></div>
+                </div>
+                
+                <div class="popcontent" id="popcnt_2">
+                    <strong>Examples</strong>: Telephonic, Skype Audio<br>
+                    <strong>Presentation:</strong>
+                        <ul>
+                            <li>Although not a face-to-face interview, it is a good practice to dress professionally<br>for confidence and clarity.</li>
+                            <li>Smile! It projects a positive tone in your voice and image. </li>
+                        </ul>
+                    <strong>Environment:</strong>
+                        <ul>
+                            <li>Check quality of audio systems, speakers or the telephone depending the mode used.</li>
+                            <li>Be in a quiet place alone. Avoid noisy open areas.</li>
+                            <li>Turn off the radio, television or any other background noise.</li>
+                            <li>Maintain a clutter free area. </li>
+                            <li>Keep a pen and paper handy to take notes.</li>
+                        </ul>           
+                    <div style="margin-left: 643px; margin-top:-105px;"><img src="../shared/images/tab2_2.png" /></div>
+                </div>
+                
+                
+                <div class="popcontent" id="popcnt_3">
+                    <strong>Examples</strong>: Video conferencing, Skype, Google Hangouts, FaceTime<br>
+                    <strong>Presentation:</strong>
+                        <ul>
+                            <li>Dress in comfortable Formals or Business Casuals.</li>
+                            <li>Maintain a calm and confident demeanor.</li>
+                            <li>Avoid smoking or chewing gum. It can be a big put-off for the candidate.</li>
+                            <li>Wear the <strong>Smile</strong>! Helps connect with the candidate.</li>
+                        </ul>
+                    <strong>Environment:</strong>
+                        <ul>
+                            <li>Get familiar with the platform or mode you are using.</li>
+                            <li>Ensure that your desk is clutter free.</li>
+                            <li>Reach at least 10 minutes ahead of time and test all equipment. </li>
+                            <li>Keep only relevant paper work with you for reference.</li>
+                            <li>Ensure that environment is noise-free.</li>
+                        </ul>           
+                    <div style="margin-left: 639px; margin-top:-278px;"><img src="../shared/images/tab2_3.png" /></div>
+                </div>
+            
+            </div> 
+               
+               
+            </div>
+	</body>
+<script type="text/javascript">
+			$(document).ready(function() {
+				$("#page1_girl").fadeIn('fast',function() { $('.fader').fadeIn('slow'); });
+			});
+			
+			$('.poptab').click(function() {
+				$('#bf_quote1').fadeOut('fast');  
+				if(!$(this).hasClass('.selected')) {
+					$('.poptab').removeClass('selected');
+					$(this).addClass('selected');
+					$('.popcontent').fadeOut('fast');
+					$('#'+$(this).attr('rel')).fadeIn('fast');
+				}
+			});	
+</script>
+
+
+    
+    
+            <script type="text/javascript">
+                var anim_flag = false; var total_steps = 5; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 18300; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 20800; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 22000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 25900; steps[5][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('module2_l5','',true,true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+				
+				function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) {
+                         $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+            </script>
+</html>

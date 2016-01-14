@@ -1,0 +1,12 @@
+#main { width:1024px; height:auto; overflow: hidden; }
+#widget-container{ width:984px; height:659px; }
+#widget-header { width:955px; }
+#widget-midcontainer { width:1008px; height:571px; padding: 10px 10px 10px 20px; overflow: hidden;}
+#widget-footer{ width:1004px; background-color: #0095da;}
+
+
+#noOfQuest{  height: 16%; width:14%;  margin-top: 120px; margin-left: 26%; }
+#timeToComp{  height: 16%; width:13%;  margin-top:-1.6%; margin-left: 42%; }
+#PassPer{  height: 14%; width:14%;  margin-top:-2%; margin-left: 58.5%; }
+#icn_close { float:right; clear:both; margin-top: -52px; margin-right:7px; width:65px; height:65px; display:inline-table; background:url(../images/top-right-icons_1.png) no-repeat; background-position: 0px -178px;  }
+.marginclass{ margin-top:-17px;}

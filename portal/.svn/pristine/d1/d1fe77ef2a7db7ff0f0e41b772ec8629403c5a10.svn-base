@@ -1,0 +1,58 @@
+#page1_bord{
+	margin-left:698px;
+	margin-top:18px;
+	overflow:hidden;
+	height:500px;
+	width:462px;
+        position: absolute;
+	background-position:bottom;
+}
+
+#ContentText{
+	width: 945px;
+	height: auto;
+	margin-top:10px;
+	text-align: left;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color:#000000;
+	overflow: hidden;
+    line-height: 1.3;
+	}
+        
+#canvas { background-image:url(../images/tab_bg.png); height:365px; width:940px; margin-top:5px;}
+
+
+#bf_quote2 { width:924px; margin-top:5px; background-color:#CC6600; font-family: Avenir Next LT Pro Regular; text-align:right; padding:7px 20px 7px 0px; color:#ffffff; display:none }
+
+#bf_quote1 { background-image: url(../images/arrow_image.png); width:850px; height:293px; position:absolute; margin-top:58px; margin-left:45px; background-repeat:no-repeat; z-index:999999;}
+
+.poptab { z-index: 10;  text-align:left; height:43px; width:190px; top: 30px; cursor:pointer; float:left; font-family: Avenir Next LT Pro Regular; font-size:11pt; font-weight: bold; color:#fff; background-repeat:no-repeat; padding-top:4px;}
+.poptab:hover { color:#000000 !important; } 
+.poptab.selected { color:#000000 !important;  } 
+
+#poptab_1{ text-align:center; vertical-align:middle; font-weight:bold;  background-image: url(../images/arrow_btn1.png); margin-left:-1px; }
+#poptab_1:hover, #poptab_1.selected {  cursor:pointer; color:#ffffff; background-image: url(../images/arrow_btn1_1.png); }
+
+#poptab_2{ text-align:center; vertical-align:middle; font-weight:bold;  background-image: url(../images/arrow_btn2.png); margin-left:1px;  }
+#poptab_2:hover, #poptab_2.selected {  cursor:pointer; color:#ffffff; background-image: url(../images/arrow_btn2_1.png); }
+
+#poptab_3{ text-align:center; vertical-align:middle; font-weight:bold;  background-image: url(../images/arrow_btn3.png); margin-left:1px;}
+#poptab_3:hover, #poptab_3.selected { cursor:pointer; color:#ffffff; background-image: url(../images/arrow_btn3_1.png); }
+
+#poptab_4{ text-align:center; vertical-align:middle; font-weight:bold;  background-image: url(../images/arrow_btn4.png); }
+#poptab_4:hover, #poptab_4.selected {  cursor:pointer; color:#ffffff; background-image: url(../images/arrow_btn4_1.png); }
+
+#poptab_5{ text-align:center; vertical-align:middle; font-weight:bold;  background-image: url(../images/arrow_btn5.png); width:179px !important; }
+#poptab_5:hover, #poptab_5.selected { cursor:pointer; color:#ffffff; background-image: url(../images/arrow_btn5_1.png); width:179px !important;}
+
+
+.popcontent {position:absolute; display:none; line-height:1.3;  z-index:99999999; background-repeat:no-repeat; font-family:Avenir Next LT Pro Regular; font-size:10pt; margin-top:52px; margin-left:15px; height:300px; width:915px; }
+
+.greybox { background-color:#CCCCCC; opacity: 0.7; padding: 2px 10px 0px 10px;}
+.animate { display:none;}        
+#instruction_text{ font-size: 14pt; font-family: Avenir Next LT Pro Regular; font-weight: normal; margin-top: 65px; margin-left: 85px;}
+.visited{ }

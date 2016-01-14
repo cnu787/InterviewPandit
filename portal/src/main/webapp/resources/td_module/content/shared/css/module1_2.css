@@ -1,0 +1,80 @@
+@-webkit-keyframes wobble1  {
+  0%  { -webkit-transform:  rotate(0deg); } 20%  { -webkit-transform:  rotate(15deg); } 40%  { -webkit-transform:  rotate(-15deg); } 60%  { -webkit-transform:  rotate(15deg); } 80%  { -webkit-transform:  rotate(-15deg); } 100%  { -webkit-transform:  rotate(0deg); }
+}
+@-moz-keyframes wobble1 {
+  0%  { -moz-transform:  rotate(0deg); } 20%  { -moz-transform:  rotate(15deg); } 40%  { -moz-transform:  rotate(-15deg); } 60%  { -moz-transform:  rotate(15deg); }  80%  { -moz-transform:  rotate(-15deg); }  100%  { -moz-transform:  rotate(0deg); }  
+}
+@-o-keyframes wobble1 {
+  0%  { -o-transform:  rotate(0deg); } 20%  { -o-transform:  rotate(15deg); } 40%  { -o-transform:  rotate(-15deg); } 60%  { -o-transform:  rotate(15deg); }  80%  { -o-transform:  rotate(-15deg); }  100%  { -o-transform:  rotate(0deg); }  
+}
+@keyframes wobble1 {
+  0%  { transform:  rotate(0deg); } 20%  { transform:  rotate(15deg); } 40%  { transform:  rotate(-15deg); } 60%  { transform:  rotate(15deg); }  80%  { transform:  rotate(-15deg); }  100%  { transform:  rotate(0deg); }  
+}
+
+@-webkit-keyframes wobble2  {
+  0%  { -webkit-transform:  rotate(0deg); } 20%  { -webkit-transform:  rotate(19deg); } 40%  { -webkit-transform:  rotate(-19deg); } 60%  { -webkit-transform:  rotate(19deg); } 80%  { -webkit-transform:  rotate(-19deg); } 100%  { -webkit-transform:  rotate(0deg); }
+} 
+@-moz-keyframes wobble2  {
+  0%  { -moz-transform:  rotate(0deg); } 20%  { -moz-transform:  rotate(19deg); } 40%  { -moz-transform:  rotate(-19deg); } 60%  { -moz-transform:  rotate(19deg); } 80%  { -moz-transform:  rotate(-19deg); } 100%  { -moz-transform:  rotate(0deg); }
+} 
+@-o-keyframes wobble2  {
+  0%  { -o-transform:  rotate(0deg); } 20%  { -o-transform:  rotate(19deg); } 40%  { -o-transform:  rotate(-19deg); } 60%  { -o-transform:  rotate(19deg); } 80%  { -o-transform:  rotate(-19deg); } 100%  { -o-transform:  rotate(0deg); }
+} 
+@keyframes wobble2  {
+  0%  { transform:  rotate(0deg); } 20%  { transform:  rotate(19deg); } 40%  { transform:  rotate(-19deg); } 60%  { transform:  rotate(19deg); } 80%  { transform:  rotate(-19deg); } 100%  { transform:  rotate(0deg); }
+} 
+
+@-webkit-keyframes wobble3  {
+  0%  { -webkit-transform:  rotate(0deg); } 20%  { -webkit-transform:  rotate(8deg); } 40%  { -webkit-transform:  rotate(-8deg); } 60%  { -webkit-transform:  rotate(8deg); } 80%  { -webkit-transform:  rotate(-8deg); } 100%  { -webkit-transform:  rotate(0deg); }
+}  
+@-moz-keyframes wobble3  {
+  0%  { -moz-transform:  rotate(0deg); } 20%  { -moz-transform:  rotate(8deg); } 40%  { -moz-transform:  rotate(-8deg); } 60%  { -moz-transform:  rotate(8deg); } 80%  { -moz-transform:  rotate(-8deg); } 100%  { -moz-transform:  rotate(0deg); }
+}  
+@-o-keyframes wobble3  {
+  0%  { -o-transform:  rotate(0deg); } 20%  { -o-transform:  rotate(8deg); } 40%  { -o-transform:  rotate(-8deg); } 60%  { -o-transform:  rotate(8deg); } 80%  { -o-transform:  rotate(-8deg); } 100%  { -o-transform:  rotate(0deg); }
+}  
+@keyframes wobble3  {
+  0%  { transform:  rotate(0deg); } 20%  { transform:  rotate(8deg); } 40%  { transform:  rotate(-8deg); } 60%  { transform:  rotate(8deg); } 80%  { transform:  rotate(-8deg); } 100%  { transform:  rotate(0deg); }
+}  
+
+#canvas { width:100%; height: 588px; margin:0px auto; padding-top:10px; background:#f4f5f6 url(../images/canvas-bg.jpg) center bottom repeat-x; top:0px; left:0px; display:none; position:absolute; }
+#canvas .sky{ width:950px; height: 588px; margin:0px auto; background:#f4f5f6 url(../images/canvas-clouds.jpg) center bottom no-repeat; }
+ 
+.balloon { background-position:0px 0px; background-repeat: no-repeat; position:absolute; top:0px; display:none; }
+.balloon A { text-align:center; display:inline-block; float:left; vertical-align:middle; text-decoration:none; cursor:pointer; border-radius:60%; }
+.balloon A SPAN { vertical-align: middle; display:table-cell; text-align: center; font:700 16px SEGOEUIL;  color:#333; padding:0px 5px; }
+.balloon i { width:56px; height:50px; display:none; float:left; background-image:url(../images/bal-span.png); background-repeat:no-repeat; position: absolute; margin:20px 0px 0px -20px; }
+.balloon.right i { display:inline-block; background-position:0px 0px; } .balloon.wrong i { display:inline-block; background-position:0px -50px; }
+
+.bal1 { height: 226px; width: 143px; background-image:url(../images/balloon-1.png); }
+.bal1 A, .bal1 A SPAN { width:143px; height:145px; }
+
+.bal2 { height: 256px; width: 148px; background-image:url(../images/balloon-2.png); }
+.bal2 A,.bal2 A SPAN { width:148px; height:145px; }
+
+.bal3 { height: 229px; width: 120px; background-image:url(../images/balloon-3.png); }
+.bal3 A,.bal3 A SPAN { width:120px; height:115px; } 
+
+.bal4 { height: 256px; width: 147px; background-image:url(../images/balloon-4.png); }
+.bal4 A,.bal4 A SPAN { width:147px; height:145px; }
+
+.wobble1 { -webkit-animation: wobble1 10s infinite; -moz-animation: wobble1 10s infinite; -o-animation: wobble1 10s infinite; animation: wobble1 10s infinite; }
+.wobble2 { -webkit-animation: wobble2 8s infinite; -moz-animation: wobble2 8s infinite; -o-animation: wobble2 8s infinite; animation: wobble2 8s infinite; }
+.wobble3 { -webkit-animation: wobble3 6s infinite; -moz-animation: wobble3 6s infinite; -o-animation: wobble3 6s infinite; animation: wobble3 6s infinite;}
+
+.timer { width:60px; height:58px; background:url(../images/timer-bg.png)0px 0px no-repeat; margin-top:40px; float:right; padding-right: 77px; clear:both; }
+.score { background:url(../images/score-bg.png) 0px 0px no-repeat; margin-top:10px; width:52px; padding-right:85px; }
+.timer .slot { width:40px; height:40px; color:#fff; float:right; margin-left:8px; font: 700 30px SEGOEUIL; text-align:center; letter-spacing: 5px; } .timer .slot.min { margin:0px; }
+.timer .blip { width:20px; height:40px; color:#fff; float:right; margin-left:8px; font: 700 30px SEGOEUIL; text-align: center; margin-top:-3px; visibility:visible; }
+.timer .blip.hide { visibility:hidden; }
+
+.resultbg { background:#202e3f; opacity: 0.3; width:100%; height:100%; position:absolute; z-index:10001; top:0px; left:0px; display:none; }
+.resultdiv { width:100%; height:100%; position:absolute; z-index:10002;top:-70px; left:0px; display:none; }
+.resultdiv .rbox {  background:#fff; margin:180px auto 0px auto; width:400px; height:auto; display:table; padding:20px; border-top:solid 2px #4ab559; }
+.resultdiv .rbox H3 { margin:0px auto 20px auto; color:#4ab559; font:700 20px SEGOEUIL; }
+.resultdiv .rbox P { color:#333; font:100 14px Avenir Next LT Pro Regular; margin-bottom:10px; }
+.resultdiv .rbox .correct, .resultdiv .rbox .incorrect { display:none; margin-bottom:20px; }
+.resultdiv.correct .rbox .correct { display:block; } .resultdiv .rbox.correct .incorrect { display:none; }
+.resultdiv.incorrect .rbox .incorrect { display:block; } .resultdiv .rbox.incorrect .correct { display:none; }
+.resultdiv .rbox .btns { margin:10px auto; width:100px; } #rdiv .rbox .btns { width:210px; } #rdiv .rbox .btns A:first-child { margin-right:10px;  }
+.resultdiv .rbox .btns A { width:28px; display:inline-table; padding:7px 0px 5px 40px; cursor:pointer; color:#fff; font:700 17px SEGOEUIL; text-decoration:none; background:#4ab559 }

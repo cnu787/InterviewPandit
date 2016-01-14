@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M1</title>
+<link href="../lib/css/framework.css" rel="stylesheet"></link>
+</head>
+
+<body style="padding: 10px; font-family: SEGOEUIL;">
+    
+    <div>
+    For an optimal experience, please ensure that your desktop or laptop meets the following system requirements. <br/><br/>
+    <div style="background-color:#ffd34d; height:3px; width:100%"></div>
+    <div style="background-color:#fff2cc; height:75px; width:100%">
+    	<div style="height:58%; width:30%; float:left; padding: 24px 5px 5px 5px;">Browsers</div>
+        <div style="height:85%; width:65%; float:right; padding: 4px 5px 5px 5px;">IE 10 and above<br />Chrome 35 and above<br />Firefox build 30 and above</div>
+    </div>
+    <div style="background-color:#fff; height:75px; width:100%">
+    	<div style="height:58%; width:30%; float:left; padding: 24px 5px 5px 5px;">Screen Resolution</div>
+        <div style="height:58%; width:65%; float:right; padding: 24px 5px 5px 5px;">1024 x 768 (minimum)</div>
+    </div>
+    <div style="background-color:#fff2cc; height:75px; width:100%">
+    	<div style="height:58%; width:30%; float:left; padding: 24px 5px 5px 5px;">Audio</div>
+        <div style="height:70%; width:65%; float:right; padding: 15px 5px 5px 5px;">Audio enabled system<br />A good headphone</div>
+    </div>
+    <div style="background-color:#ffd34d; height:3px; width:100%; margin-bottom:10px;"></div>
+    
+      <strong>Note: </strong>You can also view this course on Android tablets and iPad that has a screen size of more than 8 inches. However note that there may be minor glitches and the experience may not be optimal. 
+    </div>
+
+</body>
+</html>

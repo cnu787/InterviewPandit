@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developing Questioning Techniques</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+    <link rel="stylesheet" type="text/css" href="../shared/css/module3_l3.css" />
+    <script src="../shared/js/jquery/jquery.min.js"></script>
+    <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+    <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../shared/js/jquery/jquery-flip-min.js"></script>
+</head>	
+<body>
+    <div id="content">
+        <div id="pageTitle">Developing Questioning Techniques</div>
+            <div id="interactivity">
+                <div id="ContentText" class="pagesubtext">You are familiar with the phrase <b>Garbage in, garbage out</b>, aren’t you? Similarly, in a mock interview, you ask the wrong questions, you will probably get the wrong answer, or, at least not quite what you're hoping for. Asking the right question is the crux of effective interviewing. Here are some common questioning techniques. <br><br>
+<span class="hl">Click each type of question below to learn more.</span></div>
+                <div class="flipgame">
+                
+                        <div class="card" id="card_1">
+                            <div class="text">Open-Ended Questions</div>
+                            <div class="label">
+                                <p>Encourage a full, meaningful response based on knowledge, feelings and opinions.</p><br>
+                                <p><strong><i>When to ask?</i></strong><br>When you want candidates to reflect and think, or express feelings and opinions.</p><br>
+                                <p><strong><i>Examples:</i></strong><br>“What happened at the meeting?” “Describe the circumstances in more detail.”</p>
+
+</div>
+                        </div>
+                    
+                    
+                    
+                    
+                    <div class="card" id="card_2"><div class="text">Closed-ended Questions</div>
+                            <div class="label">
+                                <p>Receives a single word or very short, factual answer. Usually ‘Yes’ or ‘No’. </p><br>
+                                <p><strong><i>When to ask?</i></strong><br>When you need to gather facts or need a quick, short answer from candidates.</p><br>
+                                <p><strong><i>Examples:</i></strong><br>“Which company did you work for last?"<br> "Where do you live?"</p>
+
+                            </div>
+                    </div>
+                    <div class="card" id="card_3"><div class="text">Probing Questions</div>
+                        <div class="label">
+                                <p>Help gather additional information to invite detail and understand responses better.</p><br>
+                                <p><strong><i>When to ask?</i></strong><br>When you need clarity, clarification, detail or purpose of the response from candidates.</p><br>
+                                <p><strong><i>Examples:</i></strong><br>“What was your exact role in resolving the conflict?”<br>“What are some of your reasons for liking it?”</p>
+
+                            </div>
+                    </div>
+                    <div class="card" id="card_4"><div class="text">Leading Questions</div>
+                        <div class="label">
+                                <p>Lead to your way of thinking. Usually carry an assumption, or give people the choice.</p><br>
+                                <p><strong><i>When to ask?</i></strong><br>When you intend to guide candidates in a desired direction.</p><br>
+                                <p><strong><i>Examples:</i></strong><br>"How late do you think that the project will deliver?“<br>“You are attending the meeting today, aren’t you?"</p>
+
+                            </div>
+                    </div>
+               
+                </div>
+        </div>
+    </div>
+        
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            parent.next_disable();
+        });
+        var card_choices = Array(); var i = 1; var current_card = 0; var last_card = 0; var is_flipping = false; var cur_step = 0;
+        
+        $(window).load(function() {
+            parent.loadAudioTranscript('m3_03','',true,false);
+        });
+
+        var anim_flag = false; var total_steps = 6; var steps = Array(); var steps_handle = Array();
+        for(i=1;i<=total_steps;i++) steps[i] = Array();
+        /*steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+        steps[2][0] = 'playStep2()'; steps[2][1] = 10000; steps[2][2] = 0;
+        steps[3][0] = 'playStep3()'; steps[3][1] = 12000; steps[3][2] = 0;
+        steps[4][0] = 'playStep4()'; steps[4][1] = 14000; steps[4][2] = 0;
+        steps[5][0] = 'playStep5()'; steps[5][1] = 16000; steps[5][2] = 0;
+        steps[6][0] = 'playStep6()'; steps[6][1] = 1000; steps[6][2] = 0;*/
+
+        function postAudioPlay(){
+            anim_flag = true; 
+            if($('#content').css('visibility')=='hidden') {
+                $('#content').css('display','none');
+                $('#content').css('visibility','visible').fadeIn('normal');
+            }
+            for(i=1;i<=total_steps;i++) {
+                steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+            } 
+            cur_step = -1;
+        }
+
+        function pauseAnimation(current_time) {  
+            anim_flag = false; 
+            for(i=1;i<=steps_handle.length;i++) {
+                if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+            }
+        }
+        function resumeAnimation(current_time) {
+            anim_flag = true;
+            if(current_time>0) {
+                current_time = Math.floor(parseInt(current_time)) * 1000;
+                ii = 1;
+                for(j=1;j<=total_steps;j++) {
+                    if(current_time<= steps[j][1]) ii = j; break;
+                }
+
+                for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+            }
+        }
+
+       /* function playStep1() {  
+            if(anim_flag==true) {  
+                $('#sb1').fadeIn('slow');
+                steps[1][1] = 1; 
+            }
+        } 
+        function playStep2() {  
+            if(anim_flag==true) {  
+                $('.box1').fadeIn('slow');
+                steps[2][1] = 1; 
+            }
+        } 
+        function playStep3() {  
+            if(anim_flag==true) {  
+                $('.box2').fadeIn('slow');
+                steps[3][1] = 1; 
+            }
+        } 
+        function playStep4() {  
+            if(anim_flag==true) {  
+                $('.box3').fadeIn('slow');
+                steps[4][1] = 1; 
+            }
+        }  
+        function playStep5() {  
+            if(anim_flag==true) {  
+                $('.box4').fadeIn('slow');
+                steps[5][1] = 1; 
+            }
+        } 
+        function playStep6() {  
+            if(anim_flag==true) {  
+                steps[6][1] = 1; 
+                cur_step = 1;
+                $("#animation").fadeOut('fast',function() { $("#interactivity").fadeIn('slow'); }); 
+                  
+            }
+        } */
+        
+        
+        
+        /****************** card interactivity *****************/
+        
+        $('.card').click(function() {
+            parent.unloadAudioTranscript();
+            if(!$(this).hasClass('discard') && !$(this).hasClass('open') && !$(this).hasClass('close') && is_flipping == false) {
+                var tmp = $(this).attr('id').split('_'); id = tmp[1]; 
+                current_card = id; flipMe(current_card); 
+            }
+            $(this).addClass('visited');
+            
+            if($('#card_1').hasClass('visited') && $('#card_2').hasClass('visited') && $('#card_3').hasClass('visited') && $('#card_4').hasClass('visited'))
+                                           {
+                                           parent.next_enable();
+                                           }
+        });
+        function flipMe(id) {
+            is_flipping = true;
+            id = $('#card_'+id); $(id).removeClass('close'); 
+            if($(id).hasClass('open')) { $(id).removeClass('open');}
+            else {
+                $(id).flip({
+                    direction:'lr',
+                    content:'',
+                    speed:500,
+                    onEnd: function() { $(id).addClass('open'); is_flipping = false; $("#btn_playagain").removeClass('disabled'); },
+                })	 
+            }
+        }
+        $("#btn_playagain").click(function(){
+            if(!$(this).hasClass('disabled')){
+                $('.card.open').each(function(){
+                        var tmp = $(this).attr('id').split('_'); id = tmp[1]; 
+                        current_card = id; flipMe(current_card); 
+
+                        $(this).css('background-color','#4c6d86').removeClass('open');
+                }); 
+
+                is_flipping = false; current_card = 1;
+
+                $(this).addClass('disabled');
+            }
+        });
+        
+    </script>
+    
+</body>
+</html>

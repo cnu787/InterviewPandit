@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+            <link rel="stylesheet" type="text/css" href="../shared/css/module3_l5.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+            <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+            <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+            #page1_girl { display:none }
+            .fader { display:block; }
+			UL { margin-top:2px;}
+        </style>
+    </head>
+	<body>
+            <div id="content"> 
+            <div id="pageTitle">Using the STAR Technique</div>
+            <div id="ContentText">The <strong><b>STAR</b></strong>  (Situation, Task, Action, Result) technique is a competency-based interviewing technique you can use to gather all the relevant information about a specific capability that a job requires. This is designed to make the job application process as objective as possible by removing any biases. Inform candidates that this may be one of the techniques used by organizations during the interview process among other techniques. Therefore, they should be prepared!
+            Click each tab below to learn more.
+            </div>
+            
+            <div id="canvas">
+                <div class="poptab" id="poptab_1" rel="popcnt_1" audio_name=""><img src="../shared/images/star_s.png"></div>
+                <div class="poptab" id="poptab_2" rel="popcnt_2" audio_name=""><img src="../shared/images/star_t.png"></div>
+                <div class="poptab" id="poptab_3" rel="popcnt_3" audio_name=""><img src="../shared/images/star_a.png"></div>
+                <div class="poptab" id="poptab_4" rel="popcnt_4" audio_name=""><img src="../shared/images/star_r.png"></div>
+                
+                <div class="benjamin_franklin" id="bf_quote1"></div>
+                
+              <div class="popcontent" id="popcnt_1">
+                  <strong><b>Questions you can ask:</b></strong> <br><br>
+                    ‘Tell me about a time when you…’. <br>
+                    ‘Give us an example of a situation in which you…’.<br><br>
+                    <strong><b>Look for candidates to:</b></strong>
+                    <ul>
+                        <li>Provide context and background.</li>
+                        <li>Present a challenge or situation they experienced or a task they needed to accomplish.</li>
+                    </ul>
+
+                    <div style="margin-left: 700px; margin-top:-145px;"><img src="../shared/images/box_s.png" /></div>
+                </div>
+                
+                <div class="popcontent" id="popcnt_2">
+                    <strong><b>Questions you can ask:</b></strong> <br><br>
+                    ‘What was your role in this example?’<br>
+                    ‘So what were you required to do in this situation?’<br><br>
+                    <strong><b>Look for candidates to:</b></strong>
+                    <ul>
+                        <li>Describe the problems & challenges in the situation.</li>
+                        <li>Explain what goal did they have to achieve or working towards?</li>
+                    </ul>
+
+                    <div style="margin-left: 700px; margin-top:-145px;"><img src="../shared/images/box_t.png" /></div>
+                </div>
+                
+                
+                <div class="popcontent" id="popcnt_3">
+                    <strong><b>Questions you can ask:</b></strong> <br><br>
+                    ‘What did you say or do?’<br>
+                    ‘What steps did you take to tackle the opportunity/rectify the problem?’<br><br>
+                    <strong><b>Look for candidates to:</b></strong>
+                    <ul>
+                        <li>Explain <strong><b>what</b></strong> action did they take?</li>
+                        <li>Describe <strong><b>why</b></strong> they took that action and what were the alternatives.</li>
+                    </ul>
+
+                    <div style="margin-left: 700px; margin-top:-145px;"><img src="../shared/images/box_a.png" /></div>
+                </div>
+                
+                <div class="popcontent" id="popcnt_4">
+                    <strong><b>Questions you can ask:</b></strong> <br><br>
+                    "What was the impact of....“<br>
+                    “Where else did you use this experience?”<br><br>
+                    <strong><b>Look for candidates to:</b></strong>
+                    <ul>
+                        <li>State benefits, savings, rewards, recognitions, etc.</li>
+                        <li>Quantify/specify the outcome of the action and if they met their objective.</li>
+                        <li>Detail the learning  from this experience.</li>
+                    </ul>
+
+                    <div style="margin-left: 700px; margin-top:-165px;"><img src="../shared/images/box_r.png" /></div>
+                </div>
+                
+                
+            
+            </div> 
+            
+               
+            </div>
+	</body>
+<script type="text/javascript">
+                         parent.next_disable();
+			$(document).ready(function() {
+				$("#page1_girl").fadeIn('slow',function() { $('.fader').fadeIn('slow'); });
+			});
+			
+			$('.poptab').click(function() {
+				$('#bf_quote1').fadeOut('fast'); 
+					if(!$(this).hasClass('.selected')) {
+                                                $(this).addClass('visited');
+						$('.poptab').removeClass('selected');
+						$(this).addClass('selected');
+						$('.popcontent').fadeOut('fast');
+						$('#'+$(this).attr('rel')).fadeIn('fast'); 
+                                               
+					}
+                                        
+                                        if($('#poptab_1').hasClass('visited') && $('#poptab_2').hasClass('visited') && $('#poptab_3').hasClass('visited') && $('#poptab_4').hasClass('visited') )
+                                           {
+                                           parent.next_enable();
+                                           }
+			});	
+</script>
+
+
+    
+    
+            <script type="text/javascript">
+                var anim_flag = false; var total_steps = 5; var steps = Array(); var steps_handle = Array();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 100; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 18300; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 20800; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 22000; steps[4][2] = 0;
+                steps[5][0] = 'playStep5()'; steps[5][1] = 25900; steps[5][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('m3_05','',true,false);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('#ul_text').fadeIn('normal',function() { steps[2][2] = 1; });
+                    }
+                }
+				
+				function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#text1').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#text2').fadeIn('normal', function() { steps[4][2] = 1; });
+                    }
+                }
+                
+                function playStep5() { 
+                    if(anim_flag==true) {
+                         $('#text3').fadeIn('normal', function() { steps[5][2] = 1; });
+                    }
+                }
+                
+            </script>
+</html>

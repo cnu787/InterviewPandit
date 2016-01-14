@@ -1,0 +1,11 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+mailHost=email-smtp.us-west-2.amazonaws.com
+username= AKIAJWQN45WAAXMLKQGQ
+password= Al/2/HLL6f/THIyf7zzG7/rxziEq8tg5xmJT7CpHpaHm
+port=587
+###########sender mail id##########
+support=support@testmyinterview.com
+
+

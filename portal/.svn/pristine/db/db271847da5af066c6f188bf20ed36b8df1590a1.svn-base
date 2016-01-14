@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.testmyinterview.portal.dao.KookooDao" x="31" y="297">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.util.TmiUtil"
+            endpointName="tmiUtil" kind="Simple"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.kookoo.KookooController"
+        x="394" y="78">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.KookooDao"
+            endpointName="kookooDao" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.KookooDao"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.kookoo.ScheduleCallBean"
+        x="25" y="174">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.dao.KookooDao"
+            endpointName="kookooDao" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.dao.KookooDao"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.util.TmiUtil" x="719" y="332">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.testmyinterview.portal.kookoo.ScheduledJob" x="28" y="78">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.testmyinterview.portal.kookoo.ScheduleCallBean"
+            endpointName="scheduleCallBean" kind="Simple"/>
+        <Communication destinationClassName="com.testmyinterview.portal.kookoo.ScheduleCallBean"/>
+    </Class>
+</ClassDiagram>

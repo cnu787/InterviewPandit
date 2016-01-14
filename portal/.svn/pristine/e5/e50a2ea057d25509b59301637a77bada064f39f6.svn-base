@@ -1,0 +1,6 @@
+#main { width:1004px; height:629px; }
+#widget-container{ width:984px; height:629px; }
+#widget-header { width:944px; }
+#widget-midcontainer { width:964px; height:489px; }
+#widget-footer{ width:954px; }
+.ddsetdiv { height:260px; overflow-x:hidden; }

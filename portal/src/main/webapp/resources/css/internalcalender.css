@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+#page-wrap {
+	margin: 50px
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse
+}
+
+.interviewHistory>tbody>tr:nth-of-type(odd) {
+	background: #FFF
+}
+
+.interviewHistory>tbody>tr:nth-of-type(even) {
+	background: #f2f2f2
+}
+
+.interviewHistory>thead>tr>th {
+	background: #59574B;
+	color: #fff;
+	font-weight: 700
+}
+
+.interviewHistory>tbody>tr>td,th {
+	padding: 10px 20px;
+	border: 0 solid #ccc;
+	text-align: left
+}
+
+.interviewHistory>tbody>tr {
+	border-bottom: 1px solid #ccc
+}
+
+@media only screen and (max-width: 700px) {
+	.interviewHistory,.interviewthead,.interviewttbody,.interviewth,.interviewtd,.interviewtr
+		{
+		display: block
+	}
+	.interviewHistory>tbody>tr>td {
+		color: #0095da;
+		font-size: 14px;
+		font-family: "robotoregular"
+	}
+	.interviewHistory>tbody>tr:nth-of-type(even) {
+		background: #f2f2f2
+	}
+	.interviewHistory>tbody>tr:nth-of-type(odd) {
+		background: #f2f2f2
+	}
+	.interView>table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px
+	}
+	.interviewHistory>tbody>tr {
+		border: 1px solid #ccc;
+		margin-top: 25px
+	}
+	.interviewHistory>tbody>tr>td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%
+	}
+	.interviewHistory>tbody>tr>td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap
+	}
+	.interviewHistory>tbody>tr>td:nth-of-type(1):before {
+		content: "Interview ID :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.interviewHistory>tbody>tr>td:nth-of-type(2):before {
+		content: "User Name :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.interviewHistory>tbody>tr>td:nth-of-type(3):before {
+		content: "Applied Position :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.interviewHistory>tbody>tr>td:nth-of-type(4):before {
+		content: "Interview Type :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.interviewHistory>tbody>tr>td:nth-of-type(5):before {
+		content: "Time Slot :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.interviewHistory>tbody>tr>td:nth-of-type(6):before {
+		content: "Status :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	/* .interviewHistory>tbody>tr>td:nth-of-type(7):before {
+		content: "Feedback :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}  */
+	#test {
+		padding-left: 30%
+	}
+}
+/* for Study css */
+.studyHistory>tbody>tr:nth-of-type(odd) {
+	background: #FFF
+}
+
+.studyHistory>tbody>tr:nth-of-type(even) {
+	background: #f2f2f2
+}
+
+.studyHistory>thead>tr>th {
+	background: #59574B;
+	color: #fff;
+	font-weight: 700
+}
+
+.studyHistory>tbody>tr>td,th {
+	padding: 10px 20px;
+	border: 0 solid #ccc;
+	text-align: left
+}
+
+.studyHistory>tbody>tr {
+	border-bottom: 1px solid #ccc
+}
+
+@media only screen and (max-width: 700px) {
+	.studyHistory,.studythead,.studytbody,.studyth,.studytd,.studytr 
+		{
+		display: block 
+	}
+	.studyHistory>tbody>tr>td {
+		color: #0095da;
+		font-size: 14px;
+		font-family: "robotoregular"
+	}
+	.studyHistory>tbody>tr:nth-of-type(even) {
+		background: #f2f2f2
+	}
+	.studyHistory>tbody>tr:nth-of-type(odd) {
+		background: #f2f2f2
+	}
+	.interView>table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px
+	}
+	.studyHistory>tbody>tr {
+		border: 1px solid #ccc;
+		margin-top: 25px
+	}
+	.studyHistory>tbody>tr>td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%
+	}
+	.studyHistory>tbody>tr>td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap
+	}
+	 .studyHistory>tbody>tr>td:nth-of-type(1):before {
+		content: "College :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.studyHistory>tbody>tr>td:nth-of-type(2):before {
+		content: "Graduated Year :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.studyHistory>tbody>tr>td:nth-of-type(3):before {
+		content: "Degree :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	.studyHistory>tbody>tr>td:nth-of-type(4):before {
+		content: "Field of Study :";
+		font-family: "robotoregular";
+		color: #3E454c;
+		font-size: 14px
+	}
+	 
+	#test {
+		padding-left: 30%
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) {
+	body {
+		padding: 0;
+		margin: 0;
+		width: auto
+	}
+	.footer {
+		position: relative;
+		font-size: 14px;
+		bottom: 0;
+		width: 100%;
+		height: 80px;
+		background-color: #3E454D
+	}
+}
+
+@media only screen and (min-device-width: 768px) {
+	#width1 {
+		width: 13%
+	}
+	#width2 {
+		width: 12%
+	}
+	#width3 {
+		width: 13%
+	}
+	#width4 {
+		width: 13%
+	}
+	#width5 {
+		width: 20%
+	}
+	#width6 {
+		width: 15%
+	}
+	#width7 {
+		width: 10%
+	}
+}

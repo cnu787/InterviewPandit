@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Usable</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="../shared/css/content.css" />
+		<link rel="stylesheet" type="text/css" href="../shared/css/module3_l7.css" />
+            <script src="../shared/js/jquery/jquery.min.js"></script>
+	    <script src="../shared/js/jquery/jquery.transit.min.js"></script>
+	    <script src="../shared/js/jquery/jquery-ui.min.js"></script>
+            <style>
+                .usable_li{
+                    margin-left: 25px;
+                    padding-left: 20px;
+                }
+            </style>
+             
+    </head>
+	<body>
+            <div id="content">
+                <div id="pageTitle">Avoiding Inappropriate Questions</div>
+                       
+                    <div id="ContentText" class="pagesubtext animate">As the face of <strong><b>Interview Pandit</b></strong>, it is important for you to  avoid asking inappropriate questions during the interview while still getting to the root of the concern behind the question. The table below gives you a few examples of how to ask these questions appropriately.</div>
+                    <center>
+                        <br>
+                        <br>
+                    <table  class="segoeuil animate" style="color:#2c2c2c;font-size: 14px;font-family: Avenir Next LT Pro Regular;font-weight:bold; margin-top:20px;">
+		<tr>
+			<th  style=" text-align:center;border:none !important;border-top-left-radius:4px;" class="border_left border_top">Focus Area</th>
+			<th  style="text-align:center;" class="border_top">Do not Ask</th>
+			<th  class="border_top " style=" text-align:center;box-shadow: 1px 2px 0px 0px #B2BECB;border:none;border-top-right-radius:4px">Instead Ask</th>
+			
+		</tr>
+		
+		<tr>
+                        <td class="usable_table_back back_even border_left" >Religion</td>
+                        <td class="back_even">What religious holidays do you observe?</td>
+                        <td class="back_even border_right shadow_right">What days are you available to work?</td>
+		</tr>
+		<tr>
+                        <td class="usable_table_back back_odd border_left" >Age</td>
+			<td class="back_odd">How much longer are you planning to work before you retire?</td>
+                        <td class="back_odd border_right shadow_right">What are your long-term career goals?</td>
+		</tr>
+		<tr>
+                        <td class="usable_table_back back_even border_left">Marital / Family Status</td>
+                        <td class="back_even">Do you have or plan to have children?</td>
+                        <td class="back_even border_right shadow_right">Are you available to work overtime on occasion? Can you travel?</td>
+                </tr>
+                <tr >
+                        <td class="usable_table_back back_odd border_left " style="border-bottom-left-radius:4px;">Culture/Gender</td>
+                        <td class="back_odd ">What do you think of inter-office dating?</td>
+                        <td class="back_odd border_right shadow_right ">Have you ever been disciplined for your behavior at work?</td>
+                </tr>
+	
+	</table>
+                    </center>
+                    <div id="instruction_text" class="animate">Sensitize candidates to prepare ahead of time for these type of questions.
+                    </div>
+                    <div id="instruction_text1" class="animate">While it is important not to ask any inappropriate questions, it is equally important not to indulge in any personal discussions or answer personal questions that a candidate may have for you. Also you must never reveal your name or the organization that you work for to a candidate. Keep your discussions focused on the job role you are interviewing a candidate for.
+                    </div>
+       
+    </div>
+            <script type="text/javascript">
+                var anim_flag = false; var total_steps = 4; var steps = Array(); var steps_handle = Array(); parent.next_disable();
+                for(i=1;i<=total_steps;i++) steps[i] = Array();
+                steps[1][0] = 'playStep1()'; steps[1][1] = 300; steps[1][2] = 0;
+                steps[2][0] = 'playStep2()'; steps[2][1] = 11000; steps[2][2] = 0;
+                steps[3][0] = 'playStep3()'; steps[3][1] = 14800; steps[3][2] = 0;
+                steps[4][0] = 'playStep4()'; steps[4][1] = 19500; steps[4][2] = 0;
+                $(window).load(function() {
+                parent.loadAudioTranscript('m3_07','',true,true);
+                });
+
+                function postAudioPlay(){
+                    anim_flag = true;
+                    for(i=1;i<=total_steps;i++) {
+                        steps_handle[i] = setTimeout(steps[i][0],steps[i][1]);
+                    }
+                    
+			if($('#content').css('visibility')=='hidden') {
+                                $('#content').css('display','none');
+				$('#content').css('visibility','visible').fadeIn('normal');
+			}
+                }
+
+                function pauseAnimation(current_time) {  
+                    anim_flag = false;
+                    for(i=1;i<=steps_handle.length;i++) {
+                        if(steps[i][2]==0) clearTimeout(steps_handle[i]);
+                    }
+                }
+                function resumeAnimation(current_time) {
+                    anim_flag = true;
+                    if(current_time>0) {
+                        current_time = Math.floor(parseInt(current_time)) * 1000;
+                        ii = 1;
+                        for(j=1;j<=total_steps;j++) {
+                            if(current_time<= steps[j][1]) ii = j; break;
+                        }
+
+                        for(k=ii;k<=total_steps;k++) { steps_handle[k] = setTimeout(steps[k][0],steps[k][1] - current_time); }
+                    }
+                }
+                
+                function playStep1() { 
+                    if(anim_flag==true) { 
+                        $('#ContentText').fadeIn('normal',function() { steps[1][2] = 1; });
+                    }
+                }
+                function playStep2() { 
+                    if(anim_flag==true) { 
+                        $('.segoeuil').fadeIn('normal', function() { steps[2][2] = 1; });
+                    }
+                }
+				
+                function playStep3() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text').fadeIn('normal',function() { steps[3][2] = 1; });
+                    }
+                }
+                function playStep4() { 
+                    if(anim_flag==true) { 
+                        $('#instruction_text1').fadeIn('normal',function() { steps[4][2] = 1; });
+                    }
+                }
+            </script>
+        </body>
+    </html>

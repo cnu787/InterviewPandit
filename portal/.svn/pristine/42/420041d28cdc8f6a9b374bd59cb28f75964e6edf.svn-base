@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - Application context containing business beans. - - Used by all artifacts. 
+	- - $Id: applicationContext-common-business.xml,v 1.1.1.1 2010-03-25 10:29:51 
+	pavan Exp $ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		 <property name="url" value="jdbc:mysql://localhost:3306/interviewportaldb" />
+		<property name="username" value="root" />
+		<property name="password" value="root" /> 
+		<!-- <property name="url" value="jdbc:mysql://tmiproddb.corn82ghrqij.us-west-2.rds.amazonaws.com/interviewportaldb" />
+		<property name="username" value="tmi" />
+		<property name="password" value="TmiPran123" /> -->
+		<!-- <property name="url" value="jdbc:mysql://aackhltcb1jwis.corn82ghrqij.us-west-2.rds.amazonaws.com/interviewportaldb" />
+		<property name="username" value="tmi" />
+		<property name="password" value="TmiPran123" /> -->
+		<!-- The number of connections created when the pool is started. 
+    (actually created when first connection is opened)-->
+    <property name="initialSize" value="100"/>
+   <!--  <property name="maxActive" value="100" /> -->
+    <property name="maxIdle" value="10" />
+   <!--  <property name="maxWait" value="5000" /> -->
+    <property name="poolPreparedStatements" value="true" />
+    <property name="maxOpenPreparedStatements" value="100" />
+
+   
+	</bean>
+
+	<bean id="secTransactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="secTransactionManager" />
+</beans>

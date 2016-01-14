@@ -1,0 +1,185 @@
+#page1_girl{
+        margin-top: 160px;
+        margin-left: 34%;
+	overflow:hidden;
+	height:600px;
+	width:462px;
+	z-index: 9999;
+        
+}
+
+#page1_forke{
+	margin-top:-170px;
+	height:300px;
+	width:462px;
+	margin-left:330px;
+}
+
+
+#page1_sb{
+	margin-top: -660px;
+	margin-left:20%;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;	 
+	font-size: 15pt;
+	color:#595959;
+	height: 39px;
+	width:159px;
+}
+#page2_sb{
+	margin-top:-18px;
+	margin-left:65%;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;	 
+	font-size: 15pt;
+	color:#595959;
+	height: 39px;
+	width:159px;
+}
+
+#page3_sb{
+margin-left:140px; margin-top:200px;
+}
+#page4_sb{
+	margin-top: -370px;
+	margin-left:660px;
+        font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;	 
+	font-size: 15pt;
+	color:#595959;
+	height: 39px;
+	width:159px;
+}
+
+.content_div{ position: absolute; top:00px; left:00px;  height: 100%; width: 100%;}
+.textDesc { margin-top:-59px; margin-left:20px;}
+.textDesc_1 { margin-top:-59px; margin-left:40px; width: 140px;}
+.textDesc_2 { margin-top:-49px; margin-left:20px;}
+.textDesc_3 { margin-top:-59px; margin-left:40px; width: 130px;}
+
+
+
+
+.btn_continue {
+    background-color:transparent !Important;
+background-image:url(../images/cnt_btn_new.png);
+width:130px;
+height:39px;
+  font-family: Avenir Next LT Pro Regular;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  border:0px;
+  cursor:pointer;
+  padding: 0px 30px 1px 5px;
+  font-weight:bold;
+}
+
+.btn_continue:hover {
+    background-color:transparent !Important;
+  background-image:url(../images/cnt_btn_new.png);
+  color:#000000;
+}
+
+.skip_intro {
+	background-image: url(../../../lib/images/skip_intro.png);
+	width:126px;
+	height:12px;
+	background-color: transparent !important;
+	font-family: Avenir Next LT Pro Regular;
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	border:0px;
+	cursor:pointer;
+	font-weight:bold;
+	position:absolute;
+	display:block;
+	z-index:99999999;
+	margin-top:630px;
+	right:15px;
+}
+
+.skip_intro:hover {
+   
+  background-image:url(../../../lib/images/skip_intro.png);
+}
+
+#ContentText{
+	width:100%;
+        height: 233.33px;
+	margin-top:283px;
+        padding-top: 30px;
+	text-align: center;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color:#ffffff;
+	overflow: hidden;
+        line-height: .8;
+        background-image: url('../images/blue_bg.png');
+        background-repeat: repeat;
+	}
+    
+	#ContentText111{
+	width:100%;
+        height: 233.33px;
+	margin-top:330px;
+        padding-top: 30px;
+	text-align: center;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color:#ffffff;
+	overflow: hidden;
+        line-height: .8;
+        background-image: url('../images/blue_bg.png');
+        background-repeat: repeat;
+	}
+	   
+#ContentText1{
+	width:100%;
+	height: 233.33px;
+	margin-top:10px;
+        padding-top: 30px;
+	text-align: center;
+	font-family: Avenir Next LT Pro Regular;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	color:#ffffff;
+	overflow: hidden;
+        line-height: 1.5;
+        background-image: url('../images/blue_bg.png');
+        background-repeat: repeat;
+	}
+        
+#instruction_text { 
+    width: 485px;
+    height: 50px;
+    margin-left: 270px; 
+    margin-top:10px;
+    text-align: left;
+    font-family: Avenir Next LT Pro Regular;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14pt;
+    color:#000000;
+    overflow: hidden;
+}
+
+#start_button { background-image: url('../images/start_btn_1.png'); width:145px; background-repeat: no-repeat;  height:40px; margin-left: 85px; }
+#start_button:hover{ background-image: url('../images/start_btn_2.png'); cursor: pointer;}
+.resultbg { background:#202e3f; opacity: 0.2; width:100%; height:100%; position:absolute; z-index:10001; top:0px; left:0px; display:none; }

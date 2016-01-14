@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=”http://cdn.pubnub.com/pubnub.min.js”></script>
+<script src=”resources/js/webrtc-beta-pubnub.*.*.*.js”></script>
+<script src=”resources/js/webrtc-beta-pubnub.*.*.*.mini.js”></script>
+<script type="text/javascript">
+function gotStream(stream) {
+	
+	alert(document.querySelector('#self-call-video'));
+	  document.querySelector('#self-call-video').src = URL.createObjectURL(stream);
+	  myStream = stream; // Save the stream for later use
+	};
+	
+	function getStream(){
+		alert("Clicked");
+		alert(navigator);
+		alert(navigator.webkitGetUserMedia());
+		alert(document.querySelector('#self-call-video'));
+	navigator.webkitGetUserMedia({ audio: true, video: true}, gotStream);
+	};
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<input type="submit" onclick="getStream();">
+
+<div id="self-call-video"></div>
+</body>
+</html>

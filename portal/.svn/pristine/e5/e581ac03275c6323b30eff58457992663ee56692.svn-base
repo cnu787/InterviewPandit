@@ -1,0 +1,222 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1" />
+	<title></title>
+	<script type="text/javascript">parent.document.getElementById('loFrame').style.height = '99%';</script>
+	<link rel="stylesheet" type="text/css" href="lib/css/default.css">
+	<link id="layout" rel="stylesheet" type="text/css" href="lib/css/desktop.css" media="screen and (min-width:100px) and (max-width:1064px)" />	
+	<link rel="stylesheet" media="all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait)" href="lib/css/iportrait.css" />
+    <link rel="stylesheet" media="all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape)" href="lib/css/ilandscape.css" />	
+	<link rel="stylesheet" href="lib/css/ui-lightness/jquery-ui.css" />
+	<link rel="stylesheet" href="lib/css/qframework.css" />
+	
+	
+</head>
+<body onLoad="setupSession(0);">
+<!-- the main container -->
+
+<div id="main">		
+	<div id="main_div"> 
+            <div id="instruction_div">
+                <div id="noOfQuest">
+                    <center>
+                    <div id="noq">Number of Questions</div>
+                    <div id="text_ten" >10</div>
+                    </center>
+                </div>
+                <div id="timeToComp">
+                    <center>
+                    <div id="noq1">Time to Complete</div>
+                    <div id="text_ten1" >5 <span style="font-size: 21pt; color:#3fafe2; margin-left: -30px; ">min</span></div>
+                    </center>
+                </div>
+                <div id="PassPer">
+                    <center>
+                    <div id="noq1">Passing Percentage</div>
+                    <div id="text_ten2" >80</div>
+                    </center>
+                </div>
+            </div>
+            <div id="middle_div">
+                <center>
+                <div id="middle_div_logos"></div>
+                </center>
+            </div>
+            <center>
+            <div id="button_div">
+                <button type="button" id="btn_start1" class="btnstart"></button>
+            </div>
+            </center>    
+        </div>
+    <div class="resultbg"></div>
+    <div id="msg_box_container">
+        <center>
+        <div id="instruction_msg_box">
+            <center><div style="background-image:url(lib/images/logo.png); height:50px; width:160px;"></div></center>
+            <h3 style="color:#5e5e5e;">Assessment</h3>
+            <p>Here are ten questions that help assess what you have learned from this course on Interviewing Skills. Read the question below and select the correct answer(s) from the options given for each question. </p>
+            <p>You will have <strong><b>5 minutes</b></strong> to complete this assessment.</p>
+            <p> Click <b><strong>Start</strong></b> to proceed.</p>
+            <center>
+            <button type="button" id="btn_start" class="btnstart"></button>
+            </center>
+        </center>    
+        </div>
+    </div>
+    
+    
+	<div id="widget-container">
+		<!-- contains the UI elements related to header -->
+		<div id="widget-header">
+                    <div id="widget-header-hstrip">
+                            <div id="widget-header-links">
+                                <h1 id="page_title" class="header_text"></h1>
+                            </div>					
+                            <div id="widget-header-close"><div id="widget-header-logo"><div id="logo-container"></div></div>  <a id="icn_close" href="#" title="Quit"></a></div>
+                    </div>				
+                </div>
+		<!-- end of header -->
+					
+		<!-- contains the UI elements related to main content area -->
+		<div id="widget-midcontainer">
+			<!-- contains the main content area related to the course -->
+                        <table id="mtable_intro" class="mtable" cellpadding="0" cellspacing="0" align="center" border="0" style="margin:0px auto 10px auto; width:984px;">
+<!--			<tr valign="top"><td align="center" id="intro_cell"></td></tr>-->
+			<tr valign="top"><td align="center"><div id="weldiv nofloat"></div></td></tr>
+			</table>
+		
+			<table id="mtable_test" class="mtable" cellpadding="0" cellspacing="0" align="center" border="0">
+			<tr valign="top">
+				<td class="qhead">				
+					<div id="qweightdiv" class="qhitm floatleft">
+						<div class="qhil"></div>
+						<div class="qhtxt"><font>Total points for this question:&nbsp;<span id="qweight" class="boldText">&nbsp;&nbsp;</span></font></div>
+						<div class="qhir"></div>
+					</div>
+					
+					<div id="qtimerdiv" class="qhitm floatright">
+						<div class="qtimer" id="qtimer">
+							<img src="lib/images/timer.png" alt="Timer" />
+							<div class="qtimerfont boldText"><span id="qtimer_minutes">00</span>:<span id="qtimer_seconds">00</span></div>
+						</div>
+					</div>
+				</td>
+			</tr>		
+			<tr valign="top">
+				<td class="question">
+					<table class="qtable" cellpadding="0" cellspacing="0" align="center" border="0">
+					<tr valign="top">
+						<td class="qtd">
+							<table width="100%" cellpadding="0" cellspacing="2" align="center" border="0">
+							<tr valign="top"><td class="qtext" id="qtext"></td></tr>
+							<tr valign="top"><td class="options" id="qoptions"><div class="qins" id="qinstructions"></div></td></tr>
+							</table>
+						</td>
+					</tr>		
+					<tr valign="middle"><td class="qhelp"><div id="qhelp">Click 'Start Assessment' button to launch the assessment.</div></td></tr>
+					</table>
+				</td>
+			</tr>	
+			<tr valign="top">
+				<td class="qfoot">							
+					<div id="loqbtndiv"><a id="btn_loq" class="qbtn" href="#">Check Answers</a></div>
+					<div id="resdiv"><a id="btn_result" class="qbtn" href="#">Submit Answers</a></div>	
+					<div class="certificate_btnset" id="result_btns_div"> 
+						<div id="certificate_btns">
+						
+						</div>
+					</div>
+				</td>
+			</tr>	
+			</table>
+			<!-- end of widget-maincontent -->
+		</div><!-- end of main content area -->		
+		
+		<!-- contains the UI elements related to the bottom bar -->
+                <div id="widget-footer" class="marginclass">				
+			<!-- contains footer navigation -->
+			<div id="navbar" class="navbar">
+				<div id="navdiv">
+                                    
+				<a class="btn next" id="btn_next" title="Next Question"></a>
+                                <div id="qtext1" class="sep"></div>
+				<a class="btn previous" id="btn_previous" title="Previous Question"></a>
+				
+				</div>
+			</div>
+			<!-- end of footer navigation -->			
+		</div>
+		<!-- end of widget-bottombar -->
+		
+	</div>
+</div> <!-- end of main -->
+
+
+
+<div id="popbg" class="popbg"></div>
+
+<div id="pop_closer" class="pop">
+	<div class="pbox" align="center">
+		<div class="boxhead">
+			<font class="boxtitle">Exit Assessment</font>
+		</div>	
+		<div class="bcnt">
+			<p>Are you sure you want to exit the assessment?</p>
+		</div>	
+		<div class="bftr"><div class="btns"><a id="btn_closer_yes" class="btn">Yes</a><a id="btn_closer_close" class="btn">No</a></div></div>
+	</div>
+</div>
+
+<div id="pop_submiter" class="pop">
+	<div class="pbox" align="center">
+		<div class="boxhead">
+			<font class="boxtitle">Submit Answers</font>
+		</div>	
+		<div class="bcnt">
+			<p>Your answers will now be submitted for scoring. Proceed?</p>
+		</div>			
+		<div class="bftr"><div class="btns"><a id="btn_submiter_yes" class="btn width60">Yes</a><a id="btn_submiter_no" class="btn width60">No</a></div></div>
+	</div>
+</div>
+
+
+<div id="pop_help" class="pop">
+	<div class="pbox" align="center">
+		<div class="boxhead">
+			<font class="boxtitle">Help</font>
+		</div>	
+		<div class="bcnt">
+			<iframe id="helpframe" scrolling="no" frameborder="0" src="help.html"></iframe>
+		</div>	
+		<div class="bftr"><div class="btns"><a id="btn_help_close" class="btn" href="#">Close</a></div></div>
+	</div>
+</div>
+
+<div id="loqp" class="pop">
+	<div class="pbox" align="center">
+		<div class="boxhead">
+			<font class="boxtitle">Check Answers</font>
+		</div>	
+		<div class="boxText">Following are the results for each of the indivisual questions.</div>
+		<div class="bcntshowAnswers" id="loqc">
+			
+		</div>	
+		<div class="bftr"><div class="btns"><a id="btn_loq_close" class="btn width60" href="#">Close</a></div></div>
+	</div>
+</div>
+
+<div class="preloader"><img src="lib/images/radio.png" /><img src="lib/images/checkbox.png" /></div>	
+<form id="certificate_form" method="post" action="/scormtools/certificate/generator.php" target="_blank">
+	<input type="hidden" id="student_name" name="student_name" value="" />
+<input type="hidden" id="xmldata" name="xmldata" value="" />
+	<input type="hidden" id="certificate_mode" name="certificate_mode" value="" />
+	<input type="hidden" id="certificate_date" name="certificate_date" value="" />
+</form>
+<script type="text/javascript" src="lib/js/jquery.js"></script>
+<script type="text/javascript" src="lib/js/jquery-ui.js"></script>
+<script type="text/javascript" src="lib/js/qframework.js"></script>
+<script type="text/javascript" src="lib/js/dd_ipad_fix.js"></script>
+</body>
+</html>
